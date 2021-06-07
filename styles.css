@@ -49,6 +49,7 @@ img.spiral {
 a {
   color: inherit;
 }
+
 .info {
   position: relative;
   z-index: 10;
@@ -60,7 +61,6 @@ a {
   color: white;
   transition: all 2s;
 }
-
 
 h1 {
   font-size: 3em;
