@@ -1,3 +1,16 @@
+@font-face {
+  font-family: 'proza';
+  src:    url('./ProzaLibre-Medium.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'proza-light';
+  src:    url('./ProzaLibre-Light.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
 html {
   box-sizing: border-box;
 }
@@ -6,15 +19,62 @@ html {
 }
 
 body {
-  background-color: white;
+  background-color: rgb(0, 0, 0);
   color: black;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'proza-light';
   padding: 10px;
   margin: 0;
   font-size: 16px;
 }
 
+h1, h2, h3, h4, h5, p, ul, li {
+  margin: 0;
+}
 img {
   display: block;
   max-width: 100%;
+}
+
+img.spiral {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  z-index: 9;
+  opacity: .7;
+}
+.shell {
+  padding: 20px;
+}
+
+a {
+  color: inherit;
+}
+.info {
+  position: relative;
+  z-index: 10;
+  color: black;
+  transition: all 2s;
+}
+
+.info:hover {
+  color: white;
+  transition: all 2s;
+}
+
+
+h1 {
+  font-size: 3em;
+  font-family: 'proza';
+}
+
+h2 {
+  font-size: 2.8675em;
+}
+
+h3 {
+  font-size: 2.75em;
+}
+
+p {
+  font-size: 2.25em;
 }
