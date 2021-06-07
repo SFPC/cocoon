@@ -25,6 +25,7 @@ body {
   padding: 10px;
   margin: 0;
   font-size: 16px;
+  outline: 1px solid black;
 }
 
 h1, h2, h3, h4, h5, p, ul, li {
@@ -44,6 +45,8 @@ img.spiral {
 }
 .shell {
   padding: 20px;
+  position: relative;
+  z-index: 11;
 }
 
 a {
@@ -52,7 +55,7 @@ a {
 
 .info {
   position: relative;
-  z-index: 10;
+  z-index: 12;
   color: black;
   transition: all 2s;
 }
