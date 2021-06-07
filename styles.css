@@ -1,3 +1,7 @@
+:root {
+--text-margin: 10vh;
+}
+
 @font-face {
   font-family: 'proza';
   src:    url('./ProzaLibre-Medium.ttf');
@@ -53,6 +57,18 @@ a {
   color: inherit;
 }
 
+a:hover {
+  color: #01F43B;
+}
+.info:hover a.main  {
+  color: #01F43B;
+  transition: all 2s;
+}
+
+a.main:hover {
+  color: #01F43B;
+}
+
 .info {
   position: relative;
   z-index: 12;
@@ -69,16 +85,38 @@ a {
 h1 {
   font-size: 3em;
   font-family: 'proza';
+  font-weight: lighter;
+
+}
+
+h1.left {
+  float:left;
+  margin-bottom: var(--text-margin);
+}
+
+h1.right {
+  float:right;
+  margin-bottom: var(--text-margin);
 }
 
 h2 {
   font-size: 2.8675em;
+  font-weight: lighter;
 }
 
 h3 {
   font-size: 2.75em;
+  margin-bottom: var(--text-margin);
+  font-weight: lighter;
 }
 
 p {
-  font-size: 2.25em;
+  font-size: 2.75em;
+  margin-bottom: var(--text-margin);
+  font-weight: lighter;
+}
+
+
+.clear {
+  clear:both;
 }
