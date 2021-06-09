@@ -94,6 +94,14 @@ a.peek:hover {
   display: block;
   padding: var(--body-margin);
   z-index: 100;
+  transition: all 2s ease-out;
+  -moz-transition: all 2s ease-out;
+      	ms-transition: all  2s ease-out;
+      	o-transition: all  2s ease-out;
+}
+
+.dim {
+  opacity: .1
 }
 
 .info {
