@@ -184,9 +184,16 @@ p a:hover{
 
 p a.expand:hover .expanded {
   text-shadow: 0 0 0px rgba(1, 249,59,0.8);
+  text-decoration: none !important;
 }
 p a.expand.active {
   color: blueviolet;
+  text-decoration: none !important;
+}
+
+
+a.expand {
+  text-decoration: underline;
 }
 .clear {
   clear:both;
