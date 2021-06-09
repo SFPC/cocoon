@@ -63,7 +63,7 @@ a:hover {
   color: #01F43B;
 }
 
-a.main, .main {
+a.peek, .peek {
   /* font-size: 3em; */
   display:inline-block;
 	text-align: justify;
@@ -72,12 +72,15 @@ a.main, .main {
   width: 100%;
 }
 
-.info:hover a.main  {
+.info:hover a.peek  {
   color: #01F43B;
-  transition: all 2s;
+  transition: all 2s ease-out;
+  -moz-transition: all 2s ease-out;
+      	ms-transition: all 0.2s ease-out;
+      	o-transition: all 0.2s ease-out;
 }
 
-a.main:hover {
+a.peek:hover {
   color: #01F43B;
 }
 
@@ -95,20 +98,26 @@ a.main:hover {
   position: relative;
   z-index: 12;
   color: black;
-  transition: all 2s;
+  transition: all 2s ease-out;
   padding-top:var(--text-margin);
 }
 
 .info:hover h1  {
   color: #fff;
-  transition: all 2s;
+  transition: all 2s ease-out;
+  -moz-transition: all 2s ease-out;
+      	ms-transition: all 0.2s ease-out;
+      	o-transition: all 0.2s ease-out;
 }
 
 .info p:hover,
-.info p.touched
+.info.touched
  {
   color: white;
-  transition: all 2s;
+  transition: all 2s ease-out;
+  -moz-transition: all 2s ease-out;
+      	ms-transition: all 0.2s ease-out;
+      	o-transition: all 0.2s ease-out;
 }
 
 h1 {
@@ -116,7 +125,6 @@ h1 {
   font-size: 1.5vw;
   font-family: 'proza';
   font-weight: lighter;
-
 }
 
 h1.left {
@@ -144,7 +152,7 @@ p {
   cursor: help;
 }
 
-p, .main a {
+p, .peek a {
   font-size: 3vw;
   margin-bottom: var(--text-margin);
   font-weight: lighter;
@@ -153,4 +161,24 @@ p, .main a {
 
 .clear {
   clear:both;
+}
+
+
+@media (max-width: 768px) {
+
+  :root {
+  --text-margin: 10vh;
+  --body-margin: 4vw;
+  }
+
+  h1 {
+    font-size: 5vw;
+  }
+
+  p, .peek a {
+    font-size: 8vw;
+  }
+
+
+
 }
