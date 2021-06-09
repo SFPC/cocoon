@@ -74,14 +74,16 @@ a.peek, .peek {
 
 .info:hover a.peek  {
   color: #01F43B;
-  transition: all 2s ease-out;
-  -moz-transition: all 2s ease-out;
-      	ms-transition: all 0.2s ease-out;
-      	o-transition: all 0.2s ease-out;
+  transition: all .5s ease-out;
+  -moz-transition: all .5s ease-out;
+      	ms-transition: all .5s ease-out;
+      	o-transition: all .5s ease-out;
 }
 
 a.peek:hover {
-  color: #01F43B;
+  color: transparent !important;
+  text-shadow: 0 0 5px rgba(1, 249,59,0.8);
+
 }
 
 #header {
@@ -100,14 +102,25 @@ a.peek:hover {
   color: black;
   transition: all 2s ease-out;
   padding-top:var(--text-margin);
+  transition: all 2s ease-out;
+  -moz-transition: all 2s ease-out;
+      	ms-transition: all  2s ease-out;
+      	o-transition: all  2s ease-out;
 }
 
 .info:hover h1  {
   color: #fff;
   transition: all 2s ease-out;
   -moz-transition: all 2s ease-out;
-      	ms-transition: all 0.2s ease-out;
-      	o-transition: all 0.2s ease-out;
+      	ms-transition: all  2s ease-out;
+      	o-transition: all  2s ease-out;
+}
+
+.info p, .info p a {
+  transition: all .2s ease-out;
+  -moz-transition: all .2s ease-out;
+      	ms-transition: all  .2s ease-out;
+      	o-transition: all  .2s ease-out;
 }
 
 .info p:hover,
@@ -116,8 +129,8 @@ a.peek:hover {
   color: white;
   transition: all 2s ease-out;
   -moz-transition: all 2s ease-out;
-      	ms-transition: all 0.2s ease-out;
-      	o-transition: all 0.2s ease-out;
+      	ms-transition: all  2s ease-out;
+      	o-transition: all  2s ease-out;
 }
 
 h1 {
@@ -152,10 +165,21 @@ p {
   cursor: help;
 }
 
+p a {
+  -moz-transition: all 2s ease-out;
+      	ms-transition: all  2s ease-out;
+      	o-transition: all 2s ease-out;
+}
+
 p, .peek a {
   font-size: 3vw;
   margin-bottom: var(--text-margin);
   font-weight: lighter;
+}
+
+p a:hover{
+  color: transparent;
+  text-shadow: 0 0 5px rgba(1, 249,59,0.8);
 }
 
 
@@ -163,6 +187,13 @@ p, .peek a {
   clear:both;
 }
 
+.hide {
+  opacity: 0;
+  height: 0px;
+  display: none;
+  visibility: hidden;
+
+}
 
 @media (max-width: 768px) {
 
