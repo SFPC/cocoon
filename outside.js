@@ -4,7 +4,12 @@ $(window).scroll(function () {
     if ($(window).scrollTop() == $(document).height() - $(window).height()) {
         endlessScrollText();
         activeLinks();
-    }
+    };
+});
+
+$(".top").click(function() {
+  $("html, body").animate({ scrollTop: 0 }, "slow");
+  return false;
 });
 
 function endlessScrollText() {
@@ -36,7 +41,7 @@ function activeLinks() {
       if (link.classList.contains('active')) {
         link.classList.remove('active');
       }
-      
+
       if (link.children.length > 0) {
         console.log(link.children[0])
         link.children[0].style.display = "none";

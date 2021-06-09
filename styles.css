@@ -16,6 +16,7 @@
   font-weight: normal;
   font-style: normal;
 }
+
 html {
   box-sizing: border-box;
 }
@@ -94,6 +95,16 @@ a.peek:hover {
   display: block;
   padding: var(--body-margin);
   z-index: 100;
+  transition: all .5s ease-out;
+  -moz-transition: all .5s ease-out;
+      	ms-transition: all .5s ease-out;
+      	o-transition: all .5s ease-out;
+}
+
+
+#header:hover h1 {
+  color: transparent;
+  text-shadow: 0 0 3px rgba(1, 249,59,0.8);
 }
 
 .intro-text {
@@ -138,16 +149,21 @@ h1 {
   font-size: 1.5vw;
   font-family: 'proza';
   font-weight: lighter;
+  line-height: 1.5vw;
+  transition: all .5s ease-out;
+  -moz-transition: all .5s ease-out;
+      	ms-transition: all .5s ease-out;
+      	o-transition: all .5s ease-out;
 }
 
 h1.left {
   float:left;
-  margin-bottom: var(--text-margin);
+  /* margin-bottom: var(--text-margin); */
 }
 
 h1.right {
   float:right;
-  margin-bottom: var(--text-margin);
+  /* margin-bottom: var(--text-margin); */
 }
 
 h2 {
