@@ -1,5 +1,5 @@
 var counter=0;
-
+activeLinks();
 $(window).scroll(function () {
     if ($(window).scrollTop() == $(document).height() - $(window).height()) {
         endlessScrollText();
