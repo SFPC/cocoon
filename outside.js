@@ -1,6 +1,9 @@
 var counter=0;
+
+
 activeLinks();
 $(window).scroll(function () {
+   console.log(counter);
     if ($(window).scrollTop() == $(document).height() - $(window).height()) {
         endlessScrollText();
         activeLinks();
@@ -10,6 +13,9 @@ $(window).scroll(function () {
 $(".top").click(function() {
   $("html, body").animate({ scrollTop: 0 }, "slow");
   return false;
+  for(i = 0; i < counter; i++) {
+    $('#intro-text').remove();
+  }
 });
 
 function endlessScrollText() {
