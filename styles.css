@@ -72,7 +72,7 @@ a.peek, .peek {
   width: 100%;
 }
 
-.info:hover a.peek  {
+.intro-text:hover a.peek  {
   color: #01F43B;
   transition: all .5s ease-out;
   -moz-transition: all .5s ease-out;
@@ -96,7 +96,7 @@ a.peek:hover {
   z-index: 100;
 }
 
-.info {
+.intro-text {
   position: relative;
   z-index: 12;
   color: black;
@@ -108,7 +108,7 @@ a.peek:hover {
       	o-transition: all  2s ease-out;
 }
 
-.info:hover h1  {
+.intro-text:hover h1  {
   color: #fff;
   transition: all 2s ease-out;
   -moz-transition: all 2s ease-out;
@@ -116,15 +116,15 @@ a.peek:hover {
       	o-transition: all  2s ease-out;
 }
 
-.info p, .info p a {
+.intro-text p, .intro-text p a {
   transition: all .2s ease-out;
   -moz-transition: all .2s ease-out;
       	ms-transition: all  .2s ease-out;
       	o-transition: all  .2s ease-out;
 }
 
-.info p:hover,
-.info.touched
+.intro-text p:hover,
+.intro-text.touched
  {
   color: white;
   transition: all 2s ease-out;
@@ -182,7 +182,12 @@ p a:hover{
   text-shadow: 0 0 5px rgba(1, 249,59,0.8);
 }
 
-
+p a.expand:hover .expanded {
+  text-shadow: 0 0 0px rgba(1, 249,59,0.8);
+}
+p a.expand.active {
+  color: blueviolet;
+}
 .clear {
   clear:both;
 }
@@ -192,11 +197,9 @@ p a:hover{
   height: 0px;
   display: none;
   visibility: hidden;
-
 }
 
 @media (max-width: 768px) {
-
   :root {
   --text-margin: 10vh;
   --body-margin: 4vw;
@@ -209,7 +212,8 @@ p a:hover{
   p, .peek a {
     font-size: 8vw;
   }
+}
 
-
-
+.expanded {
+  display: none;
 }
