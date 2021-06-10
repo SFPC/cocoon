@@ -73,7 +73,7 @@ $(function() {
     $(window).scroll(function() {
         var newLoc = $(document).scrollTop();
         var diff = scrollLoc - newLoc;
-        rotation += diff / 2, scrollLoc = newLoc;
+        rotation += diff / 100, scrollLoc = newLoc;
         // var rotationStr = "rotate(" + rotation + "deg) scale(" + rotation + ")";
         var rotationStr = "rotate(" + rotation + "deg)";
         $(".spiral").css({
