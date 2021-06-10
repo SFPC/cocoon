@@ -115,7 +115,7 @@
 
   a.peek:hover {
     color: transparent !important;
-    text-shadow: 0 0 5px var(--primary-color);
+    text-shadow: 0 0 5px var(--primary-color) !important;
 
   }
 
