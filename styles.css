@@ -2,6 +2,7 @@
   --text-margin: 10vh;
   --body-margin: 2vw;
   --background: rgb(110, 0, 161);
+  /* rgb(115, 0, 113); */
   /*purple*/
   --primary-color: rgb(248, 201, 11);
   /*yellow*/
@@ -153,6 +154,14 @@
   }
 
   #header:hover .cocoon {
+    display: inline-block;
+    -webkit-transform:rotate(0deg);
+    -moz-transform:rotate(0deg);
+    -o-transform:rotate(0deg);
+    transform:rotate(0deg) !important;
+  }
+
+  p:hover span.cocoon {
     display: inline-block;
     -webkit-transform:rotate(0deg);
     -moz-transform:rotate(0deg);
