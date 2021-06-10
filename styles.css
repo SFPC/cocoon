@@ -277,6 +277,11 @@
 
   a.expand {
     text-decoration: underline;
+    display: inline-block;
+    margin: 0 3px;
+  }
+  a.expand.active {
+    display: inline;
   }
   .clear {
     clear:both;
