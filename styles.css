@@ -25,7 +25,7 @@ html {
 
 body {
   background-color: rgb(126, 4, 196);
-  color: black;
+  color: rgb(126, 4, 196);
   font-family: 'proza-light';
   /* padding: 10px; */
   margin: 0;
@@ -99,7 +99,7 @@ a.peek:hover {
 .intro-text {
   position: relative;
   z-index: 12;
-  color: black;
+  color: rgb(126, 4, 196);
   transition: all 2s ease-out;
   padding-top:var(--text-margin);
   transition: all 2s ease-out;
