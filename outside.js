@@ -1,6 +1,6 @@
 var counter=0;
 var bgImg = $('.layer1');
-var ran = Math.floor(Math.random() * 4);
+var ran = Math.floor(Math.random() * 8);
 var bg = bgImg.css('background-image'); // old image
 
 
@@ -22,7 +22,7 @@ function endlessScrollText() {
     let infoTextInner = $('#info').html();
     let bgImgLayer = $('.bgImg').html();
     $('#shell').append(infoTextInner);
-    ran = Math.floor(Math.random() * 4);
+    ran = Math.floor(Math.random() * 8);
     $('.bgImg').append('<img src="bgImages/layer' + ran + '.png" class="spiral" alt="" />').fadeIn(1000);;
     // bgImg.css('background-image', bg +','+ 'bgImages/layer' + Math.floor(Math.random() * 4) + '.png'); // add new image
 
