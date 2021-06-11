@@ -332,7 +332,24 @@
     visibility: hidden;
   }
 
+
+  @media all and (orientation: landscape) {
+    img.spiral {
+      height: auto;
+      width: 100vw;
+    }
+  }
+
+  @media all and (orientation: portrait) {
+    img.spiral {
+      height: 100vh;
+      width: auto;
+    }
+  }
+
+
   @media (max-width: 768px) {
+
     :root {
     --text-margin: 10vh;
     --body-margin: 4vw;

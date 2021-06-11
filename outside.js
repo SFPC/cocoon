@@ -26,8 +26,6 @@ function endlessScrollText() {
     $('.bgImg').append('<img src="bgImages/layer' + ran + '.png" class="spiral" alt="" />').fadeIn(1000);;
     // bgImg.css('background-image', bg +','+ 'bgImages/layer' + Math.floor(Math.random() * 4) + '.png'); // add new image
 
-    console.log(ranNum);
-
     counter++;
 }
 
@@ -88,24 +86,5 @@ function activeLinks() {
 //             "-moz-transform": rotationStr,
 //             "transform": rotationStr
 //         });
-//     });
-// })
-
-//
-//
-// $(function() {
-//     var rotation = 0,
-//         scrollLoc = $(document).scrollTop();
-//     $(window).scroll(function() {
-//         var newLoc = $(document).scrollTop();
-//         var diff = newLoc - scrollLoc;
-//         rotation += diff, scrollLoc = newLoc;
-//         // var rotationStr = "rotate(" + rotation + "deg) scale(" + rotation + ")";
-//         var rotationStr = rotation;
-//         $(".bgImg-layer").css({
-//             "opacity": rotationStr / 1000
-//         });
-//
-//         console.log(rotationStr);
 //     });
 // })
