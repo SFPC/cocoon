@@ -20,7 +20,9 @@ $(".top").click(function() {
 
 function endlessScrollText() {
     let infoTextInner = $('#info').html();
+    let bgImgLayer = $('.bgImg').html();
     $('#shell').append(infoTextInner);
+    $('.bgImg').append(bgImgLayer);
     counter++;
 }
 
@@ -31,7 +33,7 @@ function activeLinks() {
 
   expandableLinks.forEach((link) => {
     link.addEventListener('click', function() {
-      console.log(link);
+      // console.log(link);
       showExpanded(link);
     })
   })
@@ -66,20 +68,39 @@ function activeLinks() {
   }, false);
 }
 
+//
+// $(function() {
+//     var rotation = 0,
+//         scrollLoc = $(document).scrollTop();
+//     $(window).scroll(function() {
+//         var newLoc = $(document).scrollTop();
+//         var diff = scrollLoc - newLoc;
+//         rotation += diff / 100, scrollLoc = newLoc;
+//         // var rotationStr = "rotate(" + rotation + "deg) scale(" + rotation + ")";
+//         var rotationStr = "rotate(" + rotation + "deg)";
+//         $(".spiral").css({
+//             "-webkit-transform": rotationStr,
+//             "-moz-transform": rotationStr,
+//             "transform": rotationStr
+//         });
+//     });
+// })
 
-$(function() {
-    var rotation = 0,
-        scrollLoc = $(document).scrollTop();
-    $(window).scroll(function() {
-        var newLoc = $(document).scrollTop();
-        var diff = scrollLoc - newLoc;
-        rotation += diff / 100, scrollLoc = newLoc;
-        // var rotationStr = "rotate(" + rotation + "deg) scale(" + rotation + ")";
-        var rotationStr = "rotate(" + rotation + "deg)";
-        $(".spiral").css({
-            "-webkit-transform": rotationStr,
-            "-moz-transform": rotationStr,
-            "transform": rotationStr
-        });
-    });
-})
+//
+//
+// $(function() {
+//     var rotation = 0,
+//         scrollLoc = $(document).scrollTop();
+//     $(window).scroll(function() {
+//         var newLoc = $(document).scrollTop();
+//         var diff = newLoc - scrollLoc;
+//         rotation += diff, scrollLoc = newLoc;
+//         // var rotationStr = "rotate(" + rotation + "deg) scale(" + rotation + ")";
+//         var rotationStr = rotation;
+//         $(".bgImg-layer").css({
+//             "opacity": rotationStr / 1000
+//         });
+//
+//         console.log(rotationStr);
+//     });
+// })

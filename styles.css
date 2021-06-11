@@ -1,15 +1,21 @@
 :root {
   --text-margin: 10vh;
   --body-margin: 2vw;
-  --background: rgb(110, 0, 161);
+  --background: #ef9a83;
+  /* #7878aa; */
+  /* rgb(255,255,255); */
   /* rgb(115, 0, 113); */
+  /* rgb(110, 0, 161) */
   /*purple*/
-  --primary-color: rgb(248, 201, 11);
+  --primary-color: #ff6e47;
+  /* rgb(248, 201, 11); */
   /*yellow*/
   /* rgb(248, 62, 11);  */
   /*orange*/
-  --secondary-color: #87dfff;
+  --secondary-color: #277c67;
+  /* #87dfff; */
   /*black*/
+  --text-color: blueviolet;
 
 
 
@@ -75,11 +81,40 @@
     /* height: 50vw;
     width: 50vw;
     margin-left: 25vw; */
-    position: fixed;
+    position: absolute;
     z-index: 9;
     opacity: .7;
   }
 
+  .bgImg {
+    position: fixed;
+    top:0px;
+    left:0px;
+    height: 100vh;
+    width: 100vw;
+    z-index: 9;
+  }
+
+  .bgImg-layer {
+    background-color: var(--background);
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    opacity: .7;
+    mix-blend-mode: screen;
+  }
+
+  .layer1 {
+    background-image: url('bgImages/layer1.png')
+    ,  url('bgImages/layer2.png'),  url('bgImages/layer3.png')
+    ;
+      background-blend-mode: screen;
+  }
+
+  /* .layer2 {
+    background-image: url('bgImages/layer2.png');
+    background-blend-mode: screen;
+  } */
 
   .shell {
     padding: var(--body-margin);
@@ -183,7 +218,7 @@
   }
 
   .intro-text:hover h1  {
-    color: #fff;
+    color: var(--text-color);
     transition: all 2s ease-out;
     -moz-transition: all 2s ease-out;
           ms-transition: all  2s ease-out;
@@ -201,7 +236,7 @@
   .intro-text p:hover,
   .intro-text.touched
    {
-    color: white;
+    color: var(--text-color);
     text-shadow: 0 0 10px var(--background);
     transition: all 2s ease-out;
     -moz-transition: all 2s ease-out;
@@ -210,7 +245,7 @@
   }
 
   h1 {
-    color: white;
+    color: var(--text-color);
     font-size: 1.5vw;
     font-family: 'proza';
     font-weight: lighter;
