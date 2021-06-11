@@ -1,4 +1,7 @@
 var counter=0;
+var bgImg = $('.layer1');
+var ran = Math.floor(Math.random() * 4);
+var bg = bgImg.css('background-image'); // old image
 
 
 activeLinks();
@@ -13,16 +16,18 @@ $(window).scroll(function () {
 $(".top").click(function() {
   $("html, body").animate({ scrollTop: 0 }, "slow");
   return false;
-  for(i = 0; i < counter; i++) {
-    $('#intro-text').remove();
-  }
 });
 
 function endlessScrollText() {
     let infoTextInner = $('#info').html();
     let bgImgLayer = $('.bgImg').html();
     $('#shell').append(infoTextInner);
-    $('.bgImg').append(bgImgLayer);
+    ran = Math.floor(Math.random() * 4);
+    $('.bgImg').append('<img src="bgImages/layer' + ran + '.png" class="spiral" alt="" />').fadeIn(1000);;
+    // bgImg.css('background-image', bg +','+ 'bgImages/layer' + Math.floor(Math.random() * 4) + '.png'); // add new image
+
+    console.log(ranNum);
+
     counter++;
 }
 
@@ -51,7 +56,7 @@ function activeLinks() {
       }
 
       if (link.children.length > 0) {
-        console.log(link.children[0])
+        // console.log(link.children[0])
         link.children[0].style.display = "none";
       }
     })
