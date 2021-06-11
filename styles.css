@@ -355,6 +355,11 @@
     --body-margin: 4vw;
     }
 
+    img.spiral {
+      height: 100vh;
+      width: auto;
+    }
+
     h1 {
       font-size: 5vw;
     }
