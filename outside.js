@@ -19,8 +19,8 @@ activeLinks();
 
 
 $(window).on("load", function() {
-  $('<img src="bgImages/layer1.png" class="spiral" alt="" />').appendTo('.bgImg').hide().fadeIn(500);
-  $('<img src="bgImages/layer2.png" class="spiral" alt="" />').appendTo('.bgImg').hide().fadeIn(1500);
+  $('<img src="bgImages/layer1.png" class="spiral" alt="" />').appendTo('.bgImg').hide().fadeIn(1000);
+  $('<img src="bgImages/layer2.png" class="spiral" alt="" />').appendTo('.bgImg').hide().fadeIn(2000);
   $('<img src="bgImages/layer3.png" class="spiral" alt="" />').appendTo('.bgImg').hide().fadeIn(3000);
 });
 
@@ -48,18 +48,30 @@ $(window).scroll(function () {
         // lighterBG();
     };
 
-    if(scroll < position) {
-        $(".bgImg img:last-child").remove();
-    }
+    if($(window).scrollTop() == 0) {
+      fadeOutAtTop();
+   }
 });
 
 $(".top").click(function() {
   $("html, body").animate({ scrollTop: 0 }, "slow");
+
+  fadeOutAtTop();
+
   return false;
-  $('body').remove(".newText");
-  $('body').remove(".newBg");
-  counter=0;
 });
+
+
+function fadeOutAtTop() {
+  $(".newBg").fadeOut(300, function() {
+        $(this).remove();
+  });
+
+  $(".newText").fadeOut(300, function() {
+          $(this).remove();
+  });
+  counter=0;
+}
 
 function endlessScrollText() {
     let infoTextInner = $('#info').html();
@@ -76,12 +88,9 @@ function endlessScrollText() {
       ran2 = Math.floor(Math.random() * 22);
     }
 
-
     $('<img src="bgImages/layer' + ran + '.png" class="spiral newBg" alt="" />').appendTo('.bgImg').hide().fadeIn(1000);
-    $('<img src="bgImages/layer' + ran2 + '.png" class="spiral newBg" alt="" />').appendTo('.bgImg').hide().fadeIn(2000);
-    $('<img src="bgImages/layer' + ran3 + '.png" class="spiral newBg" alt="" />').appendTo('.bgImg').hide().fadeIn(2000);
-
-    // bgImg.css('background-image', bg +','+ 'bgImages/layer' + Math.floor(Math.random() * 4) + '.png'); // add new image
+    $('<img src="bgImages/layer' + ran + '.png" class="spiral newBg" alt="" />').appendTo('.bgImg').hide().fadeIn(2000);
+    $('<img src="bgImages/layer' + ran2 + '.png" class="spiral newBg" alt="" />').appendTo('.bgImg').hide().fadeIn(3000);
 
     counter++;
 }
