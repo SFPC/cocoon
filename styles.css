@@ -1,7 +1,8 @@
 :root {
   --text-margin: 10vh;
   --body-margin: 2vw;
-  --background: #ef9a83;
+  --background: rgb(239, 154, 131);
+  /* #ef9a83; */
   /* #7878aa; */
   /* rgb(255,255,255); */
   /* rgb(115, 0, 113); */
@@ -16,24 +17,8 @@
   /* #87dfff; */
   /*black*/
   --text-color: blueviolet;
-
-
-
   }
 
-  @font-face {
-    font-family: 'proza';
-    src:    url('./ProzaLibre-Medium.ttf');
-    font-weight: normal;
-    font-style: normal;
-  }
-
-  @font-face {
-    font-family: 'proza-light';
-    src:    url('./ProzaLibre-Light.ttf');
-    font-weight: normal;
-    font-style: normal;
-  }
 
   @font-face {
     font-family: 'times dot';
@@ -97,6 +82,10 @@
     background-color: var(--background);
   }
 
+    .bgImg img {
+      z-index: 10;
+    }
+
   .bgImg-layer {
     background-color: var(--background);
     background-size: cover;
@@ -119,11 +108,25 @@
     background-blend-mode: screen;
   } */
 
+  .whiteBG {
+    height: 100vh;
+    width: 100vw;
+    display: block;
+    background: #fff;
+    opacity: .5;
+    position: fixed;
+    top:0px;
+    left:0px;
+    z-index: 10;
+  }
+
   .shell {
     padding: var(--body-margin);
     position: relative;
     z-index: 11;
   }
+
+
 
   a {
     color: inherit;
