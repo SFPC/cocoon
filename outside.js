@@ -62,6 +62,7 @@ function endlessScrollText() {
 
     $('<img src="bgImages/layer' + ran + '.png" class="spiral newBg" alt="" />').appendTo('.bgImg').hide().fadeIn(1000);
     $('<img src="bgImages/layer' + ran + '.png" class="spiral newBg" alt="" />').appendTo('.bgImg').hide().fadeIn(2000);
+    $('<img src="bgImages/layer' + ran + '.png" class="spiral newBg" alt="" />').appendTo('.bgImg').hide().fadeIn(2000);
 
     // bgImg.css('background-image', bg +','+ 'bgImages/layer' + Math.floor(Math.random() * 4) + '.png'); // add new image
 
