@@ -6,8 +6,6 @@ var position = $(window).scrollTop();
 var bgR, bgG, bgB;
 
 
-
-
 activeLinks();
 
 
@@ -49,17 +47,21 @@ $(window).scroll(function () {
 $(".top").click(function() {
   $("html, body").animate({ scrollTop: 0 }, "slow");
   return false;
+  $('body').remove(".newText");
+  $('body').remove(".newBg");
+  counter=0;
 });
 
 function endlessScrollText() {
     let infoTextInner = $('#info').html();
     let bgImgLayer = $('.bgImg').html();
-    $('#shell').append(infoTextInner);
+    // $('#shell').append(infoTextInner);
+    $(infoTextInner).appendTo('#shell').addClass('newText');
     ran = Math.floor(Math.random() * 11);
 
 
-    $('<img src="bgImages/layer' + ran + '.png" class="spiral" alt="" />').appendTo('.bgImg').hide().fadeIn(1000);
-    $('<img src="bgImages/layer' + ran + '.png" class="spiral" alt="" />').appendTo('.bgImg').hide().fadeIn(2000);
+    $('<img src="bgImages/layer' + ran + '.png" class="spiral newBg" alt="" />').appendTo('.bgImg').hide().fadeIn(1000);
+    $('<img src="bgImages/layer' + ran + '.png" class="spiral newBg" alt="" />').appendTo('.bgImg').hide().fadeIn(2000);
 
     // bgImg.css('background-image', bg +','+ 'bgImages/layer' + Math.floor(Math.random() * 4) + '.png'); // add new image
 
