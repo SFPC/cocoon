@@ -1,16 +1,49 @@
 var counter=0;
 var bgImg = $('.layer1');
-var ran = Math.floor(Math.random() * 8);
-var bg = bgImg.css('background-image'); // old image
+var ran = Math.floor(Math.random() * 11);
+var bg = bgImg.css('background-image');
+var position = $(window).scrollTop();
+var bgR, bgG, bgB;
+
+
 
 
 activeLinks();
+
+
+$(window).on("load", function() {
+  $('<img src="bgImages/layer1.png" class="spiral" alt="" />').appendTo('.bgImg').hide().fadeIn(500);
+  $('<img src="bgImages/layer2.png" class="spiral" alt="" />').appendTo('.bgImg').hide().fadeIn(1500);
+  $('<img src="bgImages/layer3.png" class="spiral" alt="" />').appendTo('.bgImg').hide().fadeIn(3000);
+});
+
+$(document).ready(function() {
+  bgR = 239, bgG = 154, bgB = 131;
+  $("body").get(0).style.setProperty("--background", "rgb(" + bgR + "," + bgG + "," + bgB + ")");
+});
+
 $(window).scroll(function () {
-   console.log(counter);
-    if ($(window).scrollTop() == $(document).height() - $(window).height()) {
+    var scroll = $(window).scrollTop();
+    var diff = $(document).height() - $(window).height();
+
+    console.log("Scroll " + scroll);
+    console.log("Diff " + diff);
+
+    // console.log(diff);
+
+    bgR = bgR + 5;
+    bgG = bgG + 5;
+    bgB = bgB + 5;
+
+    if (scroll + 100 >= diff && scroll <= diff) {
         endlessScrollText();
         activeLinks();
+        // lighterBG();
     };
+
+    if(scroll < position) {
+        $(".bgImg img:last-child").remove();
+    }
 });
 
 $(".top").click(function() {
@@ -22,8 +55,12 @@ function endlessScrollText() {
     let infoTextInner = $('#info').html();
     let bgImgLayer = $('.bgImg').html();
     $('#shell').append(infoTextInner);
-    ran = Math.floor(Math.random() * 8);
-    $('.bgImg').append('<img src="bgImages/layer' + ran + '.png" class="spiral" alt="" />').fadeIn(1000);;
+    ran = Math.floor(Math.random() * 11);
+
+
+    $('<img src="bgImages/layer' + ran + '.png" class="spiral" alt="" />').appendTo('.bgImg').hide().fadeIn(1000);
+    $('<img src="bgImages/layer' + ran + '.png" class="spiral" alt="" />').appendTo('.bgImg').hide().fadeIn(2000);
+
     // bgImg.css('background-image', bg +','+ 'bgImages/layer' + Math.floor(Math.random() * 4) + '.png'); // add new image
 
     counter++;
@@ -40,6 +77,13 @@ function activeLinks() {
       showExpanded(link);
     })
   })
+
+  function lighterBG() {
+     bgR += 1;
+     bgG += 1;
+     bgB += 1;
+     $("body").get(0).style.setProperty("--background", "rgb(" + bgR + "," + bgG + "," + bgB + ")");
+  }
 
   function showExpanded(link) {
     hideOtherExpandedLinks();
@@ -70,21 +114,3 @@ function activeLinks() {
     }
   }, false);
 }
-
-//
-// $(function() {
-//     var rotation = 0,
-//         scrollLoc = $(document).scrollTop();
-//     $(window).scroll(function() {
-//         var newLoc = $(document).scrollTop();
-//         var diff = scrollLoc - newLoc;
-//         rotation += diff / 100, scrollLoc = newLoc;
-//         // var rotationStr = "rotate(" + rotation + "deg) scale(" + rotation + ")";
-//         var rotationStr = "rotate(" + rotation + "deg)";
-//         $(".spiral").css({
-//             "-webkit-transform": rotationStr,
-//             "-moz-transform": rotationStr,
-//             "transform": rotationStr
-//         });
-//     });
-// })
