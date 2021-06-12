@@ -1,6 +1,15 @@
 var counter=0;
 var bgImg = $('.layer1');
-var ran = Math.floor(Math.random() * 11);
+var ran, ran2, ran3;
+ran = Math.floor(Math.random() * 22);
+ran2 = Math.floor(Math.random() * 22);
+ran3 = Math.floor(Math.random() * 22);
+if (ran == ran2 || ran == ran3) {
+  ran = Math.floor(Math.random() * 22);
+}
+if (ran2 == ran3) {
+  ran2 = Math.floor(Math.random() * 22);
+}
 var bg = bgImg.css('background-image');
 var position = $(window).scrollTop();
 var bgR, bgG, bgB;
@@ -57,12 +66,20 @@ function endlessScrollText() {
     let bgImgLayer = $('.bgImg').html();
     // $('#shell').append(infoTextInner);
     $(infoTextInner).appendTo('#shell').addClass('newText');
-    ran = Math.floor(Math.random() * 11);
+    ran = Math.floor(Math.random() * 22);
+    ran2 = Math.floor(Math.random() * 22);
+    ran3 = Math.floor(Math.random() * 22);
+    if (ran == ran2 || ran == ran3) {
+      ran = Math.floor(Math.random() * 22);
+    }
+    if (ran2 == ran3) {
+      ran2 = Math.floor(Math.random() * 22);
+    }
 
 
     $('<img src="bgImages/layer' + ran + '.png" class="spiral newBg" alt="" />').appendTo('.bgImg').hide().fadeIn(1000);
-    $('<img src="bgImages/layer' + ran + '.png" class="spiral newBg" alt="" />').appendTo('.bgImg').hide().fadeIn(2000);
-    $('<img src="bgImages/layer' + ran + '.png" class="spiral newBg" alt="" />').appendTo('.bgImg').hide().fadeIn(2000);
+    $('<img src="bgImages/layer' + ran2 + '.png" class="spiral newBg" alt="" />').appendTo('.bgImg').hide().fadeIn(2000);
+    $('<img src="bgImages/layer' + ran3 + '.png" class="spiral newBg" alt="" />').appendTo('.bgImg').hide().fadeIn(2000);
 
     // bgImg.css('background-image', bg +','+ 'bgImages/layer' + Math.floor(Math.random() * 4) + '.png'); // add new image
 
