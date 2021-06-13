@@ -182,6 +182,10 @@
   }
 
   .cocoon {
+    font-family: 'Self Modern';
+    font-style: italic;
+    line-height: 0;
+    font-weight: bold;
     display: inline-block;
     -webkit-transform:rotate(-180deg);
     -moz-transform:rotate(-180deg);
@@ -297,6 +301,13 @@
     font-size: 3vw;
     margin-bottom: var(--text-margin);
     font-weight: lighter;
+  }
+
+  .peek a {
+    font-family: 'Self Modern';
+    font-style: italic;
+    /* line-height: 0; */
+    font-weight: bold;
   }
 
   p a:hover{
