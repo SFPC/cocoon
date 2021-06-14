@@ -1,8 +1,11 @@
 :root {
     --text-margin: 10vh;
     --body-margin: 2vw;
+    --background-shadow: rgb(255, 255, 255);
     /* #ce988a */
-    --background: rgb(245, 181, 164);
+    --background: #bb905e;
+    /* --background: #a47848; */
+    /* #bb905e */
     /* #ef9a83; */
     /* #7878aa; */
     /* rgb(255,255,255); */
@@ -169,7 +172,7 @@ a.peek,
 .intro-text:hover a.peek,
 .break-sect:hover a.peek {
     color: var(--primary-color);
-    text-shadow: 0 0 10px var(--background);
+    text-shadow: 0 0 10px var(--background-shadow);
     transition: all .5s ease-out;
     -moz-transition: all .5s ease-out;
     ms-transition: all .5s ease-out;
@@ -283,7 +286,7 @@ p:hover span.cocoon {
 .intro-text p:hover,
 .intro-text.touched {
     color: var(--text-color);
-    text-shadow: 0 0 10px var(--background);
+    text-shadow: 0 0 10px var(--background-shadow);
     transition: all 2s ease-out;
     -moz-transition: all 2s ease-out;
     ms-transition: all 2s ease-out;
@@ -345,7 +348,7 @@ p,
 .break-sect {
     color: var(--text-color);
     font-family: 'Self Modern';
-    text-shadow: 0 0 4px var(--background);
+    text-shadow: 0 0 4px var(--background-shadow);
     /* border-top: 3px dotted  var(--text-color); */
     text-align: center;
 }
@@ -385,7 +388,7 @@ p a:hover {
 
 .programs-list p {
     color: var(--text-color);
-    text-shadow: 0 0 4px var(--background);
+    text-shadow: 0 0 4px var(--background-shadow);
     font-family: 'Times Dot';
     line-height: 1;
 }
@@ -422,7 +425,7 @@ p a:hover {
 
 .programs-list h2 {
     color: var(--text-color);
-    text-shadow: 0 0 4px var(--background);
+    text-shadow: 0 0 4px var(--background-shadow);
     font-family: 'Self Modern';
     font-style: italic;
     font-weight: bold;
@@ -432,7 +435,7 @@ p a:hover {
 
 p a.expand:hover .expanded {
     /* text-shadow: none !important; */
-    text-shadow: 0 0 8px var(--background);
+    text-shadow: 0 0 8px var(--background-shadow);
     text-decoration: none !important;
 }
 
@@ -440,7 +443,7 @@ p a.expand.active {
     color: var(--secondary-color);
     text-decoration: none !important;
     /* text-shadow: none !important; */
-    text-shadow: 0 0 10px var(--background);
+    text-shadow: 0 0 10px var(--background-shadow);
 }
 
 a.expand {
@@ -506,6 +509,7 @@ a.expand.active {
     }
     .intro-text {
         color: var(--text-color);
+        text-shadow: 0 0 10px var(--background-shadow);
     }
     p .cocoon {
         -webkit-transform: rotate(0deg);
