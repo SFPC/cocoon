@@ -1,7 +1,7 @@
 :root {
     --text-margin: 10vh;
     --body-margin: 2vw;
-    --background-shadow-purple: rgb(215, 0, 223);
+    --background-shadow-purple: #ff6e47;
     --background-shadow-green: rgb(6, 187, 0);
     /* #ce988a */
     --background: #bb905e;
@@ -303,32 +303,37 @@ p:hover span.cocoon {
 }
 
 .withfriends p {
-    color: var(--primary-color);
+    /* color: var(--primary-color); */
+
+    color: var(--text-color);
+    text-shadow: 1px 1px 1px var(--background-shadow-purple);
+    /* , 1px 1px 10px var(--background-shadow); */
+    font-size: 1.5vw;
     font-family: 'Self Modern';
     font-style: italic;
     line-height: 0;
     font-weight: bold;
     text-align: center;
-    font-size: 1.5em;
+    /* font-size: 1.5em; */
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 500px;
-    text-shadow: 0 0 10px var(--background-shadow);
+    /* text-shadow: 0 0 10px var(--background-shadow); */
     display: table;
     /* keep the background color wrapped tight */
     margin: 0px auto 0px auto;
     /* keep the table centered */
     padding: 5px;
-    background-color: #ffffff5d;
+    /* background-color: #ffffff5d; */
 }
 
 h1 {
     color: var(--text-color);
+    text-shadow: 1px 1px 1px var(--background-shadow-purple);
     font-size: 1.5vw;
-    font-family: 'proza';
-    font-weight: lighter;
+    font-weight: bold;
     line-height: 1.5vw;
     transition: all .5s ease-out;
     -moz-transition: all .5s ease-out;
