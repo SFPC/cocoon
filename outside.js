@@ -57,6 +57,7 @@ $(".top").click(function() {
   $("html, body").animate({ scrollTop: 0 }, "slow");
 
   fadeOutAtTop();
+  $(".programs-list").additionClass('hide');
   return false;
 });
 

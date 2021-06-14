@@ -417,7 +417,7 @@
   @media (max-width: 768px) {
 
     :root {
-    --text-margin: 10vh;
+    --text-margin: 5vh;
     --body-margin: 4vw;
     }
 
@@ -426,13 +426,31 @@
       width: auto;
     }
 
-    h1 {
-      font-size: 5vw;
+    h1, h2 {
+      font-size: 4vw !important;
     }
 
     p, .peek a {
-      font-size: 8vw;
+      font-size: 6vw;
     }
+
+    .intro-text {
+      color: var(--text-color);
+    }
+
+    p .cocoon {
+      -webkit-transform:rotate(0deg);
+      -moz-transform:rotate(0deg);
+      -o-transform:rotate(0deg);
+      transform:rotate(0deg) !important;
+      ms-filter:"progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";
+      filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+      transition: all .5s ease-out;
+      -moz-transition: all .5s ease-out;
+            ms-transition: all .5s ease-out;
+            o-transition: all .5s ease-out;
+    }
+
   }
 
   .expanded {
