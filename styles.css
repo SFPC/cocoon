@@ -445,12 +445,32 @@ p a:hover {
     transition: all 2s ease-out;
 }
 
+.programs-list h2 span {
+  background: var(--text-color);
+  border-radius: 100%;
+  color: var(--background);
+  padding: 0px 20px;
+  text-shadow: none;
+}
+
 .programs-list p {
     color: var(--text-color);
-    text-shadow: 1px 1px 1px var(--background-shadow-green);
+    text-shadow: 1px 1px 1px var(--background-shadow-purple);
     font-family: 'Times Dot';
-    line-height: 1;
+    line-height: 1.2;
 }
+
+.programs-list p span {
+  /* text-decoration: underline !important; */
+  cursor: pointer;
+}
+
+
+.programs-list p a:after{
+   content: '↝ ';
+   font-weight: lighter;
+}
+
 
 .programs-list p span,
 .programs-list a.expand {
