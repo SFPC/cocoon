@@ -25,6 +25,8 @@ $(window).on("load", function() {
     $('<img src="bgImages/layer3.png" class="spiral" alt="" />').appendTo('.bgImg').hide().fadeIn(3000);
     $('<div class="break-sect"><center><img src="cocoonImages/cocoon' + ranCocoon + '.jpg"></center></div>').appendTo('#shell');
 
+
+
 });
 
 $(document).ready(function() {
@@ -55,6 +57,8 @@ $(window).scroll(function() {
         fadeOutAtTop();
     }
 });
+
+
 
 $(".top").click(function() {
     $("html, body").animate({ scrollTop: 0 }, "slow");

@@ -302,15 +302,19 @@ p:hover span.cocoon {
     z-index: 100;
 }
 
+.withfriends p:hover  {
+  opacity: 1 !important;
+}
 .withfriends p {
+    opacity: 0;
     /* color: var(--primary-color); */
     color: var(--text-color);
-    text-shadow: 1px 1px 1px var(--background-shadow-purple);
+    /* text-shadow: 1px 1px 1px var(--background-shadow-purple); */
     /* , 1px 1px 10px var(--background-shadow); */
     font-size: 1.5vw;
     font-family: 'Self Modern';
     font-style: italic;
-    line-height: 0;
+    line-height: 1;
     font-weight: bold;
     text-align: center;
     /* font-size: 1.5em; */
@@ -331,13 +335,17 @@ p:hover span.cocoon {
     padding: 5px;
     background-color: #ffffff80;
     height: 33px;
-    box-shadow: 0 0 16px white;
+    box-shadow: 0 0 10px white;
     border-radius: 50%;
+    transition: all .5s ease-out;
+    -moz-transition: all .5s ease-out;
+    ms-transition: all .5s ease-out;
+    o-transition: all .5s ease-out;
 }
 
 h1 {
     color: var(--text-color);
-    text-shadow: 1px 1px 1px var(--background-shadow-purple);
+    /* text-shadow: 1px 1px 1px var(--background-shadow-purple); */
     font-size: 1.5vw;
     font-weight: bold;
     line-height: 1.5vw;
