@@ -60,7 +60,6 @@ $(".top").click(function() {
   $("html, body").animate({ scrollTop: 0 }, "slow");
 
   fadeOutAtTop();
-  $(".programs-list").additionClass('hide');
   return false;
 });
 
@@ -84,6 +83,12 @@ function fadeOutAtTop() {
   $(".break-new").fadeOut(300, function() {
           $(this).remove();
   });
+
+
+  $(".programs-list").addClass('hide');
+  $(".programs span").fadeIn();
+  $(".programs").removeClass('active');
+
   counter=0;
 }
 
