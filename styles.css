@@ -304,7 +304,6 @@ p:hover span.cocoon {
 
 .withfriends p {
     /* color: var(--primary-color); */
-
     color: var(--text-color);
     text-shadow: 1px 1px 1px var(--background-shadow-purple);
     /* , 1px 1px 10px var(--background-shadow); */
@@ -319,7 +318,7 @@ p:hover span.cocoon {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 500px;
+    width: 130px;
     /* text-shadow: 0 0 10px var(--background-shadow); */
     display: table;
     /* keep the background color wrapped tight */
@@ -327,6 +326,13 @@ p:hover span.cocoon {
     /* keep the table centered */
     padding: 5px;
     /* background-color: #ffffff5d; */
+    display: table;
+    margin: 0px auto 0px auto;
+    padding: 5px;
+    background-color: #ffffff80;
+    height: 33px;
+    box-shadow: 0 0 16px white;
+    border-radius: 50%;
 }
 
 h1 {
