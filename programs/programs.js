@@ -13,6 +13,7 @@ $.get(url, function(data) {
     //adds the html for the program to the container
     $('#programs-container').append(addProgramDiv(programs[index]))
   }
+  if(location.hash){$(location.hash)[0].scrollIntoView()}
 });
 //This function will add an anchor link that jumps to the program
 function addNavigationLink(program){
