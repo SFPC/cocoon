@@ -300,6 +300,7 @@ p:hover span.cocoon {
     right: 1px;
     width: 230px;
     z-index: 100;
+    cursor: pointer !important;
 }
 
 .withfriends p:hover  {
@@ -341,6 +342,7 @@ p:hover span.cocoon {
     -moz-transition: all .5s ease-out;
     ms-transition: all .5s ease-out;
     o-transition: all .5s ease-out;
+    cursor: pointer !important;
 }
 
 h1 {
@@ -572,6 +574,13 @@ a.expand.active {
         -moz-transition: all .5s ease-out;
         ms-transition: all .5s ease-out;
         o-transition: all .5s ease-out;
+    }
+    .withfriends {
+      width: 150px;
+    }
+    .withfriends p {
+      opacity: 1;
+      font-size: 3vw;
     }
 }
 
