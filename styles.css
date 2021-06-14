@@ -34,12 +34,12 @@
     font-style: italic;
   }
 
-  /* @font-face {
+  @font-face {
     font-family: 'Self Modern';
-    src:    url('fonts/times_dot-italic-webfont.ttf');
+    src:    url('fonts/bretagne_self-modern_italic_web.ttf');
     font-weight: normal;
     font-style: italic;
-  } */
+  }
 
   html {
     box-sizing: border-box;
