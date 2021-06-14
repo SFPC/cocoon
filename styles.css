@@ -1,54 +1,56 @@
 :root {
-  --text-margin: 10vh;
-  --body-margin: 2vw;
-  --background: rgb(239, 154, 131);
-  /* #ef9a83; */
-  /* #7878aa; */
-  /* rgb(255,255,255); */
-  /* rgb(115, 0, 113); */
-  /* rgb(110, 0, 161) */
-  /*purple*/
-  --primary-color: #ff6e47;
-  /* rgb(248, 201, 11); */
-  /*yellow*/
-  /* rgb(248, 62, 11);  */
-  /*orange*/
-  --secondary-color: #277c67;
-  /* #87dfff; */
-  /*black*/
-  --text-color: blueviolet;
-  }
+    --text-margin: 10vh;
+    --body-margin: 2vw;
+    --background: rgb(245, 181, 164);
+    /* #ef9a83; */
+    /* #7878aa; */
+    /* rgb(255,255,255); */
+    /* rgb(115, 0, 113); */
+    /* rgb(110, 0, 161) */
+    /*purple*/
+    --primary-color: #ff6e47;
+    /* rgb(248, 201, 11); */
+    /*yellow*/
+    /* rgb(248, 62, 11);  */
+    /*orange*/
+    --secondary-color: hsl(165, 53%, 25%);
+    /* #87dfff; */
+    /*black*/
+    --text-color: #211060;
+}
 
-
-  @font-face {
+@font-face {
     font-family: 'times dot';
-    src:    url('fonts/timesdotrom-webfont.ttf');
+    src: url('fonts/timesdotrom-webfont.ttf');
     font-weight: normal;
     font-style: normal;
-  }
+}
 
-  @font-face {
+@font-face {
     font-family: 'times dot';
-    src:    url('fonts/times_dot-italic-webfont.ttf');
+    src: url('fonts/times_dot-italic-webfont.ttf');
     font-weight: normal;
     font-style: italic;
-  }
+}
 
-  @font-face {
+@font-face {
     font-family: 'Self Modern';
-    src:    url('fonts/bretagne_self-modern_italic_web.ttf');
+    src: url('fonts/bretagne_self-modern_italic_web.ttf');
     font-weight: normal;
     font-style: italic;
-  }
+}
 
-  html {
+html {
     box-sizing: border-box;
-  }
-  *, *:before, *:after {
-    box-sizing: inherit;
-  }
+}
 
-  body {
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
     background-color: var(--background);
     /* color: black; */
     color: var(--background);
@@ -57,17 +59,25 @@
     margin: 0;
     /* font-size: 16px; */
     /* outline: 1px solid black; */
-  }
+}
 
-  h1, h2, h3, h4, h5, p, ul, li {
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+ul,
+li {
     margin: 0;
-  }
-  img {
+}
+
+img {
     display: block;
     max-width: 100%;
-  }
+}
 
-  img.spiral {
+img.spiral {
     height: auto;
     width: 100vw;
     /* height: 50vw;
@@ -77,103 +87,104 @@
     z-index: 9;
     opacity: .7;
     mix-blend-mode: screen;
-  }
+}
 
-  .bgImg {
+.bgImg {
     position: fixed;
-    top:0px;
-    left:0px;
+    top: 0px;
+    left: 0px;
     height: 100vh;
     width: 100vw;
     z-index: 9;
     background-color: var(--background);
-  }
+}
 
-    .bgImg img {
-      z-index: 10;
-    }
+.bgImg img {
+    z-index: 10;
+}
 
-  .bgImg-layer {
+.bgImg-layer {
     background-color: var(--background);
     background-size: cover;
     height: 100vh;
     width: 100vw;
     opacity: .7;
     mix-blend-mode: screen;
-  }
+}
 
-  .layer1 {
+.layer1 {
     background-image: url('bgImages/layer1.png')
     /* ,  url('bgImages/layer2.png'),  url('bgImages/layer3.png') */
     ;
-      background-blend-mode: screen;
-      /* mix-blend-mode: screen; */
-  }
+    background-blend-mode: screen;
+    /* mix-blend-mode: screen; */
+}
 
-  /* .layer2 {
+
+/* .layer2 {
     background-image: url('bgImages/layer2.png');
     background-blend-mode: screen;
   } */
 
-  .whiteBG {
+.whiteBG {
     height: 100vh;
     width: 100vw;
     display: block;
     background: #fff;
     opacity: .5;
     position: fixed;
-    top:0px;
-    left:0px;
+    top: 0px;
+    left: 0px;
     z-index: 10;
-  }
+}
 
-  .shell {
+.shell {
     padding: var(--body-margin);
     position: relative;
     z-index: 11;
-  }
+}
 
-
-
-  a {
+a {
     color: inherit;
-  }
+}
 
-  a:hover {
+a:hover {
     color: var(--secondary-color);
-  }
+}
 
-  a.peek, .peek {
+a.peek,
+.peek {
     /* font-size: 3em; */
-    display:inline-block;
+    display: inline-block;
     text-align: justify;
     text-align-last: justify;
     letter-spacing: -0.1em;
     width: 100%;
     text-decoration: underline;
     cursor: pointer;
-  }
+}
 
-  .intro-text:hover a.peek, .break-sect:hover a.peek  {
+.intro-text:hover a.peek,
+.break-sect:hover a.peek {
     color: var(--primary-color);
     text-shadow: 0 0 10px var(--background);
     transition: all .5s ease-out;
     -moz-transition: all .5s ease-out;
-          ms-transition: all .5s ease-out;
-          o-transition: all .5s ease-out;
-  }
+    ms-transition: all .5s ease-out;
+    o-transition: all .5s ease-out;
+}
 
-  .intro-text:hover a.peek.active, .break-sect:hover a.peek.active  {
+.intro-text:hover a.peek.active,
+.break-sect:hover a.peek.active {
     color: var(--text-color);
-  }
+}
 
-  a.peek:hover {
+a.peek:hover {
     color: transparent !important;
     text-shadow: 0 0 5px var(--primary-color) !important;
+}
 
-  }
-
-  #header {
+#header {
     cursor: pointer;
     position: fixed;
     top: 0px;
@@ -182,93 +193,98 @@
     display: block;
     padding: var(--body-margin);
     z-index: 100;
-    transition: all .5s ease-out;
-    -moz-transition: all .5s ease-out;
-          ms-transition: all .5s ease-out;
-          o-transition: all .5s ease-out;
-  }
+    transition: all 1.5s ease-out;
+    -moz-transition: all 1.5s ease-out;
+    ms-transition: all 1.5s ease-out;
+    o-transition: all 1.5s ease-out;
+}
 
-
-  #header:hover h1 {
+#header:hover h1 {
     color: transparent;
     text-shadow: 0 0 3px var(--secondary-color);
-  }
+}
 
-  .cocoon {
+.cocoon {
     font-family: 'Self Modern';
     font-style: italic;
     line-height: 0;
     font-weight: bold;
     display: inline-block;
-    -webkit-transform:rotate(-180deg);
-    -moz-transform:rotate(-180deg);
-    -o-transform:rotate(-180deg);
-    transform:rotate(-180deg) !important;
-    ms-filter:"progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";
-    filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+    transform: rotate(-180deg) !important;
+    ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";
+    filter: progid: DXImageTransform.Microsoft.BasicImage(rotation=2);
     transition: all .5s ease-out;
     -moz-transition: all .5s ease-out;
-          ms-transition: all .5s ease-out;
-          o-transition: all .5s ease-out;
-  }
+    ms-transition: all .5s ease-out;
+    o-transition: all .5s ease-out;
+}
 
-  #header:hover .cocoon {
+.cocoon-inline {
+    color: transparent;
+    text-shadow: 0 0 3px var(--secondary-color);
+}
+
+#header:hover .cocoon {
     display: inline-block;
-    -webkit-transform:rotate(0deg);
-    -moz-transform:rotate(0deg);
-    -o-transform:rotate(0deg);
-    transform:rotate(0deg) !important;
-  }
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg) !important;
+}
 
-  p:hover span.cocoon {
+p:hover span.cocoon {
     display: inline-block;
-    -webkit-transform:rotate(0deg);
-    -moz-transform:rotate(0deg);
-    -o-transform:rotate(0deg);
-    transform:rotate(0deg) !important;
-  }
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg) !important;
+}
 
-  .intro-text {
+.intro-text {
     position: relative;
     z-index: 12;
     color: var(--background);
     transition: all 2s ease-out;
-    padding-top:var(--text-margin);
+    padding-top: var(--text-margin);
     transition: all 2s ease-out;
     -moz-transition: all 2s ease-out;
-          ms-transition: all  2s ease-out;
-          o-transition: all  2s ease-out;
-  }
+    ms-transition: all 2s ease-out;
+    o-transition: all 2s ease-out;
+}
 
-  .intro-text:hover h1  {
+.intro-text:hover h1 {
     color: var(--text-color);
     transition: all 2s ease-out;
     -moz-transition: all 2s ease-out;
-          ms-transition: all  2s ease-out;
-          o-transition: all  2s ease-out;
-  }
+    ms-transition: all 2s ease-out;
+    o-transition: all 2s ease-out;
+}
 
-  .intro-text p, .intro-text p a {
+.intro-text p,
+.intro-text p a {
     transition: all .2s ease-out;
     -moz-transition: all .2s ease-out;
-          ms-transition: all  .2s ease-out;
-          o-transition: all  .2s ease-out;
+    ms-transition: all .2s ease-out;
+    o-transition: all .2s ease-out;
+}
 
-  }
 
-  /* .intro-text p:hover, */
-  .intro-text p:hover,
-  .intro-text.touched
-   {
+/* .intro-text p:hover, */
+
+.intro-text p:hover,
+.intro-text.touched {
     color: var(--text-color);
     text-shadow: 0 0 10px var(--background);
     transition: all 2s ease-out;
     -moz-transition: all 2s ease-out;
-          ms-transition: all  2s ease-out;
-          o-transition: all  2s ease-out;
-  }
+    ms-transition: all 2s ease-out;
+    o-transition: all 2s ease-out;
+}
 
-  h1 {
+h1 {
     color: var(--text-color);
     font-size: 1.5vw;
     font-family: 'proza';
@@ -276,114 +292,117 @@
     line-height: 1.5vw;
     transition: all .5s ease-out;
     -moz-transition: all .5s ease-out;
-          ms-transition: all .5s ease-out;
-          o-transition: all .5s ease-out;
-  }
+    ms-transition: all .5s ease-out;
+    o-transition: all .5s ease-out;
+}
 
-  h1.left {
-    float:left;
+h1.left {
+    float: left;
     /* margin-bottom: var(--text-margin); */
-  }
+}
 
-  h1.right {
-    float:right;
+h1.right {
+    float: right;
     /* margin-bottom: var(--text-margin); */
-  }
+}
 
-  h2 {
+h2 {
     font-size: 2.8675em;
     font-weight: lighter;
-  }
+}
 
-  h3 {
+h3 {
     font-size: 2.75em;
     margin-bottom: var(--text-margin);
     font-weight: lighter;
-  }
+}
 
-  p {
+p {
     cursor: help;
-  }
+}
 
-  p a {
+p a {
     -moz-transition: all 2s ease-out;
-          ms-transition: all  2s ease-out;
-          o-transition: all 2s ease-out;
-          transition: all 2s ease-out;
-  }
+    ms-transition: all 2s ease-out;
+    o-transition: all 2s ease-out;
+    transition: all 2s ease-out;
+}
 
-  p, .peek a, .break-sect {
+p,
+.peek a,
+.break-sect {
     font-size: 3vw;
     margin-bottom: var(--text-margin);
     font-weight: lighter;
-  }
+}
 
-
-  .break-sect {
-    color:  var(--text-color);
+.break-sect {
+    color: var(--text-color);
     font-family: 'Self Modern';
     text-shadow: 0 0 4px var(--background);
     /* border-top: 3px dotted  var(--text-color); */
     text-align: center;
-  }
+}
 
-  .break-sect img {
+.break-sect img {
     width: 30vw;
     height: auto;
     border: 2px solid var(--text-color);
     -moz-transition: all .3s ease-out;
-          ms-transition: all  .3s ease-out;
-          o-transition: all .3s ease-out;
-          transition: all .3s ease-out;
-  }
+    ms-transition: all .3s ease-out;
+    o-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+}
 
-  .break-sect img:hover {
+.break-sect img:hover {
     border: 2px solid var(--primary-color);
-  }
+}
 
-  .peek a {
+.peek a {
     font-family: 'Self Modern';
     font-style: italic;
     /* line-height: 0; */
     font-weight: bold;
-  }
+}
 
-  p a:hover{
+p a:hover {
     color: transparent;
     text-shadow: 0 0 4px var(--primary-color);
-  }
+}
 
-  .programs-list {
+.programs-list {
     -moz-transition: all 2s ease-out;
-          ms-transition: all  2s ease-out;
-          o-transition: all 2s ease-out;
-          transition: all 2s ease-out;
-  }
-  .programs-list p {
+    ms-transition: all 2s ease-out;
+    o-transition: all 2s ease-out;
+    transition: all 2s ease-out;
+}
+
+.programs-list p {
     color: var(--text-color);
     text-shadow: 0 0 4px var(--background);
     font-family: 'Times Dot';
     line-height: 1;
-  }
+}
 
-  .programs-list p span, .programs-list a.expand{
+.programs-list p span,
+.programs-list a.expand {
     font-family: 'Self Modern';
     font-style: italic;
     font-weight: bold;
     /* line-height: inherit; */
-  }
+}
 
-  .programs.active, .programs.active:hover, .peek:hover .programs.active  {
+.programs.active,
+.programs.active:hover,
+.peek:hover .programs.active {
     color: var(--text-color);
     text-shadow: none;
-  }
-
-
+}
 
 .programs-list a.expand span.expanded {
-  font-family: 'Times Dot';
-  font-style: normal;
-  font-weight: normal;
+    font-family: 'Times Dot';
+    font-style: normal;
+    font-weight: normal;
 }
 
 .programs-list a.expand i {
@@ -391,13 +410,11 @@
     font-style: normal;
     font-weight: normal;
     text-decoration: none !important;
-  }
+}
 
-  .programs-list {
+.programs-list {}
 
-  }
-
-  .programs-list h2{
+.programs-list h2 {
     color: var(--text-color);
     text-shadow: 0 0 4px var(--background);
     font-family: 'Self Modern';
@@ -405,110 +422,99 @@
     font-weight: bold;
     font-size: 1.5vw;
     line-height: 1.5;
-  }
+}
 
-  p a.expand:hover .expanded {
+p a.expand:hover .expanded {
     /* text-shadow: none !important; */
     text-shadow: 0 0 8px var(--background);
     text-decoration: none !important;
-  }
+}
 
-
-
-  p a.expand.active {
+p a.expand.active {
     color: var(--secondary-color);
     text-decoration: none !important;
     /* text-shadow: none !important; */
     text-shadow: 0 0 10px var(--background);
-  }
+}
 
-  a.expand {
+a.expand {
     text-decoration: underline;
     display: inline-block;
     margin: 0 3px;
-  }
-  a.expand.active {
-    display: inline;
-  }
-  .clear {
-    clear:both;
-  }
+}
 
-  .hide {
+a.expand.active {
+    display: inline;
+}
+
+.clear {
+    clear: both;
+}
+
+.hide {
     opacity: 0;
     height: 0px;
     display: none;
     visibility: hidden;
-  }
+}
 
-
-  .session .bubble {
+.session .bubble {
     float: left;
     /* background-image: url('https://img.favpng.com/1/22/21/sphere-png-favpng-tLD1Ei0kkL6uGXmYFUb1hiiUu.jpg'); */
     width: 10vw;
-  }
+}
 
-  @media all and (orientation: landscape) {
+@media all and (orientation: landscape) {
     img.spiral {
-      height: auto;
-      width: 100vw;
+        height: auto;
+        width: 100vw;
     }
-  }
+}
 
-  @media all and (orientation: portrait) {
+@media all and (orientation: portrait) {
     img.spiral {
-      height: 100vh;
-      width: auto;
+        height: 100vh;
+        width: auto;
     }
-  }
+}
 
-
-  @media (max-width: 768px) {
-
-    :root {
-    --text-margin: 5vh;
-    --body-margin: 4vw;
+@media (max-width: 768px) {
+     :root {
+        --text-margin: 5vh;
+        --body-margin: 4vw;
     }
-
     img.spiral {
-      height: 100vh;
-      width: auto;
+        height: 100vh;
+        width: auto;
     }
-
     .break-sect img {
-      width: 60vw;
+        width: 60vw;
     }
-
-    h1, h2 {
-      font-size: 4vw !important;
+    h1,
+    h2 {
+        font-size: 4vw !important;
     }
-
-    p, .peek a {
-      font-size: 6vw;
+    p,
+    .peek a {
+        font-size: 6vw;
     }
-
     .intro-text {
-      color: var(--text-color);
+        color: var(--text-color);
     }
-
     p .cocoon {
-      -webkit-transform:rotate(0deg);
-      -moz-transform:rotate(0deg);
-      -o-transform:rotate(0deg);
-      transform:rotate(0deg) !important;
-      ms-filter:"progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";
-      filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
-      transition: all .5s ease-out;
-      -moz-transition: all .5s ease-out;
-            ms-transition: all .5s ease-out;
-            o-transition: all .5s ease-out;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg) !important;
+        ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";
+        filter: progid: DXImageTransform.Microsoft.BasicImage(rotation=2);
+        transition: all .5s ease-out;
+        -moz-transition: all .5s ease-out;
+        ms-transition: all .5s ease-out;
+        o-transition: all .5s ease-out;
     }
+}
 
-
-
-
-  }
-
-  .expanded {
+.expanded {
     display: none;
-  }
+}
