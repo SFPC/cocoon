@@ -6,21 +6,23 @@ $.get(url, function(data) {
   programs = TSVToJSONArray(data)
   //we loop through the array of JSON objects (one for each class) and add html to the page
   for (let index = 0; index < programs.length; index++) {
+    //converts course title to a unique 
+    programs[index].idForLink = programs[index].title.toLowerCase().replace(/[^0-9a-z ]/g, '').replaceAll(" ", "-")
     //adds a navigation link at the top
-    $('#programs-nav ul').append(addNavigationLink(programs[index], index))
+    $('#programs-nav ul').append(addNavigationLink(programs[index]))
     //adds the html for the program to the container
-    $('#programs-container').append(addProgramDiv(programs[index], index))
+    $('#programs-container').append(addProgramDiv(programs[index]))
   }
 });
 //This function will add an anchor link that jumps to the program
-function addNavigationLink(program, index){
-  return `<li><a href="#${index}"><em>${program.title}</em> by ${program.teacher}</a></li>`
+function addNavigationLink(program){
+  return `<li><a href="#${program.idForLink}"><em>${program.title}</em> by ${program.teacher}</a></li>`
 }
 //this creates the div html for the program, feel free to change any of the html or class names
 //data is pulled from the course object using ${}
 function addProgramDiv(program, index){
   return `
-    <div class="programDiv" id="${index}">
+    <div class="programDiv" id="${program.idForLink}">
       <img src="${program.image}" />
       <h2 class="schedule">${program.schedule}</h2>
       <h1 class="programTitle">${program.title}</h1>
@@ -53,7 +55,9 @@ function TSVToJSONArray(str, delimiter = "\t") {
     return el;
   });
 
+
   // return the array
   return JSON.parse(JSON.stringify(arr));
 }
+
 
