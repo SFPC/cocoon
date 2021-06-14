@@ -293,6 +293,36 @@ p:hover span.cocoon {
     o-transition: all 2s ease-out;
 }
 
+.withfriends {
+    position: fixed;
+    bottom: 1px;
+    right: 1px;
+    width: 230px;
+    z-index: 100;
+}
+
+.withfriends p {
+    color: var(--primary-color);
+    font-family: 'Self Modern';
+    font-style: italic;
+    line-height: 0;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.5em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    text-shadow: 0 0 10px var(--background-shadow);
+    display: table;
+    /* keep the background color wrapped tight */
+    margin: 0px auto 0px auto;
+    /* keep the table centered */
+    padding: 5px;
+    background-color: #ffffff5d;
+}
+
 h1 {
     color: var(--text-color);
     font-size: 1.5vw;
