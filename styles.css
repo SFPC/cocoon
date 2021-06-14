@@ -169,9 +169,10 @@ a.peek,
     text-decoration: underline;
     cursor: pointer;
 }
-
-.intro-text:hover a.peek,
-.break-sect:hover a.peek {
+a.peek
+/* .intro-text:hover a.peek, */
+/* .break-sect:hover a.peek */
+ {
     color: var(--primary-color);
     text-shadow: 1px 1px 1px var(--background-shadow-green);
     transition: all .5s ease-out;
@@ -188,6 +189,7 @@ a.peek,
 a.peek:hover {
     color: transparent !important;
     text-shadow: 0 0 5px var(--primary-color) !important;
+    text-decoration: none !important;
 }
 
 #header {
@@ -292,6 +294,7 @@ p:hover span.cocoon {
     -moz-transition: all 2s ease-out;
     ms-transition: all 2s ease-out;
     o-transition: all 2s ease-out;
+    /* text-decoration: none !important; */
 }
 
 .withfriends {
@@ -429,6 +432,7 @@ p,
 p a:hover {
     color: transparent;
     text-shadow: 0 0 4px var(--primary-color);
+    text-decoration: none !important;
 }
 
 .programs-list {
@@ -453,9 +457,20 @@ p a:hover {
     /* line-height: inherit; */
 }
 
-.programs.active,
+/* .programs.active,
 .programs.active:hover,
-.peek:hover .programs.active {
+.peek:hover .programs.active  */
+/* .programs.active,  */
+p.visible
+{
+    color: var(--text-color);
+    text-shadow: none;
+    text-shadow: 1px 1px 1px var(--background-shadow-purple);
+    font-size: 2vw;
+}
+
+.programs.active
+{
     color: var(--text-color);
     text-shadow: none;
 }
