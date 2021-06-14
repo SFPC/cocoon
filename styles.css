@@ -475,6 +475,10 @@
       width: auto;
     }
 
+    .break-sect img {
+      width: 60vw;
+    }
+
     h1, h2 {
       font-size: 4vw !important;
     }
@@ -499,6 +503,9 @@
             ms-transition: all .5s ease-out;
             o-transition: all .5s ease-out;
     }
+
+
+
 
   }
 
