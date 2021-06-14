@@ -34,6 +34,13 @@
     font-style: italic;
   }
 
+  /* @font-face {
+    font-family: 'Self Modern';
+    src:    url('fonts/times_dot-italic-webfont.ttf');
+    font-weight: normal;
+    font-style: italic;
+  } */
+
   html {
     box-sizing: border-box;
   }
@@ -243,6 +250,7 @@
 
   }
 
+  /* .intro-text p:hover, */
   .intro-text p:hover,
   .intro-text.touched
    {
@@ -315,11 +323,55 @@
     text-shadow: 0 0 4px var(--primary-color);
   }
 
+  .programs-list p {
+    color: var(--text-color);
+    text-shadow: 0 0 4px var(--background);
+    font-family: 'Times Dot';
+    line-height: 1;
+  }
+
+  .programs-list p span, .programs-list a.expand{
+    font-family: 'Self Modern';
+    font-style: italic;
+    font-weight: bold;
+    /* line-height: inherit; */
+  }
+
+
+.programs-list a.expand span.expanded {
+  font-family: 'Times Dot';
+  font-style: normal;
+  font-weight: normal;
+}
+
+.programs-list a.expand i {
+    font-family: 'Times Dot';
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none !important;
+  }
+
+  .programs-list {
+
+  }
+
+  .programs-list h2{
+    color: var(--text-color);
+    text-shadow: 0 0 4px var(--background);
+    font-family: 'Self Modern';
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1.5vw;
+  }
+
   p a.expand:hover .expanded {
     /* text-shadow: none !important; */
     text-shadow: 0 0 8px var(--background);
     text-decoration: none !important;
   }
+
+
+
   p a.expand.active {
     color: var(--secondary-color);
     text-decoration: none !important;

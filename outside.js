@@ -42,7 +42,7 @@ $(window).scroll(function () {
     bgG = bgG + 5;
     bgB = bgB + 5;
 
-    if (scroll + 100 >= diff && scroll <= diff) {
+    if ( (scroll + 100 >= diff && scroll <= diff)   ) {
         endlessScrollText();
         activeLinks();
         // lighterBG();
@@ -57,10 +57,20 @@ $(".top").click(function() {
   $("html, body").animate({ scrollTop: 0 }, "slow");
 
   fadeOutAtTop();
-
   return false;
 });
 
+$(".programs").click(function() {
+  // $("html, body").animate({ scrollTop: 0 }, "slow");
+  // $('<img src="bgImages/layer-all.png" class="spiral allBg" alt="" />').appendTo('.bgImg').hide().fadeIn(1000);
+
+  // fadeOutAtTop();
+
+  // $(".intro-text").fadeOut();
+  $(".programs-list").removeClass('hide');
+
+  return false;
+});
 
 function fadeOutAtTop() {
   $(".newBg").fadeOut(300, function() {
