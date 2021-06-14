@@ -169,9 +169,10 @@ a.peek,
     text-decoration: underline;
     cursor: pointer;
 }
-
-.intro-text:hover a.peek,
-.break-sect:hover a.peek {
+a.peek
+/* .intro-text:hover a.peek, */
+/* .break-sect:hover a.peek */
+ {
     color: var(--primary-color);
     text-shadow: 1px 1px 1px var(--background-shadow-green);
     transition: all .5s ease-out;
@@ -181,13 +182,17 @@ a.peek,
 }
 
 .intro-text:hover a.peek.active,
-.break-sect:hover a.peek.active {
-    color: var(--text-color);
+.break-sect:hover a.peek.active,
+a.peek.active:hover {
+    color: var(--text-color) !important;
+    text-shadow: none !important;
+    text-decoration: underline;
 }
 
 a.peek:hover {
     color: transparent !important;
     text-shadow: 0 0 5px var(--primary-color) !important;
+    text-decoration: none !important;
 }
 
 #header {
@@ -292,6 +297,7 @@ p:hover span.cocoon {
     -moz-transition: all 2s ease-out;
     ms-transition: all 2s ease-out;
     o-transition: all 2s ease-out;
+    /* text-decoration: none !important; */
 }
 
 .withfriends {
@@ -429,6 +435,7 @@ p,
 p a:hover {
     color: transparent;
     text-shadow: 0 0 4px var(--primary-color);
+    text-decoration: none !important;
 }
 
 .programs-list {
@@ -438,12 +445,32 @@ p a:hover {
     transition: all 2s ease-out;
 }
 
+.programs-list h2 span {
+  background: var(--text-color);
+  border-radius: 100%;
+  color: var(--background);
+  padding: 0px 20px;
+  text-shadow: none;
+}
+
 .programs-list p {
     color: var(--text-color);
-    text-shadow: 1px 1px 1px var(--background-shadow-green);
+    text-shadow: 1px 1px 1px var(--background-shadow-purple);
     font-family: 'Times Dot';
-    line-height: 1;
+    line-height: 1.2;
 }
+
+.programs-list p span {
+  /* text-decoration: underline !important; */
+  cursor: pointer;
+}
+
+
+.programs-list p a:after{
+   content: '↝ ';
+   font-weight: lighter;
+}
+
 
 .programs-list p span,
 .programs-list a.expand {
@@ -453,11 +480,31 @@ p a:hover {
     /* line-height: inherit; */
 }
 
-.programs.active,
+/* .programs.active,
 .programs.active:hover,
-.peek:hover .programs.active {
+.peek:hover .programs.active  */
+/* .programs.active,  */
+p.visible,  #info li
+{
     color: var(--text-color);
     text-shadow: none;
+    text-shadow: 1px 1px 1px var(--background-shadow-purple);
+    font-size: 2vw;
+    /* margin-bottom: 0px !important; */
+}
+
+#info ul, #info li {
+  list-style: none;
+}
+
+a.social:before{
+   content: '↝ ';
+}
+
+.programs.active, .programs.active:hover
+{
+    color: var(--text-color) !important;
+    text-shadow: none !important;
 }
 
 .programs-list a.expand span.expanded {
