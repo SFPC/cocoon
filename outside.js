@@ -1,6 +1,7 @@
 var counter=0;
 var bgImg = $('.layer1');
 var ran, ran2, ran3;
+ranCocoon = Math.floor(Math.random() * 8);
 ran = Math.floor(Math.random() * 22);
 ran2 = Math.floor(Math.random() * 22);
 ran3 = Math.floor(Math.random() * 22);
@@ -22,6 +23,8 @@ $(window).on("load", function() {
   $('<img src="bgImages/layer1.png" class="spiral" alt="" />').appendTo('.bgImg').hide().fadeIn(1000);
   $('<img src="bgImages/layer2.png" class="spiral" alt="" />').appendTo('.bgImg').hide().fadeIn(2000);
   $('<img src="bgImages/layer3.png" class="spiral" alt="" />').appendTo('.bgImg').hide().fadeIn(3000);
+  $('<div class="break-sect"><center><img src="cocoonImages/cocoon' + ranCocoon + '.jpg"></center></div>').appendTo('#shell');
+
 });
 
 $(document).ready(function() {
@@ -62,13 +65,9 @@ $(".top").click(function() {
 });
 
 $(".programs").click(function() {
-  // $("html, body").animate({ scrollTop: 0 }, "slow");
-  // $('<img src="bgImages/layer-all.png" class="spiral allBg" alt="" />').appendTo('.bgImg').hide().fadeIn(1000);
-
-  // fadeOutAtTop();
-
-  // $(".intro-text").fadeOut();
   $(".programs-list").removeClass('hide');
+  $(".programs span").fadeOut();
+  $(".programs").addClass('active');
 
   return false;
 });
@@ -79,6 +78,10 @@ function fadeOutAtTop() {
   });
 
   $(".newText").fadeOut(300, function() {
+          $(this).remove();
+  });
+
+  $(".break-new").fadeOut(300, function() {
           $(this).remove();
   });
   counter=0;
@@ -98,12 +101,13 @@ function endlessScrollText() {
     if (ran2 == ran3) {
       ran2 = Math.floor(Math.random() * 22);
     }
-
+    ranCocoon = Math.floor(Math.random() * 8);
+    $('<div class="break-sect break-new"><center><img src="cocoonImages/cocoon' + ranCocoon + '.jpg"></center></div>').appendTo('#shell');
     $('<img src="bgImages/layer' + ran + '.png" class="spiral newBg" alt="" />').appendTo('.bgImg').hide().fadeIn(1000);
     $('<img src="bgImages/layer' + ran + '.png" class="spiral newBg" alt="" />').appendTo('.bgImg').hide().fadeIn(2000);
     $('<img src="bgImages/layer' + ran2 + '.png" class="spiral newBg" alt="" />').appendTo('.bgImg').hide().fadeIn(3000);
 
-    counter++;
+    counter++
 }
 
 function activeLinks() {

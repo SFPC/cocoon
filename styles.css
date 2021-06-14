@@ -150,15 +150,21 @@
     text-align-last: justify;
     letter-spacing: -0.1em;
     width: 100%;
+    text-decoration: underline;
+    cursor: pointer;
   }
 
-  .intro-text:hover a.peek  {
+  .intro-text:hover a.peek, .break-sect:hover a.peek  {
     color: var(--primary-color);
     text-shadow: 0 0 10px var(--background);
     transition: all .5s ease-out;
     -moz-transition: all .5s ease-out;
           ms-transition: all .5s ease-out;
           o-transition: all .5s ease-out;
+  }
+
+  .intro-text:hover a.peek.active, .break-sect:hover a.peek.active  {
+    color: var(--text-color);
   }
 
   a.peek:hover {
@@ -303,12 +309,36 @@
     -moz-transition: all 2s ease-out;
           ms-transition: all  2s ease-out;
           o-transition: all 2s ease-out;
+          transition: all 2s ease-out;
   }
 
-  p, .peek a {
+  p, .peek a, .break-sect {
     font-size: 3vw;
     margin-bottom: var(--text-margin);
     font-weight: lighter;
+  }
+
+
+  .break-sect {
+    color:  var(--text-color);
+    font-family: 'Self Modern';
+    text-shadow: 0 0 4px var(--background);
+    /* border-top: 3px dotted  var(--text-color); */
+    text-align: center;
+  }
+
+  .break-sect img {
+    width: 30vw;
+    height: auto;
+    border: 2px solid var(--text-color);
+    -moz-transition: all .3s ease-out;
+          ms-transition: all  .3s ease-out;
+          o-transition: all .3s ease-out;
+          transition: all .3s ease-out;
+  }
+
+  .break-sect img:hover {
+    border: 2px solid var(--primary-color);
   }
 
   .peek a {
@@ -323,6 +353,12 @@
     text-shadow: 0 0 4px var(--primary-color);
   }
 
+  .programs-list {
+    -moz-transition: all 2s ease-out;
+          ms-transition: all  2s ease-out;
+          o-transition: all 2s ease-out;
+          transition: all 2s ease-out;
+  }
   .programs-list p {
     color: var(--text-color);
     text-shadow: 0 0 4px var(--background);
@@ -336,6 +372,12 @@
     font-weight: bold;
     /* line-height: inherit; */
   }
+
+  .programs.active, .programs.active:hover, .peek:hover .programs.active  {
+    color: var(--text-color);
+    text-shadow: none;
+  }
+
 
 
 .programs-list a.expand span.expanded {
@@ -362,6 +404,7 @@
     font-style: italic;
     font-weight: bold;
     font-size: 1.5vw;
+    line-height: 1.5;
   }
 
   p a.expand:hover .expanded {
@@ -398,6 +441,12 @@
     visibility: hidden;
   }
 
+
+  .session .bubble {
+    float: left;
+    /* background-image: url('https://img.favpng.com/1/22/21/sphere-png-favpng-tLD1Ei0kkL6uGXmYFUb1hiiUu.jpg'); */
+    width: 10vw;
+  }
 
   @media all and (orientation: landscape) {
     img.spiral {
