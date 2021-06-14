@@ -182,8 +182,11 @@ a.peek
 }
 
 .intro-text:hover a.peek.active,
-.break-sect:hover a.peek.active {
-    color: var(--text-color);
+.break-sect:hover a.peek.active,
+a.peek.active:hover {
+    color: var(--text-color) !important;
+    text-shadow: none !important;
+    text-decoration: underline;
 }
 
 a.peek:hover {
@@ -461,18 +464,27 @@ p a:hover {
 .programs.active:hover,
 .peek:hover .programs.active  */
 /* .programs.active,  */
-p.visible
+p.visible,  #info li
 {
     color: var(--text-color);
     text-shadow: none;
     text-shadow: 1px 1px 1px var(--background-shadow-purple);
     font-size: 2vw;
+    /* margin-bottom: 0px !important; */
 }
 
-.programs.active
+#info ul, #info li {
+  list-style: none;
+}
+
+a.social:before{
+   content: '↝ ';
+}
+
+.programs.active, .programs.active:hover
 {
-    color: var(--text-color);
-    text-shadow: none;
+    color: var(--text-color) !important;
+    text-shadow: none !important;
 }
 
 .programs-list a.expand span.expanded {
