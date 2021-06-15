@@ -529,6 +529,12 @@ p a:hover {
     /* line-height: inherit; */
 }
 
+p.visible {
+  transition: all .5s ease-out;
+  -moz-transition: all .5s ease-out;
+  ms-transition: all .5s ease-out;
+  o-transition: all .5s ease-out;
+}
 /* .programs.active,
 .programs.active:hover,
 .peek:hover .programs.active  */
