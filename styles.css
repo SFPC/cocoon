@@ -207,12 +207,14 @@ a.peek:hover {
     left: 0px;
     width: 100%;
     display: block;
-    padding: var(--body-margin);
+    padding: calc(var(--body-margin)/2) var(--body-margin);
     z-index: 100;
     transition: all 1.5s ease-out;
     -moz-transition: all 1.5s ease-out;
     ms-transition: all 1.5s ease-out;
     o-transition: all 1.5s ease-out;
+    background-image: linear-gradient(to top, rgba(187,144,94,0), rgba(187,144,94,1), rgba(187,144,94,1));
+    height: 10vh;
 }
 
 #header:hover h1 {
@@ -670,6 +672,10 @@ a.social:before{
 }
 
 
+.session-info .details {
+  clear: both;
+}
+
 .session-info .details .labels-info {
   float:right;
   width: 80%;
@@ -715,6 +721,10 @@ a.expand.active {
     width: 10vw;
 }
 
+.introImg {
+    margin-top: 5vh;
+}
+
 @media all and (orientation: landscape) {
     img.spiral {
         height: auto;
@@ -750,9 +760,7 @@ a.expand.active {
         width: 60vw;
     }
 
-    .introImg {
-        margin-top: 60px;
-    }
+
 
     h1,
     h2, .programs-list h2, .session-info h2, .session-info .details .labels,
