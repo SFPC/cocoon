@@ -765,6 +765,10 @@ a.expand.active {
         --body-margin: 4vw;
     }
 
+    #header {
+      padding: var(--body-margin) var(--body-margin);
+    }
+
     .session-info {
       width: 92vw;
       margin: 0px auto;
