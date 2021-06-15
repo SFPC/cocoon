@@ -120,7 +120,7 @@ img.spiral {
     background-size: cover;
     height: 100vh;
     width: 100vw;
-    opacity: .7;
+    opacity: .6;
     mix-blend-mode: screen;
 }
 
