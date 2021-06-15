@@ -25,7 +25,6 @@
         <img src="../bgImages/layer1.png" class="spiral" alt=" " />
         <img src="../bgImages/layer2.png" class="spiral" alt=" " />
     </div>
-
     <div id="shell" class="shell">
 
         <a href="#shell" class="top">
@@ -33,6 +32,8 @@
                 <h1 class="left">
                      <div class="cocoon">Summer 2021</div>
                 </h1>
+              <div id="programs-nav" style="color:purple;"><ul></ul></div>
+
                 <h1 class="right">
                      <div class="cocoon">SFPC — COCOON</div>
                 </h1>
@@ -40,32 +41,33 @@
             </div>
         </a>
 
-        <div id="class" class="class">
+
+        <div id="class" class="class" style="display:none">
 
             <div class="session-text">
 
                 <div class="break-sect introImg">
                   <center>
-                    <img src="https://d2w9rnfcy7mm78.cloudfront.net/12219799/original_b2aeda1fba6d76c6572ebb7a27125370.jpg?1623265893?bc=0">
+                    <img id="programImg" src="https://d2w9rnfcy7mm78.cloudfront.net/12219799/original_b2aeda1fba6d76c6572ebb7a27125370.jpg?1623265893?bc=0">
                   </center>
                 </div>
                 <div class="session">
-                    <p><span id="title">Learning to Love Mathematics: History, Theory, Practice, Poetics</span> by Nabil Hassein with TA Sean Catangui</p>
+                    <p><span id="title">Learning to Love Mathematics: History, Theory, Practice, Poetics</span> by <span class="teacherName">Nabil Hassein</span> with TA <span class="TAName">Sean Catangui</span></p>
                 </div>
 
                     <div class="session-info">
 
                         <div class="details">
                           <div class="labels">Date </div>
-                          <div class="labels-info">Sundays, July 5th to August 8th (5 weeks of classes)</div>
+                          <div class="labels-info" id="date">Sundays, July 5th to August 8th (5 weeks of classes)</div>
                         </div>
                         <div class="details">
                           <div class="labels">Time </div>
-                          <div class="labels-info">4pm to 7pm EST </div>
+                          <div class="labels-info" id="time">4pm to 7pm EST </div>
                         </div>
                         <div class="details">
                           <div class="labels">Location </div>
-                          <div class="labels-info">Online (Zoom)</div>
+                          <div class="labels-info" id = "location">Online (Zoom)</div>
                         </div>
                         <div class="details">
                           <div class="labels">Cost </div>
@@ -73,11 +75,11 @@
                         </div>
                         <div class="details">
                           <div class="labels">Deadline </div>
-                          <div class="labels-info">Applications open until June 25th, 2021</div>
+                          <div class="labels-info">Applications open until <span class="deadline">June 25th, 2021</span></div>
                         </div>
 
                       <div class="peek programs">
-                          <a class="peek programs">A p p l y &nbsp; N o w</a>
+                          <a class="peek programs application-link">A p p l y &nbsp; N o w</a>
                       </div>
 
 
@@ -85,14 +87,14 @@
                       <div class="description">
                         <section>
                           <h2>Description</h2>
-                          <p>
+                          <p id="descriptionText">
                             In this workshop, participants will study both history of math -- including some connections to computing, ecology, politics, religion, and literature -- and practices of learning/using/creating math. Topics certain for at least brief discussion with everyone include a whirlwind survey of mathematics in a few pre-colonial societies and in the contemporary field, varieties of infinity, math education, logic, cultural and linguistic specificity of mathematics, category theory, and the physical realization of abstract computational models. Possible topics for discussion with everyone or in smaller groups according to participant interest include greater elaboration of the previously named topics, and other branches of mathematics or closely linked fields such as probability theory, programming language theory, computational complexity theory, information theory, music theory, graph/network theory, order theory, Ramsey theory, approximation theory, geometry, and fractals. There will be no assumption of mathematics knowledge more advanced than a vague recollection of middle/high school algebra, nor unrealistic expectations of building expertise in little more than a month's time; the intention for the short course is to build interest in and appreciation for a diverse and beautiful subject too often uglified by elitism, prejudice, and excessive rigidity.
                           </p>
                         </section>
 
                         <section>
                           <h2>Expectations and Requirements</h2>
-                          <ul>
+                          <ul id="expectations">
                             <li>hey
                             <li>hey
                           </ul>
@@ -100,7 +102,7 @@
 
                         <section>
                           <h2>Syllabus</h2>
-                          <ul>
+                          <ul id="syllabus">
                             <li>Welcome class. Hardware in a home. (Studio tour, survey of tools we use, materials, fabrication possibilities).
                             <li>Intro to circuit. Power, ground, control, resistance.
                             <li>Electronic control. The transistor + logic.
@@ -113,27 +115,27 @@
 
                         <section>
                           <h2>Meet the Teachers</h2>
-                          <article class="teacher">
-                            <div class="bio" style="background-image: url('https://i.pinimg.com/originals/89/e1/45/89e14590966515edace21b257682efe6.jpg')"></div> <a href="">Nabil Hassein</a> (Teacher) is an SFPC alum who has previously worked as a high school math teacher, a software developer, a freelance educator of programming and critical theory of technology, a co-organizer of events such as "Code Ecologies" and "Mathematics as a Religious Experience", a writer of articles such as "Against Black Inclusion in Facial Recognition", and a speaker of talks such as "Computing, climate change, and all our relationships". Now a PhD student, Nabil's research interests include the history of higher technical education in Africa and among the African diaspora, connections among decolonization and development and education, the relationship between computing and climate change, and translation.
+                          <article class="teacher" id="teacher">
+                            <div class="bio" style="background-image: url('https://i.pinimg.com/originals/89/e1/45/89e14590966515edace21b257682efe6.jpg')"></div> <a class="teacherName" href="">Nabil Hassein</a> (Teacher) <span class="bioText">is an SFPC alum who has previously worked as a high school math teacher, a software developer, a freelance educator of programming and critical theory of technology, a co-organizer of events such as "Code Ecologies" and "Mathematics as a Religious Experience", a writer of articles such as "Against Black Inclusion in Facial Recognition", and a speaker of talks such as "Computing, climate change, and all our relationships". Now a PhD student, Nabil's research interests include the history of higher technical education in Africa and among the African diaspora, connections among decolonization and development and education, the relationship between computing and climate change, and translation.</span>
                           </article>
                           <BR><BR>
-                          <article class="teacher">
-                            <div class="bio" style="background-image: url('https://i.pinimg.com/originals/89/e1/45/89e14590966515edace21b257682efe6.jpg')"></div><img src=""> <a href="">Sean Catangui</a> (Teaching Assistant) is an SFPC alum who has previously worked as a high school math teacher, a software developer, a freelance educator of programming and critical theory of technology, a co-organizer of events such as "Code Ecologies" and "Mathematics as a Religious Experience", a writer of articles such as "Against Black Inclusion in Facial Recognition", and a speaker of talks such as "Computing, climate change, and all our relationships". Now a PhD student, Nabil's research interests include the history of higher technical education in Africa and among the African diaspora, connections among decolonization and development and education, the relationship between computing and climate change, and translation.
+                          <article class="teacher" id="TA">
+                            <div class="bio" style="background-image: url('https://i.pinimg.com/originals/89/e1/45/89e14590966515edace21b257682efe6.jpg')"></div><img src=""> <a class="TAName" href="">Sean Catangui</a> (Teaching Assistant) <span class="bioText">is an SFPC alum who has previously worked as a high school math teacher, a software developer, a freelance educator of programming and critical theory of technology, a co-organizer of events such as "Code Ecologies" and "Mathematics as a Religious Experience", a writer of articles such as "Against Black Inclusion in Facial Recognition", and a speaker of talks such as "Computing, climate change, and all our relationships". Now a PhD student, Nabil's research interests include the history of higher technical education in Africa and among the African diaspora, connections among decolonization and development and education, the relationship between computing and climate change, and translation.</span>
                           </article>
                           <BR><BR>
-                          <p>This class is organized by <a href="">Emma Rae Norton</a>.</p>
+                          <p>This class is organized by <a id="organizers" href="">Emma Rae Norton</a>.</p>
                         </section>
 
                         <section>
                           <h2>Is this class for me?</h2>
-                          <p>
+                          <p id="isThisForMe">
                             Is it?
                           </p>
                         </section>
 
                         <section>
                           <h2>What will I get from taking this class?</h2>
-                          <p>
+                          <p id="whatWillIGetFromThis">
                             Above particular to each class
                           </p>
                         </section>
@@ -142,9 +144,9 @@
                           <h2>How do I apply?</h2>
 
                           <div class="peek programs">
-                              <a class="peek programs">A p p l y &nbsp; N o w</a>
+                              <a class="peek programs application-link">A p p l y &nbsp; N o w</a>
                           </div>
-                          <p>Applications open until June 25th, 2021.</p> <BR>
+                          <p>Applications open until <span class="deadline">June 25th, 2021.</span></p> <BR>
 
                           <p>
                             We will be accepting up to 18 students on a rolling basis. We will respond to your application within 5 days of submission. Rolling admissions means there are fewer and fewer slots the longer you wait, so if you’re interested in the program get your application in early!​
@@ -220,8 +222,10 @@
 </div>
 
 
-            <script src="jquery-3.6.0.min.js"></script>
-            <script src="outside.js"></script>
+            <script src="../jquery-3.6.0.min.js"></script>
+            <!-- <script src="../outside.js"></script> -->
+            <script src="programs.js"></script>
+            <script src="template.js"></script>
 </body>
 
 </html>
