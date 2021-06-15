@@ -288,7 +288,7 @@ p:hover span.cocoon {
 
 
 /* .intro-text p:hover, */
-
+.session-text p,
 .intro-text p:hover,
 .intro-text.touched {
     color: var(--text-color);
@@ -445,7 +445,7 @@ p a:hover {
     transition: all 2s ease-out;
 }
 
-.programs-list h2 span {
+.programs-list h2 span, .session h2 span {
   background: var(--text-color);
   border-radius: 100%;
   color: var(--background);
@@ -453,7 +453,7 @@ p a:hover {
   text-shadow: none;
 }
 
-.programs-list p {
+.programs-list p, .session p {
     color: var(--text-color);
     text-shadow: 1px 1px 1px var(--background-shadow-purple);
     font-family: 'Times Dot';
@@ -471,7 +471,7 @@ p a:hover {
    font-weight: lighter;
 }
 
-
+.session p span,
 .programs-list p span,
 .programs-list a.expand {
     font-family: 'Self Modern';
@@ -535,7 +535,7 @@ a.social:before{
     margin-bottom: 20vh;
 }
 
-.programs-list h2 {
+.programs-list h2, .session h2 {
     color: var(--text-color);
     text-shadow: 1px 1px 1px var(--background-shadow-green);
     font-family: 'Self Modern';
