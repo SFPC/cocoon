@@ -463,6 +463,16 @@ p a:hover {
   font-style: italic;
 }
 
+
+.bio {
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border-radius: 100%;
+  border: 2px solid var(--text-color);
+  width: 8vw;
+  height: 8vw;
+}
 .programs-list p, .session p {
     color: var(--text-color);
     text-shadow: 1px 1px 1px var(--background-shadow-purple);
