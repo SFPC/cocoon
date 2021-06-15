@@ -1,29 +1,23 @@
-let programs = [];
+let programs;
 let url =  "https://docs.google.com/spreadsheets/d/e/2PACX-1vQJHY7Kbx_Tw-_QzpR2XUmdxZuoMiwFu-chMQDpbhVAL5F8wktHMs3qIt1zLtO938LmMDTTtPbWvm_S/pub?output=tsv"
-//load programs from google sheet
-$.get(url, function(data) {
-  //data enters as TSV string, we convert it into an array of JSON objects
-  programs = TSVToJSONArray(data)
-  //we loop through the array of JSON objects (one for each class) and add html to the page
-  for (let index = 0; index < programs.length; index++) {
-    //converts course title to a unique 
-    programs[index].idForLink = programs[index].title.toLowerCase().replace(/[^0-9a-z ]/g, '').replaceAll(" ", "-")
-    //adds a navigation link at the top
-    $('#programs-nav ul').append(addNavigationLink(programs[index]))
-    //adds the html for the program to the container
-    $('#programs-container').append(addProgramDiv(programs[index]))
-  }
-  if(location.hash){$(location.hash)[0].scrollIntoView()}
-});
+//load programs from google sheet, then run a callback function on the data
+
+function loadSheetData(callback){
+  $.get(url, function(data) {
+    //data enters as TSV string, we convert it into an array of JSON objects then send to callback
+    programs = TSVToJSONArray(data)
+    callback(programs)
+  });
+}
 //This function will add an anchor link that jumps to the program
 function addNavigationLink(program){
-  return `<li><a href="#${program.idForLink}"><em>${program.title}</em> by ${program.teacher}</a></li>`
+  return `<li><a href="#${program.urlTitle}"><em>${program.title}</em> by ${program.teacher}</a></li>`
 }
 //this creates the div html for the program, feel free to change any of the html or class names
 //data is pulled from the course object using ${}
-function addProgramDiv(program, index){
+function addProgramDiv(program){
   return `
-    <div class="programDiv" id="${program.idForLink}">
+    <div class="programDiv" id="${program.urlTitle}">
       <img src="${program.image}" />
       <h2 class="schedule">${program.schedule}</h2>
       <h1 class="programTitle">${program.title}</h1>
