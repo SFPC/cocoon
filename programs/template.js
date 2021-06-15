@@ -4,7 +4,7 @@ let defaultImage = "https://i.pinimg.com/originals/89/e1/45/89e14590966515edace2
 loadSheetData(function(programs){
     sheetData = programs
     if(location.hash.length <= 1) location.hash = "#"+programs[0].urlTitle
-    let requestedPage =  location.hash.slice(1) 
+    let requestedPage =  location.hash.slice(1)
     for (let index = 0; index < programs.length; index++) {
         if(!programs[index].urlTitle) continue
         $('#programs-nav ul').append(addNavigationLink(programs[index]))
@@ -46,6 +46,7 @@ function fillPageContent(program){
     $('#TA a').attr('href', program.TALink)
     $('#TA .bioText').text(program.TABio)
     $('#organizers').text(program.organizers)
+    $('#organizers a').attr('href', program.organizerLink)
     $('#isThisForMe').text(program.isThisForMe)
     $('#whatWillIGetFromThis').text(program.whatWillIGetFromThis)
     $('#class').fadeIn()
