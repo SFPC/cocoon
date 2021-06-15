@@ -107,7 +107,7 @@
                 </p>
 
                 <div class="peek programs">
-                    <a class="peek programs"><span>V i e w &nbsp; </span>P r o g r a m s</a>
+                    <a class="peek programs" onclick="showPrograms()"><span>V i e w &nbsp; </span>P r o g r a m s</a>
                 </div>
 
 
@@ -149,6 +149,7 @@
 
 
             </div>
+        </div>
             <div class="withfriends">
                 <a href="https://withfriends.co/school_for_poetic_computation/join"><img src="pupa.png">
                     <p class="support-us">Support Us</p>
@@ -160,6 +161,17 @@
             <script src="jquery-3.6.0.min.js"></script>
             <script src="ooooh.js"></script>
             <script src="outside.js"></script>
+            <script src="programs/programs.js"></script>
+            <script>
+                loadSheetData(function(programs){
+                    console.log(programs)
+                    $('.programs-list').empty()
+                    for (let index = 0; index < programs.length; index++) {
+                        $('.programs-list').append(addProgramDiv(programs[index]))
+                    }
+                })
+            </script>
+
 </body>
 
 </html>

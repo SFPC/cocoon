@@ -1,12 +1,10 @@
-let programs;
-let url =  "https://docs.google.com/spreadsheets/d/e/2PACX-1vQJHY7Kbx_Tw-_QzpR2XUmdxZuoMiwFu-chMQDpbhVAL5F8wktHMs3qIt1zLtO938LmMDTTtPbWvm_S/pub?output=tsv"
+const sheetUrl =  "https://docs.google.com/spreadsheets/d/e/2PACX-1vQJHY7Kbx_Tw-_QzpR2XUmdxZuoMiwFu-chMQDpbhVAL5F8wktHMs3qIt1zLtO938LmMDTTtPbWvm_S/pub?output=tsv"
 //load programs from google sheet, then run a callback function on the data
 
 function loadSheetData(callback){
-  $.get(url, function(data) {
-    //data enters as TSV string, we convert it into an array of JSON objects then send to callback
-    programs = TSVToJSONArray(data)
-    callback(programs)
+  $.get(sheetUrl, function(data) {
+    //data enters as TSV string, we convert it into an array of JSON objects, save it in the variable 'programs' then send to callback
+    callback(TSVToJSONArray(data))
   });
 }
 //This function will add an anchor link that jumps to the program
@@ -16,14 +14,11 @@ function addNavigationLink(program){
 //this creates the div html for the program, feel free to change any of the html or class names
 //data is pulled from the course object using ${}
 function addProgramDiv(program){
+  let TAstring = program.TA ? ` with TA ${program.TA}` : ""
   return `
     <div class="programDiv" id="${program.urlTitle}">
-      <img src="${program.image}" />
-      <h2 class="schedule">${program.schedule}</h2>
-      <h1 class="programTitle">${program.title}</h1>
-      <h2 class="teacher">by ${program.teacher} with ${program.TA}</h2>
-      <span class="price">${program.price}</span>
-      <p class="description">${program.description}</p>
+    <h2>${program.date} ${program.time} · ${program.location} · <span>$${program.price}</span></h2>
+    <p><a href="programs/template.html#${program.urlTitle}"><span id="title">${program.title}</span></a> by ${program.teacher}${TAstring}</p>
     </div>
   `
 }

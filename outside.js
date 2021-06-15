@@ -68,14 +68,13 @@ $(".top").click(function() {
     return false;
 });
 
-$(".programs").click(function() {
+
+function showPrograms(){
     $(".programs-list").removeClass('hide');
     $(".programs span").fadeOut();
     $(".programs").addClass('active');
-
     return false;
-});
-
+}
 function fadeOutAtTop() {
     $(".newBg").fadeOut(300, function() {
         $(this).remove();
