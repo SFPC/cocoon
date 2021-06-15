@@ -477,6 +477,15 @@ p a:hover {
   border: 2px solid var(--text-color);
   width: 8vw;
   height: 8vw;
+  background-size: cover;
+  -moz-transition: all .5s ease-out;
+  ms-transition: all .5s ease-out;
+  o-transition: all .5s ease-out;
+  transition: all .5s ease-out;
+}
+
+.bio:hover  {
+  border: 2px solid var(--primary-color);
 }
 .programs-list p, .session p {
     color: var(--text-color);
@@ -587,6 +596,7 @@ a.social:before{
     font-size: 1.5vw;
 }
 
+
 .session-info .details .labels-info, .session-info .description p, .session-info article.teacher,
 .session-info .description li, .session-info .description h2 li:before  {
     color: var(--text-color);
@@ -659,6 +669,12 @@ a.social:before{
   width: 20%;
 }
 
+
+.session-info .details .labels-info {
+  float:right;
+  width: 80%;
+}
+
 p a.expand:hover .expanded {
     /* text-shadow: none !important; */
     text-shadow: 1px 1px 1px var(--background-shadow-green);
@@ -715,9 +731,17 @@ a.expand.active {
 
 @media (max-width: 768px) {
      :root {
-        --text-margin: 5vh;
+        --text-margin: 7vh;
         --body-margin: 4vw;
     }
+
+    .session-info {
+      width: 92vw;
+      margin: 0px auto;
+      display: block;
+      /* background: #fff; */
+    }
+
     img.spiral {
         height: 100vh;
         width: auto;
@@ -725,8 +749,15 @@ a.expand.active {
     .break-sect img {
         width: 60vw;
     }
+
+    .introImg {
+        margin-top: 60px;
+    }
+
     h1,
-    h2 {
+    h2, .programs-list h2, .session-info h2, .session-info .details .labels,
+    p.visible,  #info li, .session-info .details .labels-info, .session-info .description p, .session-info article.teacher,
+    .session-info .description li, .session-info .description h2 li:before  {
         font-size: 4vw !important;
     }
     p,
@@ -737,6 +768,16 @@ a.expand.active {
         color: var(--text-color);
         text-shadow: 1px 1px 1px var(--background-shadow-purple);
     }
+
+    .session-info .details .labels {
+        width: 35%;
+    }
+    .session-info .details .labels-info {
+        width: 65%;
+    }
+
+
+
     p .cocoon {
         -webkit-transform: rotate(0deg);
         -moz-transform: rotate(0deg);
@@ -757,9 +798,12 @@ a.expand.active {
       font-size: 3vw;
     }
 
-    p.visible,  #info li {
-    font-size: 4vw;
+
+    .bio {
+      width: 20vw;
+      height: 20vw;
     }
+
 }
 
 .expanded {
