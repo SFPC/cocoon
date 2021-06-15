@@ -313,7 +313,7 @@ p:hover span.cocoon {
   opacity: 1 !important;
 }
 .withfriends p {
-    opacity: 0;
+    opacity: 1;
     /* color: var(--primary-color); */
     color: var(--text-color);
     /* text-shadow: 1px 1px 1px var(--background-shadow-purple); */
@@ -329,13 +329,14 @@ p:hover span.cocoon {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 130px;
+    width: 100px;
     /* text-shadow: 0 0 10px var(--background-shadow); */
     display: table;
     /* keep the background color wrapped tight */
     margin: 0px auto 0px auto;
     /* keep the table centered */
     padding: 5px;
+    line-height: 1.25em;
     /* background-color: #ffffff5d; */
     display: table;
     margin: 0px auto 0px auto;
@@ -641,6 +642,10 @@ a.expand.active {
     .withfriends p {
       opacity: 1;
       font-size: 3vw;
+    }
+
+    p.visible,  #info li {
+    font-size: 4vw;
     }
 }
 
