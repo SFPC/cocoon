@@ -5,6 +5,7 @@
     --background-shadow-green: rgb(6, 187, 0);
     /* #ce988a */
     --background: #bb905e;
+    --background-light: #C0A27D;
     /* --background: #a47848; */
     /* #bb905e */
     /* #ef9a83; */
@@ -640,15 +641,15 @@ a.social:before{
 
 .session-info section {
     margin-bottom: var(--text-margin);
-    transition: all .5s ease-out;
-    -moz-transition: all .5s ease-out;
-    ms-transition: all .5s ease-out;
-    o-transition: all .5s ease-out;
+    transition: all .2s ease-out;
+    -moz-transition: all .2s ease-out;
+    ms-transition: all .2s ease-out;
+    o-transition: all .2s ease-out;
 }
 
 .session-info section:hover {
-  background-color: var(--background);
-  box-shadow: 0 0 50px var(--background);
+  background-color: var(--background-light);
+  box-shadow: 0 0 100px var(--background-light);
 
 }
 
