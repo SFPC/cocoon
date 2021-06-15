@@ -585,7 +585,7 @@ a.social:before{
 }
 
 .session-info {
-  width: 50vw;
+  width: 52vw;
   margin: 0px auto;
   display: block;
   /* background: #fff; */
@@ -646,13 +646,13 @@ a.social:before{
     ms-transition: all .2s ease-out;
     o-transition: all .2s ease-out;
 
-      padding: 4vw;
+      padding: 1vw;
       box-sizing: border-box;
 }
 
 .session-info section:hover {
   background-color: var(--background-light);
-  box-shadow: 0 0 50px var(--background-light);
+  box-shadow: 0 0 20px var(--background-light);
   cursor: help;
 }
 
