@@ -95,6 +95,11 @@ img.spiral {
     mix-blend-mode: screen;
 }
 
+
+.bgImg.classPage img.spiral {
+  opacity: .3 !important
+}
+
 .bgImg {
     position: fixed;
     top: 0px;
@@ -489,6 +494,18 @@ p a:hover {
 .programs-list p a:after{
    content: '↝ ';
    font-weight: lighter;
+}
+
+.session-info a {
+  -moz-transition: all .5s ease-out;
+  ms-transition: all .5s ease-out;
+  o-transition: all .5s ease-out;
+  transition: all .5s ease-out;
+}
+.session-info a:hover {
+  color: transparent !important;
+  text-shadow: 0 0 3px var(--primary-color) !important;
+  text-decoration: none;
 }
 
 .session p span,
