@@ -60,10 +60,6 @@ $(window).scroll(function() {
 });
 
 
-// $( ".finalImage" ).replaceWith( '<center><img src="cocoonImages/cocoon' + ranCocoon + '.jpg"></center>' );
-
-
-$('<div class="break-sect"><center><img src="cocoonImages/cocoon' + ranCocoon + '.jpg"></center></div>').appendTo('.finalImage');
 
 
 

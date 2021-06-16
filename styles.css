@@ -270,7 +270,6 @@ p:hover span.cocoon {
     position: relative;
     z-index: 12;
     color: var(--background);
-    transition: all 2s ease-out;
     padding-top: var(--text-margin);
     transition: all 2s ease-out;
     -moz-transition: all 2s ease-out;
@@ -414,10 +413,10 @@ p {
 }
 
 p a {
-    -moz-transition: all 2s ease-out;
+    /* -moz-transition: all 2s ease-out;
     ms-transition: all 2s ease-out;
     o-transition: all 2s ease-out;
-    transition: all 2s ease-out;
+    transition: all 2s ease-out; */
 }
 
 p,
