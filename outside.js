@@ -60,6 +60,10 @@ $(window).scroll(function() {
 });
 
 
+$( ".finalImage" ).replaceWith( '<center><img src="cocoonImages/cocoon' + ranCocoon + '.jpg"></center>' );
+
+
+
 
 $(".top").click(function() {
     $("html, body").animate({ scrollTop: 0 }, "slow");
