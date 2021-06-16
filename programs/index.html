@@ -224,6 +224,9 @@
                     <a class="peek programs" href="../index.html">A l l &nbsp; P r o g r a m s</a>
                 </div>
 
+                <div class="programs-list hide" id="programs">
+                </div>
+
 </div>
 </div>
 </div>
@@ -233,6 +236,17 @@
             <script src="inside.js"></script>
             <script src="programs.js"></script>
             <script src="template.js"></script>
+
+            <script>
+                loadSheetData(function(programs){
+                    console.log(programs)
+                    $('.programs-list').empty()
+                    for (let index = 0; index < programs.length; index++) {
+                        $('.programs-list').append(addProgramDiv(programs[index]))
+                    }
+                })
+            </script>
+
 </body>
 
 </html>
