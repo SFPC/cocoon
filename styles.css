@@ -286,12 +286,14 @@ p:hover span.cocoon {
 }
 
 .intro-text p,
-.intro-text p a {
+.intro-text p a,
+p.visible a  {
     transition: all .2s ease-out;
     -moz-transition: all .2s ease-out;
     ms-transition: all .2s ease-out;
     o-transition: all .2s ease-out;
 }
+
 
 
 /* .intro-text p:hover, */
@@ -553,6 +555,10 @@ p.visible,  #info li
     text-shadow: none;
     text-shadow: 1px 1px 1px var(--background-shadow-purple);
     font-size: 2vw;
+    transition: all .5s ease-out !important;
+    -moz-transition: all .5s ease-out !important;
+    ms-transition: all .5s ease-out !important;
+    o-transition: all .5s ease-out !important;
     /* margin-bottom: 0px !important; */
 }
 
@@ -798,12 +804,20 @@ a.expand.active {
     h2, .programs-list h2, .session-info h2, .session-info .details .labels,
     p.visible,  #info li, .session-info .details .labels-info, .session-info .description p, .session-info article.teacher,
     .session-info .description li, .session-info .description h2 li:before  {
-        font-size: 4vw !important;
+        font-size: 4.5vw !important;
     }
     p,
     .peek a {
         font-size: 6vw;
     }
+
+    .session-info .description li {
+        list-style: none;
+        text-indent: -18px;
+        margin-left: 18px;
+        margin-bottom: 10px;
+    }
+
     .intro-text {
         color: var(--text-color);
         text-shadow: 1px 1px 1px var(--background-shadow-purple);
