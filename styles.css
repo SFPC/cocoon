@@ -120,7 +120,7 @@ img.spiral {
     background-size: cover;
     height: 100vh;
     width: 100vw;
-    opacity: .6;
+    opacity: .5;
     mix-blend-mode: screen;
 }
 
@@ -529,7 +529,7 @@ p a:hover {
     /* line-height: inherit; */
 }
 
-p.visible {
+.session-text p.visible,  p.visible {
   transition: all .5s ease-out !important;
   -moz-transition: all .5s ease-out !important;
   ms-transition: all .5s ease-out !important;

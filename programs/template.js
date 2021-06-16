@@ -47,8 +47,10 @@ function fillPageContent(program){
     $('#TA a').attr('href', program.TALink)
     $('#TA .bioText').text(program.TABio)
     $('#organizers').text(program.organizers)
-    $('#isThisForMe').text(program.isThisForMe)
-    $('#whatWillIGetFromThis').text(program.whatWillIGetFromThis)
+    // $('#isThisForMe').text(program.isThisForMe)
+    hyphensToList(program.isThisForMe, "#isThisForMe")
+    hyphensToList(program.whatWillIGetFromThis, "#whatWillIGetFromThis")
+    // $('#whatWillIGetFromThis').text(program.whatWillIGetFromThis)
     $('#class').fadeIn()
 }
 
