@@ -223,6 +223,72 @@ a.peek:hover {
     text-shadow: 0 0 3px var(--secondary-color);
 }
 
+
+#footer {
+    cursor: pointer;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    display: block;
+    padding: calc(var(--body-margin)/2) var(--body-margin);
+    z-index: 100;
+    transition: all 1.5s ease-out;
+    -moz-transition: all 1.5s ease-out;
+    ms-transition: all 1.5s ease-out;
+    o-transition: all 1.5s ease-out;
+    background-image: linear-gradient(to bottom, rgba(187,144,94,0), rgba(187,144,94,1), rgba(187,144,94,1));
+    height: 10vh;
+    color: var(--text-color);
+    /* text-shadow: 1px 1px 1px var(--background-shadow-purple); */
+    font-family: 'Times Dot';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.2vw;
+    line-height: 10vh;
+}
+
+#footer a {
+  font-family: 'Self Modern';
+  text-align: center;
+  color: var(--primary-color);
+  text-shadow: 1px 1px 1px var(--background-shadow-green);
+  transition: all .5s ease-out;
+  -moz-transition: all .5s ease-out;
+  ms-transition: all .5s ease-out;
+  o-transition: all .5s ease-out;
+  text-decoration: underline;
+}
+
+#footer a:hover {
+  color: transparent;
+  text-shadow: 0 0 4px var(--primary-color);
+  text-decoration: none !important;
+}
+.footer-left {
+  float:left;
+}
+
+.footer-right {
+  float:right;
+}
+
+select#allSections {
+  background: var(--background);
+  font-family: 'Times Dot';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.2vw;
+  line-height: 10vh;
+  color: var(--text-color);
+  border-color: var(--text-color);
+}
+
+select#allSections:focus {
+  outline: 1px solid var(--background-shadow-purple);
+
+}
+
 .cocoon {
     font-family: 'Self Modern';
     font-style: italic;
@@ -811,10 +877,12 @@ a.expand.active {
 
 
 
+
     h1,
     h2, .programs-list h2, .session-info h2, .session-info .details .labels,
     p.visible,  #info li, .session-info .details .labels-info, .session-info .description p, .session-info article.teacher,
-    .session-info .description li, .session-info .description h2 li:before  {
+    .session-info .description li, .session-info .description h2 li:before,
+    #footer, select#allSections   {
         font-size: 4.5vw !important;
     }
     p,
@@ -868,6 +936,10 @@ a.expand.active {
     .bio {
       width: 20vw;
       height: 20vw;
+    }
+
+    .footer-title, .to {
+      display: none;
     }
 
 }

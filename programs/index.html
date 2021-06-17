@@ -41,8 +41,33 @@
             </div>
         </a>
 
+        <div id="footer">
+          <div class="footer-left">
+          <a class="application-link">Apply Now</a> <span class="to">to</span> <span id="title" class="footer-title"></span>
+          </div>
+          <div class="footer-right">
 
-        <div id="class" class="class" style="display:none">
+            <select id= "allSections" onchange="sectionJump(this.value)">
+              <option value ="class">Jump to section...</option>
+              <option value ="section-summary">Class Details</option>
+              <option value ="section-description">Description</option>
+              <option value ="section-expectations">Expectations</option>
+              <option value ="section-syllabus">Syllabus</option>
+              <option value ="section-teachers">Teachers</option>
+              <option value ="section-forme">Is this for me?</option>
+              <option value ="section-benefits">Why take this class?</option>
+              <option value ="section-apply">How to Apply</option>
+              <option value ="section-cost">Cost of Attendence</option>
+              <option value ="section-refund">Refund Policy</option>
+              <option value ="section-accessibility">Accessibility</option>
+              <option value ="about-cocoon">About COCOON</option>
+            </select>
+          </div>
+
+        </div>
+
+
+        <div id="class" class="class" style="display:block">
 
             <div class="session-text">
 
@@ -56,7 +81,7 @@
                 </div>
 
                     <div class="session-info">
-                        <section>
+                        <section id="section-summary">
                         <div class="details">
                           <div class="labels">Date </div>
                           <div class="labels-info" id="date">Sundays, July 5th to August 8th (5 weeks of classes)</div>
@@ -85,22 +110,22 @@
 
 
                       <div class="description">
-                        <section>
+                        <section id="section-description">
                           <h2>Description</h2>
                           <p id="descriptionText">
                             In this workshop, participants will study both history of math -- including some connections to computing, ecology, politics, religion, and literature -- and practices of learning/using/creating math. Topics certain for at least brief discussion with everyone include a whirlwind survey of mathematics in a few pre-colonial societies and in the contemporary field, varieties of infinity, math education, logic, cultural and linguistic specificity of mathematics, category theory, and the physical realization of abstract computational models. Possible topics for discussion with everyone or in smaller groups according to participant interest include greater elaboration of the previously named topics, and other branches of mathematics or closely linked fields such as probability theory, programming language theory, computational complexity theory, information theory, music theory, graph/network theory, order theory, Ramsey theory, approximation theory, geometry, and fractals. There will be no assumption of mathematics knowledge more advanced than a vague recollection of middle/high school algebra, nor unrealistic expectations of building expertise in little more than a month's time; the intention for the short course is to build interest in and appreciation for a diverse and beautiful subject too often uglified by elitism, prejudice, and excessive rigidity.
                           </p>
                         </section>
 
-                        <section>
-                          <h2>Expectations and Requirements</h2>
+                        <section id="section-expectations">
+                          <h2>Expectations</h2>
                           <ul id="expectations">
                             <li>hey
                             <li>hey
                           </ul>
                         </section>
 
-                        <section>
+                        <section id="section-syllabus">
                           <h2>Syllabus</h2>
                           <ul id="syllabus">
                             <li>Welcome class. Hardware in a home. (Studio tour, survey of tools we use, materials, fabrication possibilities).
@@ -113,7 +138,7 @@
                           </ul>
                         </section>
 
-                        <section>
+                        <section id="section-teachers">
                           <h2>Meet the Teachers</h2>
                           <article class="teacher" id="teacher">
                             <div class="bio" style="background-image: url('https://i.pinimg.com/originals/89/e1/45/89e14590966515edace21b257682efe6.jpg')"></div> <a class="teacherName" href="">Nabil Hassein</a> (Teacher) <span class="bioText">is an SFPC alum who has previously worked as a high school math teacher, a software developer, a freelance educator of programming and critical theory of technology, a co-organizer of events such as "Code Ecologies" and "Mathematics as a Religious Experience", a writer of articles such as "Against Black Inclusion in Facial Recognition", and a speaker of talks such as "Computing, climate change, and all our relationships". Now a PhD student, Nabil's research interests include the history of higher technical education in Africa and among the African diaspora, connections among decolonization and development and education, the relationship between computing and climate change, and translation.</span>
@@ -126,21 +151,21 @@
                           <p>This class is organized by <a id="organizers" href="" class="organizerLink">Emma Rae Norton</a>.</p>
                         </section>
 
-                        <section>
+                        <section id="section-forme">
                           <h2>Is this class for me?</h2>
                           <p id="isThisForMe">
                             Is it?
                           </p>
                         </section>
 
-                        <section>
+                        <section id="section-benefits">
                           <h2>What will I get from taking this class?</h2>
                           <p id="whatWillIGetFromThis">
                             Above particular to each class
                           </p>
                         </section>
 
-                        <section>
+                        <section id="section-apply">
                           <h2>How do I apply?</h2>
 
                           <div class="peek programs">
@@ -153,7 +178,7 @@
                           </p>
                         </section>
 
-                        <section>
+                        <section id="section-cost">
                           <h2>How much does it cost to attend?</h2>
                           <p>
                             <span class="price">$750</span> + Withfriends payment processing fees for five weekly classes. Upon payment, your space in the class will be reserved.<BR><BR>
@@ -168,7 +193,7 @@
 
                         </section>
 
-                        <section>
+                        <section id="section-refund">
                           <h2>What if I can’t go, can I get a refund?</h2>
                           <ul>
                             <li>Yes, we can give you 100% refund up to 10 days before class starts
@@ -178,7 +203,7 @@
                           </ul>
                         </section>
 
-                        <section>
+                        <section id="section-accessibility">
                           <h2>Accessibility</h2>
                           <p>
                             Our classes are conducted in spoken English with audiovisual materials such as slides, code examples and video. All classes will be held over Zoom. Please contact us with special accessibility requests.
@@ -203,7 +228,7 @@
 
 
 
-                      <p>
+                      <p id="about-cocoon">
                           The School for Poetic Computation is changing.
                           This summer, we are making a temporary space together in a <span class="cocoon-inline">COCOON</span>. We invite you into our collective studies as we work towards an experimental curriculum that can grow and transform over time. We will learn to unlearn with others in order to change the conditions of learning itself. We are making new schooling formations that facilitate the oscillation between teacher and student. Not yet flying, we invite you to wrap yourselves in the warm, gooey muck of becoming in the shedding over and over again.
 
