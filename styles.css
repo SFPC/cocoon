@@ -249,7 +249,10 @@ a.peek:hover {
 }
 
 #footer a {
-  font-family: 'Self Modern';
+  font-family: 'Self Modern' !important;
+  font-style: italic;
+  line-height: 0;
+  font-weight: bold;
   text-align: center;
   color: var(--primary-color);
   text-shadow: 1px 1px 1px var(--background-shadow-green);
