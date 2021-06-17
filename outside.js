@@ -60,6 +60,9 @@ $(window).scroll(function() {
 });
 
 
+if ( window.location.hash === '#programs' ) {
+  showPrograms();
+}
 
 
 
