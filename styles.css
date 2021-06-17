@@ -544,6 +544,8 @@ p a:hover {
     text-decoration: none !important;
 }
 
+
+
 .programs-list {
     -moz-transition: all 2s ease-out;
     ms-transition: all 2s ease-out;
@@ -649,6 +651,15 @@ p.visible,  #info li
 a.social:before{
    content: '↝ ';
 }
+
+p.visible {
+  margin-bottom: 0px !important;
+}
+.programs {
+      margin-top: var(--text-margin);
+}
+
+
 
 .programs.active, .programs.active:hover
 {
