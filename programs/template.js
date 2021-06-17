@@ -25,7 +25,7 @@ function findProgramAndLoad(e){
 }
 function fillPageContent(program){
     if(program.image) $('#programImg').attr('src', program.image)
-    $('#title').text(program.title)
+    $('.title').text(program.title)
     $('.teacherName').text(program.teacher)
     $('.TAName').text(program.TA)
     $('#date').text(program.date)
