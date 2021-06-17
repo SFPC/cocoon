@@ -320,15 +320,25 @@ p.visible a  {
 
 .withfriends {
     position: fixed;
-    bottom: 1px;
-    right: 1px;
-    width: 230px;
+    bottom: calc(var(--body-margin)/2);
+    right: var(--body-margin);
+    /* width: 230px; */
+    width: 9.5vw;
     z-index: 100;
     cursor: pointer !important;
+    transition: all .2s ease-out;
+    -moz-transition: all .2s ease-out;
+    ms-transition: all .2s ease-out;
+    o-transition: all .2s ease-out;
 }
 
-.withfriends p:hover  {
+.withfriends:hover {
+  transform: rotate(5deg);
+}
+
+.withfriends:hover p  {
   opacity: 1 !important;
+  text-shadow: 1px 1px 1px var(--background-shadow-purple);
 }
 .withfriends p {
     opacity: 1;
@@ -347,7 +357,7 @@ p.visible a  {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 100px;
+    /* width: 100px; */
     /* text-shadow: 0 0 10px var(--background-shadow); */
     display: table;
     /* keep the background color wrapped tight */
@@ -360,7 +370,8 @@ p.visible a  {
     margin: 0px auto 0px auto;
     padding: 5px;
     background-color: #ffffff80;
-    height: 33px;
+    /* height: 33px; */
+    height: auto;
     box-shadow: 0 0 10px white;
     border-radius: 50%;
     transition: all .5s ease-out;
@@ -621,7 +632,7 @@ a.social:before{
 
 
 .session-info .details .labels-info, .session-info .description p, .session-info article.teacher,
-.session-info .description li, .session-info .description h2 li:before  {
+.session-info .description li, .session-info .description h2 li:before, p.small  {
     color: var(--text-color);
     text-shadow: 1px 1px 1px var(--background-shadow-purple);
     font-family: 'Times Dot';
@@ -845,11 +856,12 @@ a.expand.active {
         o-transition: all .5s ease-out;
     }
     .withfriends {
-      width: 150px;
+      /* width: 110px; */
+      width: 27vw;
     }
     .withfriends p {
       opacity: 1;
-      font-size: 3vw;
+      font-size: 4.5vw;
     }
 
 
