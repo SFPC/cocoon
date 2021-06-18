@@ -655,7 +655,8 @@ a.social:before{
 p.visible {
   margin-bottom: 0px !important;
 }
-a.programs {
+
+.intro-text .programs {
       margin-top: var(--text-margin);
 }
 
