@@ -656,7 +656,7 @@ p.visible {
   margin-bottom: 0px !important;
 }
 
-.intro-text .programs {
+.intro-text .programs, #class .peek.programs  a {
       margin-top: var(--text-margin);
 }
 
