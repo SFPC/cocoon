@@ -30,6 +30,7 @@ function fillPageContent(program){
     $('.TAName').text(program.TA)
     $('#date').text(program.date)
     $('#time').text(program.time)
+    $('#location').text(program.location)
     $('.price').text("$"+program.price)
     $('#teachers').text(program.teacher + " + " + program.TA)
     $('.application-link').attr('href', program.applicationLink)
