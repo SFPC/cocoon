@@ -589,7 +589,25 @@ p a:hover {
 }
 
 
-.bio {
+
+.intro-text .bio {
+  /* float: left; */
+  display: inline-block;
+  /* margin-right: 10px; */
+  /* margin-bottom: 10px; */
+  vertical-align: bottom;
+  border-radius: 100%;
+  border: 2px solid var(--text-color);
+  width: 3.5vw;
+  height: 3.5vw;
+  background-size: cover;
+  -moz-transition: all .2s ease-out;
+  ms-transition: all .2s ease-out;
+  o-transition: all .2s ease-out;
+  transition: all .2s ease-out;
+}
+
+#section-teachers .bio {
   float: left;
   margin-right: 10px;
   margin-bottom: 10px;
@@ -609,7 +627,7 @@ p a:hover {
 }
 .programs-list p, .session p {
     color: var(--text-color);
-    text-shadow: 1px 1px 1px var(--background-shadow-purple);
+    /* text-shadow: 1px 1px 1px var(--background-shadow-purple); */
     font-family: 'Times Dot';
     line-height: 1.2;
 }
@@ -617,6 +635,7 @@ p a:hover {
 .programs-list p span {
   /* text-decoration: underline !important; */
   cursor: pointer;
+  text-shadow: 1px 1px 1px var(--background-shadow-purple);
 }
 
 
@@ -847,7 +866,7 @@ p a.expand.active {
 
 a.expand {
     text-decoration: underline;
-    display: inline-block;
+    display: inline;
     margin: 0 3px;
 }
 
@@ -939,7 +958,13 @@ a.expand.active {
 
     .intro-text {
         color: var(--text-color);
-        text-shadow: 1px 1px 1px var(--background-shadow-purple);
+        /* text-shadow: 1px 1px 1px var(--background-shadow-purple); */
+    }
+
+    .intro-text .bio {
+
+      width: 9vw;
+      height: 9vw;
     }
 
     .session-info .details .labels {
