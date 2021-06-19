@@ -92,7 +92,7 @@ img.spiral {
     margin-left: 25vw; */
     position: absolute;
     z-index: 9;
-    opacity: .55;
+    opacity: .3;
     mix-blend-mode: screen;
 }
 
@@ -160,9 +160,9 @@ a {
     color: inherit;
 }
 
-a:hover {
+/* a:hover {
     color: var(--secondary-color);
-}
+} */
 
 a.peek,
 .peek {
@@ -181,10 +181,10 @@ a.peek
  {
     color: var(--primary-color);
     text-shadow: 1px 1px 1px var(--background-shadow-green);
-    transition: all .5s ease-out;
-    -moz-transition: all .5s ease-out;
-    ms-transition: all .5s ease-out;
-    o-transition: all .5s ease-out;
+    transition: all .2s ease-out;
+    -moz-transition: all .2s ease-out;
+    ms-transition: all .2s ease-out;
+    o-transition: all .2s ease-out;
 }
 
 .intro-text:hover a.peek.active,
@@ -211,18 +211,21 @@ a.peek:hover {
     justify-content: space-between;
     padding: calc(var(--body-margin)/2) var(--body-margin);
     z-index: 100;
-    transition: all 1.5s ease-out;
-    -moz-transition: all 1.5s ease-out;
-    ms-transition: all 1.5s ease-out;
-    o-transition: all 1.5s ease-out;
+    transition: all 1.2s ease-out;
+    -moz-transition: all 1.2s ease-out;
+    ms-transition: all 1.2s ease-out;
+    o-transition: all 1.2s ease-out;
     background-image: linear-gradient(to top, rgba(187,144,94,0), rgba(187,144,94,1), rgba(187,144,94,1));
     height: 10vh;
+    /* line-height: 1; */
+
 }
 
 #header:hover h1 {
-    color: transparent;
-    text-shadow: 0 0 3px var(--secondary-color);
+    /* color: transparent;
+    text-shadow: 0 0 3px var(--secondary-color); */
 }
+
 #header h1 a {
     text-decoration:none;
 }
@@ -236,10 +239,10 @@ a.peek:hover {
     display: block;
     padding: calc(var(--body-margin)/2) var(--body-margin);
     z-index: 100;
-    transition: all 1.5s ease-out;
-    -moz-transition: all 1.5s ease-out;
-    ms-transition: all 1.5s ease-out;
-    o-transition: all 1.5s ease-out;
+    transition: all 1.2s ease-out;
+    -moz-transition: all 1.2s ease-out;
+    ms-transition: all 1.2s ease-out;
+    o-transition: all 1.2s ease-out;
     background-image: linear-gradient(to bottom, rgba(187,144,94,0), rgba(187,144,94,1), rgba(187,144,94,1));
     height: 10vh;
     color: var(--text-color);
@@ -259,10 +262,10 @@ a.peek:hover {
   text-align: center;
   color: var(--primary-color);
   text-shadow: 1px 1px 1px var(--background-shadow-green);
-  transition: all .5s ease-out;
-  -moz-transition: all .5s ease-out;
-  ms-transition: all .5s ease-out;
-  o-transition: all .5s ease-out;
+  transition: all .2s ease-out;
+  -moz-transition: all .2s ease-out;
+  ms-transition: all .2s ease-out;
+  o-transition: all .2s ease-out;
   text-decoration: underline;
 }
 
@@ -298,7 +301,7 @@ select#allSections:focus {
 .cocoon {
     font-family: 'Self Modern';
     font-style: italic;
-    line-height: 0;
+    /* line-height: 1; */
     font-weight: bold;
     display: inline-block;
     -webkit-transform: rotate(-180deg);
@@ -307,10 +310,12 @@ select#allSections:focus {
     transform: rotate(-180deg) !important;
     ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";
     filter: progid: DXImageTransform.Microsoft.BasicImage(rotation=2);
-    transition: all .5s ease-out;
-    -moz-transition: all .5s ease-out;
-    ms-transition: all .5s ease-out;
-    o-transition: all .5s ease-out;
+    transition: all .2s ease-out;
+    -moz-transition: all .2s ease-out;
+    ms-transition: all .2s ease-out;
+    o-transition: all .2s ease-out;
+    height: 2.5vh;
+    line-height: 1;
 }
 
 .cocoon-inline {
@@ -322,13 +327,30 @@ select#allSections:focus {
     text-shadow: 0 0 3px var(--secondary-color);
 }
 
-#header:hover .cocoon {
-    display: inline-block;
+/* #header:hover .cocoon*/
+
+#header {
+  transition: all .5s ease-out;
+  -moz-transition: all .5s ease-out;
+  ms-transition: all .5s ease-out;
+  o-transition: all .5s ease-out;
+}
+
+#header:hover .cocoon
+{
+    display: block;
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
     -o-transform: rotate(0deg);
     transform: rotate(0deg) !important;
 }
+
+#header h1:hover  {
+  color: transparent;
+  text-shadow: 0 0 3px var(--secondary-color);
+
+}
+
 
 p:hover span.cocoon {
     display: inline-block;
@@ -372,7 +394,7 @@ p.visible a  {
 .intro-text p:hover, .intro-text p:focus-within,
 .intro-text.touched {
     color: var(--text-color);
-    text-shadow: 1px 1px 1px var(--background-shadow-purple);
+    text-shadow: 1px 1px 1px var(--background);
     transition: all 2s ease-out;
     -moz-transition: all 2s ease-out;
     ms-transition: all 2s ease-out;
@@ -382,11 +404,11 @@ p.visible a  {
 
 .session-text p {
     color: var(--text-color);
-    text-shadow: 1px 1px 1px var(--background-shadow-purple);
-    transition: all .5s ease-out;
-    -moz-transition: all .5s ease-out;
-    ms-transition: all .5s ease-out;
-    o-transition: all .5s ease-out;
+    text-shadow: 1px 1px 1px var(--background);
+    transition: all .2s ease-out;
+    -moz-transition: all .2s ease-out;
+    ms-transition: all .2s ease-out;
+    o-transition: all .2s ease-out;
     /* text-decoration: none !important; */
 }
 
@@ -435,8 +457,8 @@ p.visible a  {
     /* keep the background color wrapped tight */
     margin: 0px auto 0px auto;
     /* keep the table centered */
-    padding: 5px;
-    line-height: 1.25em;
+    padding: 0px;
+    line-height: 1;
     /* background-color: #ffffff5d; */
     display: table;
     margin: 0px auto 0px auto;
@@ -446,10 +468,10 @@ p.visible a  {
     height: auto;
     box-shadow: 0 0 10px white;
     border-radius: 50%;
-    transition: all .5s ease-out;
-    -moz-transition: all .5s ease-out;
-    ms-transition: all .5s ease-out;
-    o-transition: all .5s ease-out;
+    transition: all .2s ease-out;
+    -moz-transition: all .2s ease-out;
+    ms-transition: all .2s ease-out;
+    o-transition: all .2s ease-out;
     cursor: pointer !important;
 }
 
@@ -466,10 +488,10 @@ h1 {
     font-size: 1.5vw;
     font-weight: bold;
     line-height: 1.5vw;
-    transition: all .5s ease-out;
-    -moz-transition: all .5s ease-out;
-    ms-transition: all .5s ease-out;
-    o-transition: all .5s ease-out;
+    transition: all .2s ease-out;
+    -moz-transition: all .2s ease-out;
+    ms-transition: all .2s ease-out;
+    o-transition: all .2s ease-out;
 }
 
 h1.left {
@@ -576,10 +598,10 @@ p a:hover {
   width: 8vw;
   height: 8vw;
   background-size: cover;
-  -moz-transition: all .5s ease-out;
-  ms-transition: all .5s ease-out;
-  o-transition: all .5s ease-out;
-  transition: all .5s ease-out;
+  -moz-transition: all .2s ease-out;
+  ms-transition: all .2s ease-out;
+  o-transition: all .2s ease-out;
+  transition: all .2s ease-out;
 }
 
 .bio:hover  {
@@ -604,10 +626,10 @@ p a:hover {
 }
 
 .session-info a {
-  -moz-transition: all .5s ease-out;
-  ms-transition: all .5s ease-out;
-  o-transition: all .5s ease-out;
-  transition: all .5s ease-out;
+  -moz-transition: all .2s ease-out;
+  ms-transition: all .2s ease-out;
+  o-transition: all .2s ease-out;
+  transition: all .2s ease-out;
 }
 .session-info a:hover {
   color: transparent !important;
@@ -625,25 +647,25 @@ p a:hover {
 }
 
 .session-text p.visible,  p.visible {
-  transition: all .5s ease-out !important;
-  -moz-transition: all .5s ease-out !important;
-  ms-transition: all .5s ease-out !important;
-  o-transition: all .5s ease-out !important;
+  transition: all .2s ease-out !important;
+  -moz-transition: all .2s ease-out !important;
+  ms-transition: all .2s ease-out !important;
+  o-transition: all .2s ease-out !important;
 }
 /* .programs.active,
 .programs.active:hover,
 .peek:hover .programs.active  */
 /* .programs.active,  */
-p.visible, p:focus,  #info li, 
+p.visible, p:focus,  #info li,
 {
     color: var(--text-color);
     text-shadow: none;
     text-shadow: 1px 1px 1px var(--background-shadow-purple);
     font-size: 2vw;
-    transition: all .5s ease-out !important;
-    -moz-transition: all .5s ease-out !important;
-    ms-transition: all .5s ease-out !important;
-    o-transition: all .5s ease-out !important;
+    transition: all .2s ease-out !important;
+    -moz-transition: all .2s ease-out !important;
+    ms-transition: all .2s ease-out !important;
+    o-transition: all .2s ease-out !important;
     /* margin-bottom: 0px !important; */
 }
 
@@ -936,10 +958,10 @@ a.expand.active {
         transform: rotate(0deg) !important;
         ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";
         filter: progid: DXImageTransform.Microsoft.BasicImage(rotation=2);
-        transition: all .5s ease-out;
-        -moz-transition: all .5s ease-out;
-        ms-transition: all .5s ease-out;
-        o-transition: all .5s ease-out;
+        transition: all .2s ease-out;
+        -moz-transition: all .2s ease-out;
+        ms-transition: all .2s ease-out;
+        o-transition: all .2s ease-out;
     }
     .withfriends {
       /* width: 110px; */
