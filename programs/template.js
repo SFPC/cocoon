@@ -26,7 +26,9 @@ function findProgramAndLoad(e){
     }
 }
 function fillPageContent(program){
-    if(program.image) $('#programImg').attr('src', program.image)
+    console.log(program)
+    console.log(program.imageAltText)
+    if(program.image) $('#programImg').attr('src', program.image).attr('alt', program.imageAltText)
     $('.title').text(program.title)
     $('.teacherName').text(program.teacher)
     $('.TAName').text(program.TA)
@@ -41,11 +43,11 @@ function fillPageContent(program){
     $('#descriptionText').text(program.description)
     hyphensToList(program.expectations, "#expectations")
     hyphensToList(program.syllabus, "#syllabus")
-    if(program.teacherImg) $('#teacher .bio').css('background-image', `url(${program.teacherImg})`)
+    if(program.teacherImg) $('#teacher .bio').css('background-image', `url(${program.teacherImg})`).attr('aria-label', `A photo of ${program.teacher}'s face`)
     else $('#teacher .bio').css('background-image', `url(${defaultImage})`)
     $('#teacher a').attr('href', program.teacherLink)
     $('#teacher .bioText').text(program.teacherBio)
-    if(program.TAImg) $('#TA .bio').css('background-image', `url(${program.TAImg})`)
+    if(program.TAImg) $('#TA .bio').css('background-image', `url(${program.TAImg})`).attr('aria-label', `A photo of ${program.TA}'s face`)
     else $('#TA .bio').css('background-image', `url(${defaultImage})`)
     $('#TA a').attr('href', program.TALink)
     $('#TA .bioText').text(program.TABio)

@@ -137,6 +137,10 @@ function activeLinks() {
             // console.log(link);
             showExpanded(link);
         })
+        link.addEventListener('keypress', function() {
+            // console.log(link);
+            showExpanded(link);
+        })
     })
 
     function lighterBG() {

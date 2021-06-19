@@ -369,7 +369,7 @@ p.visible a  {
 
 
 /* .intro-text p:hover, */
-.intro-text p:hover,
+.intro-text p:hover, .intro-text p:focus-within,
 .intro-text.touched {
     color: var(--text-color);
     text-shadow: 1px 1px 1px var(--background-shadow-purple);
@@ -634,7 +634,7 @@ p a:hover {
 .programs.active:hover,
 .peek:hover .programs.active  */
 /* .programs.active,  */
-p.visible,  #info li
+p.visible, p:focus,  #info li, 
 {
     color: var(--text-color);
     text-shadow: none;
