@@ -642,6 +642,7 @@ p a:hover {
 .programs-list p a:after{
    content: '↝ ';
    font-weight: lighter;
+   text-shadow: 1px 1px 1px var(--background-shadow-purple);
 }
 
 .session-info a {
@@ -650,6 +651,12 @@ p a:hover {
   o-transition: all .2s ease-out;
   transition: all .2s ease-out;
 }
+
+.programs-list p a:hover {
+color: transparent !important;
+text-shadow: 0 0 3px var(--primary-color) !important;
+}
+
 .session-info a:hover {
   color: transparent !important;
   text-shadow: 0 0 3px var(--primary-color) !important;
@@ -679,7 +686,7 @@ p.visible, p:focus,  #info li,
 {
     color: var(--text-color);
     text-shadow: none;
-    text-shadow: 1px 1px 1px var(--background-shadow-purple);
+    text-shadow: 1px 1px 1px var(--background);
     font-size: 2vw;
     transition: all .2s ease-out !important;
     -moz-transition: all .2s ease-out !important;
@@ -759,7 +766,7 @@ p.visible {
 .session-info .details .labels-info, .session-info .description p, .session-info article.teacher,
 .session-info .description li, .session-info .description h2 li:before, p.small  {
     color: var(--text-color);
-    text-shadow: 1px 1px 1px var(--background-shadow-purple);
+    /* text-shadow: 1px 1px 1px var(--background-shadow-purple); */
     font-family: 'Times Dot';
     font-style: normal;
     font-weight: normal;
