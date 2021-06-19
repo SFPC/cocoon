@@ -18,7 +18,7 @@ function addProgramDiv(program){
   return `
     <div class="programDiv" id="${program.urlTitle}">
     <h2>${program.date} ${program.time} · ${program.location} · <span>$${program.price}</span></h2>
-    <p><a href="/cocoon/programs/#${program.urlTitle}"><span id="title">${program.title}</span></a> by ${program.teacher}${TAstring}</p>
+    <p><a href="/cocoon/programs#${program.urlTitle}"><span id="title">${program.title}</span></a> by ${program.teacher}${TAstring}</p>
     </div>
   `
 }
