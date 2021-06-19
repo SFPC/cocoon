@@ -3,11 +3,13 @@ let programData;
 let defaultImage = "https://i.pinimg.com/originals/89/e1/45/89e14590966515edace21b257682efe6.jpg"
 loadSheetData(function(programs){
     sheetData = programs
-    if(location.hash.length <= 1) location.hash = "#"+programs[0].urlTitle
+    // if(location.hash.length <= 1) location.hash = "#"+programs[0].urlTitle
     let requestedPage =  location.hash.slice(1)
     for (let index = 0; index < programs.length; index++) {
         if(!programs[index].urlTitle) continue
-        $('#programs-nav ul').append(addNavigationLink(programs[index]))
+        // $('#programs-nav ul').append(addNavigationLink(programs[index]))
+        $('.programs-list').append(addProgramDiv(programs[index]))
+
         if(programs[index].urlTitle == requestedPage){
             programData = programs[index]
         }
@@ -53,6 +55,10 @@ function fillPageContent(program){
     hyphensToList(program.whatWillIGetFromThis, "#whatWillIGetFromThis")
     // $('#whatWillIGetFromThis').text(program.whatWillIGetFromThis)
     $('#class').fadeIn()
+    $('#class')[0].scrollIntoView(true)
+    $('#footer').fadeIn()
+    
+    
 }
 
 function hyphensToList(hyphenString, destinationSelector){

@@ -207,7 +207,8 @@ a.peek:hover {
     top: 0px;
     left: 0px;
     width: 100%;
-    display: block;
+    display: flex;
+    justify-content: space-between;
     padding: calc(var(--body-margin)/2) var(--body-margin);
     z-index: 100;
     transition: all 1.5s ease-out;
@@ -222,7 +223,9 @@ a.peek:hover {
     color: transparent;
     text-shadow: 0 0 3px var(--secondary-color);
 }
-
+#header h1 a {
+    text-decoration:none;
+}
 
 #footer {
     cursor: pointer;
