@@ -726,7 +726,7 @@ p a:hover {
 
 .programs-list p span {
   /* text-decoration: underline !important; */
-  cursor: pointer;
+  /* cursor: pointer; */
   /* text-shadow: 1px 1px 1px var(--background-shadow-purple); */
 }
 
