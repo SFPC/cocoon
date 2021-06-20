@@ -498,7 +498,7 @@ p.visible a  {
 }
 
 .applynow:hover, .applynow.touched {
-  transform: rotate(5deg);
+  transform: rotate(-5deg);
 }
 
 .applynow:hover p  {
@@ -1083,6 +1083,15 @@ a.expand.active {
       width: 27vw;
     }
     .withfriends p {
+      opacity: 1;
+      font-size: 4.5vw;
+    }
+
+    .applynow {
+      /* width: 110px; */
+      width: 27vw;
+    }
+    .applynow p {
       opacity: 1;
       font-size: 4.5vw;
     }
