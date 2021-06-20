@@ -31,26 +31,23 @@ function fillPageContent(program){
     if(program.image) $('#programImg').attr('src', program.image).attr('alt', program.imageAltText)
     $('.title').text(program.title)
     $('.teacherName').text(program.teacher)
-    $('.TAName').text(program.TA)
+    if(program.teacher2) $('.TAName').text(" with TA " + program.teacher2)
+    if(program.byline) $('#byline').text(program.byline)
     $('#date').text(program.date)
     $('#time').text(program.time)
     $('#location').text(program.location)
     $('.price').text("$"+program.price)
-    $('#teachers').text(program.teacher + " + " + program.TA)
     $('.application-link').attr('href', program.applicationLink)
     $('.organizerLink').attr('href', program.organizerLink)
     $('.deadline').text(program.deadline)
     $('#descriptionText').text(program.description)
     hyphensToList(program.expectations, "#expectations")
     hyphensToList(program.syllabus, "#syllabus")
-    if(program.teacherImg) $('#teacher .bio').css('background-image', `url(${program.teacherImg})`).attr('aria-label', `A photo of ${program.teacher}'s face`)
-    else $('#teacher .bio').css('background-image', `url(${defaultImage})`)
-    $('#teacher a').attr('href', program.teacherLink)
-    $('#teacher .bioText').text(program.teacherBio)
-    if(program.TAImg) $('#TA .bio').css('background-image', `url(${program.TAImg})`).attr('aria-label', `A photo of ${program.TA}'s face`)
-    else $('#TA .bio').css('background-image', `url(${defaultImage})`)
-    $('#TA a').attr('href', program.TALink)
-    $('#TA .bioText').text(program.TABio)
+    addTeacher(program, "")
+    if(program.teacher2) addTeacher(program, "2")
+    if(program.teacher3) addTeacher(program, "3")
+    if(program.teacher4) addTeacher(program, "4")
+    if(program.teacher5) addTeacher(program, "5")
     $('#organizers').text(program.organizers)
     // $('#isThisForMe').text(program.isThisForMe)
     hyphensToList(program.isThisForMe, "#isThisForMe")
@@ -69,4 +66,17 @@ function hyphensToList(hyphenString, destinationSelector){
     list.forEach(element => {
         if(element.length > 0) $(destinationSelector).append(`<li>${element}</li>`)
     });
+}
+function addTeacher(program, num){
+    let teacher = "teacher"+num
+    let teacherImg = program[teacher+"Img"] ? program[teacher+"Img"] : defaultImage
+    let teacherHTML = `
+    <article class="teacher" id="teacher${num}">
+    <div><span class="bio bio-2" style="background-image: url(${teacherImg})" role="img" aria-label="A photo of ${program[teacher]}'s face"></span></div><img src=""> <a class="teacher${num}Name" href="${program[teacher+"Link"]}">${program[teacher]}</a> (<span class="teacher${num}title">${program[teacher+"Title"]}</span>)
+    <span class="bioText">${program[teacher+"Bio"]}
+    </span>
+    </article>
+    <BR><BR>
+  `
+  $('#teacher-list').append(teacherHTML)
 }
