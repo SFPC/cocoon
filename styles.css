@@ -404,7 +404,7 @@ p.visible a  {
 
 .session-text p {
     color: var(--text-color);
-    text-shadow: 1px 1px 1px var(--background);
+    /* text-shadow: 1px 1px 1px var(--background); */
     transition: all .2s ease-out;
     -moz-transition: all .2s ease-out;
     ms-transition: all .2s ease-out;
@@ -645,7 +645,7 @@ p a:hover {
    /* text-shadow: 1px 1px 1px var(--background-shadow-purple); */
 }
 
-.session-info a {
+.session-info a, .programs-list p a {
   -moz-transition: all .2s ease-out;
   ms-transition: all .2s ease-out;
   o-transition: all .2s ease-out;
@@ -653,8 +653,8 @@ p a:hover {
 }
 
 .programs-list p a:hover {
-color: transparent !important;
-text-shadow: 0 0 3px var(--primary-color) !important;
+  color: transparent !important;
+  text-shadow: 0 0 3px var(--primary-color) !important;
 }
 
 .session-info a:hover {
