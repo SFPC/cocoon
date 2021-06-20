@@ -288,7 +288,7 @@ select#allSections {
   font-family: 'Times Dot';
   font-style: normal;
   font-weight: normal;
-  font-size: 1.2vw;
+  /* font-size: 1.2vw; */
   line-height: 10vh;
   color: var(--text-color);
   border-color: var(--text-color);
