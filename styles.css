@@ -432,7 +432,7 @@ p.visible a  {
 
 .withfriends:hover p  {
   opacity: 1 !important;
-  text-shadow: 1px 1px 1px var(--background-shadow-purple);
+  text-shadow: 1px 1px 1px var(--background-shadow-green);
 }
 .withfriends p {
     opacity: 1;
@@ -537,7 +537,7 @@ p,
 .break-sect {
     color: var(--text-color);
     font-family: 'Self Modern';
-    text-shadow: 1px 1px 1px var(--background-shadow-purple);
+    text-shadow: 1px 1px 1px var(--background-shadow-green);
     /* border-top: 3px dotted  var(--text-color); */
     text-align: center;
 }
@@ -635,14 +635,14 @@ p a:hover {
 .programs-list p span {
   /* text-decoration: underline !important; */
   cursor: pointer;
-  text-shadow: 1px 1px 1px var(--background-shadow-purple);
+  /* text-shadow: 1px 1px 1px var(--background-shadow-purple); */
 }
 
 
 .programs-list p a:after{
    content: '↝ ';
    font-weight: lighter;
-   text-shadow: 1px 1px 1px var(--background-shadow-purple);
+   /* text-shadow: 1px 1px 1px var(--background-shadow-purple); */
 }
 
 .session-info a {
