@@ -688,15 +688,15 @@ p a:hover {
   transition: all .2s ease-out;
 }
 
-.bio-1 {
+.bio-1, .bio-6 {
   border-radius: 100% 80%;
 }
 
-.bio-2 {
+.bio-2, .bio-4 {
   border-radius:  75% 100%;
 }
 
-.bio-3 {
+.bio-3, .bio-5, .bio-0 {
   border-radius: 90% 75%;
 }
 

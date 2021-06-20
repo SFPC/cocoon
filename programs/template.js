@@ -56,8 +56,8 @@ function fillPageContent(program){
     $('#class').fadeIn()
     $('#class')[0].scrollIntoView(true)
     $('#footer').fadeIn()
-    
-    
+
+
 }
 
 function hyphensToList(hyphenString, destinationSelector){
@@ -72,7 +72,7 @@ function addTeacher(program, num){
     let teacherImg = program[teacher+"Img"] ? program[teacher+"Img"] : defaultImage
     let teacherHTML = `
     <article class="teacher" id="teacher${num}">
-    <div><span class="bio bio-2" style="background-image: url(${teacherImg})" role="img" aria-label="A photo of ${program[teacher]}'s face"></span></div><img src=""> <a class="teacher${num}Name" href="${program[teacher+"Link"]}">${program[teacher]}</a> (<span class="teacher${num}title">${program[teacher+"Title"]}</span>)
+    <div><span class="bio bio-${num}" style="background-image: url(${teacherImg})" role="img" aria-label="A photo of ${program[teacher]}'s face"></span></div><img src=""> <a class="teacher${num}Name" href="${program[teacher+"Link"]}">${program[teacher]}</a> (<span class="teacher${num}title">${program[teacher+"Title"]}</span>)
     <span class="bioText">${program[teacher+"Bio"]}
     </span>
     </article>
