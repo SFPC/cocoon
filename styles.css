@@ -478,6 +478,77 @@ p.visible a  {
     cursor: pointer !important;
 }
 
+
+
+
+
+.applynow {
+    position: fixed;
+    bottom: calc(var(--body-margin)/2);
+    left: var(--body-margin);
+    /* width: 230px; */
+    width: 9.5vw;
+    z-index: 100;
+    cursor: pointer !important;
+    transition: all .2s ease-out;
+    -moz-transition: all .2s ease-out;
+    ms-transition: all .2s ease-out;
+    o-transition: all .2s ease-out;
+}
+
+.applynow:hover, .applynow.touched {
+  transform: rotate(5deg);
+}
+
+.applynow:hover p  {
+  opacity: 1 !important;
+  color: transparent;
+  text-shadow: 0 0 4px var(--primary-color);
+  text-decoration: none !important;
+}
+.applynow p {
+    opacity: 1;
+    text-shadow: 1px 1px 1px var(--background-shadow-green);
+    /* color: var(--primary-color); */
+    color: var(--text-color);
+    /* text-shadow: 1px 1px 1px var(--background-shadow-purple); */
+    /* , 1px 1px 10px var(--background-shadow); */
+    font-size: 1.5vw;
+    font-family: 'Self Modern';
+    font-style: italic;
+    line-height: 1;
+    font-weight: bold;
+    text-align: center;
+    /* font-size: 1.5em; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* width: 100px; */
+    /* text-shadow: 0 0 10px var(--background-shadow); */
+    display: table;
+    /* keep the background color wrapped tight */
+    margin: 0px auto 0px auto;
+    /* keep the table centered */
+    padding: 0px;
+    line-height: 1;
+    /* background-color: #ffffff5d; */
+    display: table;
+    margin: 0px auto 0px auto;
+    padding: 5px;
+    background-color: #ffffff80;
+    /* height: 33px; */
+    height: auto;
+    box-shadow: 0 0 10px white;
+    border-radius: 50%;
+    transition: all .2s ease-out;
+    -moz-transition: all .2s ease-out;
+    ms-transition: all .2s ease-out;
+    o-transition: all .2s ease-out;
+    cursor: pointer !important;
+}
+
+
 #header h1 span {
   font-size: 2vw !important;
   font-family: 'Self Modern';
