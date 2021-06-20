@@ -432,6 +432,7 @@ p.visible a  {
 
 .withfriends:hover p  {
   opacity: 1 !important;
+  color: transparent;
   text-shadow: 0 0 4px var(--primary-color);
   text-decoration: none !important;
 }
