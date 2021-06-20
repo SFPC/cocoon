@@ -700,7 +700,7 @@ p.visible, p:focus,  #info li,
 }
 
 a.social:before{
-   content: '↝ ';
+   content: '⁙ ';
 }
 
 p.visible {
@@ -829,7 +829,7 @@ p.visible {
 }
 
 .session-info .description li:before{
-   content: '↝ ';
+   content: '⁙ ';
 }
 
 .session-info .description {
