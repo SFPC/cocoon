@@ -14,12 +14,28 @@ if (ran2 == ran3) {
 
 
 $(window).on("load", function() {
+  $('<img src="../bgImages/layer' + ran + '.png" class="spiral" alt="" />').appendTo('.bgImg.classPage').hide().fadeIn(1000);
+  $('<img src="../bgImages/layer' + ran2 + '.png" class="spiral" alt="" />').appendTo('.bgImg.classPage').hide().fadeIn(3000);
     $('<div class="break-sect"><center><img src="../cocoonImages/cocoon' + ranCocoon + '.jpg"></center></div>').appendTo('.session-info');
 
 });
 
 $(window).scroll(function() {
 
+
+
+});
+
+$(".moreAbtCost").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#section-cost").offset().top - 100
+    }, 1000);
+});
+
+$(".moreAbtSchol").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#section-scholarships").offset().top - 100
+    }, 1000);
 });
 
 
