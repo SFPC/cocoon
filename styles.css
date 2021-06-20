@@ -1024,6 +1024,12 @@ a.expand.active {
       display: none;
     }
 
+
+    #footer {
+        background-image: linear-gradient(to bottom, rgba(187,144,94,0), rgba(187,144,94,1), rgba(187,144,94,1));
+
+    }
+
 }
 
 .expanded {
