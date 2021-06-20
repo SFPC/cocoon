@@ -25,7 +25,13 @@ $(window).scroll(function() {
   $(".moreAbtCost").click(function() {
       $('html, body').animate({
           scrollTop: $("#section-cost").offset().top - 100
-      }, 2000);
+      }, 1000);
+  });
+
+  $(".moreAbtSchol").click(function() {
+      $('html, body').animate({
+          scrollTop: $("#section-scholarships").offset().top - 100
+      }, 1000);
   });
 
 });
