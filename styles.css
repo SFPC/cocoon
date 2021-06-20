@@ -778,7 +778,7 @@ p a:hover {
 .programs.active:hover,
 .peek:hover .programs.active  */
 /* .programs.active,  */
-p.visible, p:focus,  #info li,
+p.visible, p:focus,  #info li
 {
     color: var(--text-color) !important;
     text-shadow: 1px 1px 1px var(--background);
