@@ -9,7 +9,7 @@ function loadSheetData(callback){
 }
 //This function will add an anchor link that jumps to the program
 function addNavigationLink(program){
-  return `<li><a href="#${program.urlTitle}"><em>${program.title}</em> by ${program.teacher}</a></li>`
+  return `<li><a href="#${program.urlTitle}"><em>${program.title}</em> by ${program.teacher}${TAstring}</a></li>`
 }
 //this creates the div html for the program, feel free to change any of the html or class names
 //data is pulled from the course object using ${}
