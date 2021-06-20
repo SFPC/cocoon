@@ -551,9 +551,9 @@ p.visible a  {
 
 
 #header h1 span {
-  font-size: 2vw !important;
+  /* font-size: 2vw !important;
   font-family: 'Self Modern';
-  line-height: 0.5;
+  line-height: 0.5; */
 }
 
 h1 {
@@ -995,6 +995,21 @@ a.expand.active {
     margin-top: 5vh;
 }
 
+
+.hidedesk {
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+}
+
+
+.hidemobile {
+  display: inline-block;
+  opacity: 1;
+  visibility: visible;
+}
+
+
 @media all and (orientation: landscape) {
     img.spiral {
         height: auto;
@@ -1015,8 +1030,14 @@ a.expand.active {
         --body-margin: 4vw;
     }
 
+    .hidedesk {
+      display: inline-block;
+      opacity: 1;
+      visibility: visible;
+    }
+
     #header {
-      padding: var(--body-margin) var(--body-margin);
+      /* padding: var(--body-margin) var(--body-margin); */
     }
 
     .session-info {
@@ -1113,6 +1134,12 @@ a.expand.active {
 
     .footer-title, .to {
       display: none;
+    }
+
+    .hidemobile, #header:hover .hidemobile {
+      display: none;
+      opacity: 0;
+      visibility: hidden;
     }
 
 }
