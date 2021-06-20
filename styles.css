@@ -810,6 +810,10 @@ p.visible {
 }
 
 
+#class .peek.programs.allprograms a {
+  margin-bottom: calc(var(--text-margin) * 2);
+}
+
 
 .programs.active, .programs.active:hover
 {
