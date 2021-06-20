@@ -780,8 +780,7 @@ p a:hover {
 /* .programs.active,  */
 p.visible, p:focus,  #info li,
 {
-    color: var(--text-color);
-    text-shadow: none;
+    color: var(--text-color) !important;
     text-shadow: 1px 1px 1px var(--background);
     font-size: 2vw;
     transition: all .2s ease-out !important;
