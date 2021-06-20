@@ -243,7 +243,8 @@ a.peek:hover {
     -moz-transition: all 1.2s ease-out;
     ms-transition: all 1.2s ease-out;
     o-transition: all 1.2s ease-out;
-    background-image: linear-gradient(to bottom, rgba(187,144,94,0), rgba(187,144,94,1), rgba(187,144,94,1));
+    /* background-image: linear-gradient(to bottom, rgba(187,144,94,0), rgba(187,144,94,1), rgba(187,144,94,1)); */
+    background-image: linear-gradient(to bottom, rgba(187,144,94,0), rgba(187,144,94,1));
     height: 10vh;
     color: var(--text-color);
     /* text-shadow: 1px 1px 1px var(--background-shadow-purple); */
@@ -650,6 +651,7 @@ p a:hover {
     ms-transition: all 2s ease-out;
     o-transition: all 2s ease-out;
     transition: all 2s ease-out;
+    margin-bottom: var(--text-margin);
 }
 
 .programs-list h2 span, .session h2 span, .session-info .labels-info span.price, .session-info p span.price{
