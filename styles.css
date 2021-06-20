@@ -672,6 +672,10 @@ p a:hover {
     /* line-height: inherit; */
 }
 
+.session-text {
+  margin-top: var(--text-margin);
+}
+
 .session-text p.visible,  p.visible {
   transition: all .2s ease-out !important;
   -moz-transition: all .2s ease-out !important;
