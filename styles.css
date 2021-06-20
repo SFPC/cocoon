@@ -294,7 +294,7 @@ select#allSections {
 }
 
 select#allSections:focus {
-  outline: 1px solid var(--background-shadow-purple);
+  outline: 1px solid var(--background-shadow-green);
 
 }
 
