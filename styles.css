@@ -657,7 +657,7 @@ p a:hover {
     ms-transition: all 2s ease-out;
     o-transition: all 2s ease-out;
     transition: all 2s ease-out;
-    margin-bottom: var(--text-margin);
+    margin-bottom: calc(var(--text-margin) * 2);
 }
 
 .programs-list h2 span, .session h2 span, .session-info .labels-info span.price, .session-info p span.price{
