@@ -15,7 +15,7 @@ if (ran2 == ran3) {
 
 $(window).on("load", function() {
   $('<img src="../bgImages/layer' + ran + '.png" class="spiral" alt="" />').appendTo('.bgImg.classPage').hide().fadeIn(1000);
-  $('<img src="../bgImages/layer' + ran2 + '.png" class="spiral" alt="" />').appendTo('.bgImg.classPage').hide().fadeIn(2000);
+  $('<img src="../bgImages/layer' + ran2 + '.png" class="spiral" alt="" />').appendTo('.bgImg.classPage').hide().fadeIn(3000);
     $('<div class="break-sect"><center><img src="../cocoonImages/cocoon' + ranCocoon + '.jpg"></center></div>').appendTo('.session-info');
 
 });
