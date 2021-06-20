@@ -802,6 +802,10 @@ p.visible {
     padding-inline-start: 0em;
 }
 
+.session-programs-title {
+    margin-top: var(--text-margin);
+  }
+
 .session-info section {
     margin-bottom: var(--text-margin);
     transition: all .2s ease-out;
