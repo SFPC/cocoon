@@ -432,10 +432,12 @@ p.visible a  {
 
 .withfriends:hover p  {
   opacity: 1 !important;
-  text-shadow: 1px 1px 1px var(--background-shadow-green);
+  text-shadow: 0 0 4px var(--primary-color);
+  text-decoration: none !important;
 }
 .withfriends p {
     opacity: 1;
+    text-shadow: 1px 1px 1px var(--background-shadow-green);
     /* color: var(--primary-color); */
     color: var(--text-color);
     /* text-shadow: 1px 1px 1px var(--background-shadow-purple); */
