@@ -22,6 +22,12 @@ $(window).on("load", function() {
 
 $(window).scroll(function() {
 
+  $(".moreAbtCost").click(function() {
+      $('html, body').animate({
+          scrollTop: $("#section-cost").offset().top - 100
+      }, 2000);
+  });
+
 });
 
 

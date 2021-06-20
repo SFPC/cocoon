@@ -678,7 +678,6 @@ p a:hover {
   /* margin-right: 10px; */
   /* margin-bottom: 10px; */
   vertical-align: bottom;
-  border-radius: 100%;
   border: 2px solid var(--text-color);
   width: 3.5vw;
   height: 3.5vw;
@@ -689,11 +688,22 @@ p a:hover {
   transition: all .2s ease-out;
 }
 
+.bio-1 {
+  border-radius: 100% 80%;
+}
+
+.bio-2 {
+  border-radius:  75% 100%;
+}
+
+.bio-3 {
+  border-radius: 90% 75%;
+}
+
 #section-teachers .bio {
   float: left;
   margin-right: 10px;
   margin-bottom: 10px;
-  border-radius: 100%;
   border: 2px solid var(--text-color);
   width: 8vw;
   height: 8vw;
