@@ -14,7 +14,7 @@ function addNavigationLink(program){
 //this creates the div html for the program, feel free to change any of the html or class names
 //data is pulled from the course object using ${}
 function addProgramDiv(program){
-  let TAstring = program.TA ? ` with TA ${program.TA}` : ""
+  let TAstring = program.teacher2 ? ` with TA ${program.teacher2}` : ""
   let byline = program.byline ? program.byline : program.teacher+TAstring
   let titleLink = `<a href="/cocoon/programs#${program.urlTitle}"><span id="title">${program.title}</span></a>`
   if(!program.live) titleLink = `<span id="title">${program.title}</span>`
