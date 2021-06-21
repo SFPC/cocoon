@@ -43,8 +43,8 @@ function fillPageContent(program){
     $('.price').text("$"+program.price)
     $('.application-link').attr('href', program.applicationLink)
     $('.organizerLink').attr('href', program.organizerLink)
-    $('.deadline').text(program.deadline)
-    $('#descriptionText').text(program.description)
+    $('.deadline').html(program.deadline)
+    $('#descriptionText').html(program.description)
     if (program.expectations) hyphensToList(program.expectations, "#expectations")
     else{
         $('#expectations').parent().hide()
