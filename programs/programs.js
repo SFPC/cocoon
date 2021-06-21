@@ -55,5 +55,6 @@ function TSVToJSONArray(str, delimiter = "\t") {
 }
 
 function openPage(hash){
+  location.hash= ""
   location.href = `/cocoon/programs#${hash}`
 }
