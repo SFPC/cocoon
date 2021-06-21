@@ -16,7 +16,7 @@ function addNavigationLink(program){
 function addProgramDiv(program){
   let TAstring = program.teacher2 ? ` with ${program.teacher2}` : ""
   let byline = program.byline ? program.byline : program.teacher+TAstring
-  let url = location.pathname.includes("programs") ? `../programs#${program.urlTitle}` : `programs#${program.urlTitle}`
+  let url = location.pathname.includes("programs") ? `/cocoon/programs#${program.urlTitle}` : `/cocoon/programs#${program.urlTitle}`
   let titleLink = `<a href="${url}"><span id="title">${program.title}</span></a>`
   if(!program.live) titleLink = `<span id="title">${program.title}</span>`
   return `
