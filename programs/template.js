@@ -34,7 +34,7 @@ function fillPageContent(program){
     if(program.byline) $('#byline').text(program.byline)
     $('#date').text(program.date)
     $('#time').text(program.time)
-    $('#location').text(program.location)
+    $('#location').html(program.location)
     if(program.location.includes("In Person")){
         $('#section-covid, option[value="section-covid"]').show()
         $('#location').html($('#location').html() + ` <a href="#section-covid">Covid-19 Safety</a>`)
@@ -86,9 +86,10 @@ function hyphensToList(hyphenString, destinationSelector){
 function addTeacher(program, num){
     let teacher = "teacher"+num
     let teacherImg = program[teacher+"Img"] ? program[teacher+"Img"] : defaultImage
+    let href = program[teacher+"Link"] ? `href='${program[teacher+"Link"]}'` : ''
     let teacherHTML = `
     <article class="teacher" id="teacher${num}">
-    <div><span class="bio bio-${num}" style="background-image: url(${teacherImg})" role="img" aria-label="A photo of ${program[teacher]}'s face"></span></div><img src=""> <a class="teacher${num}Name" href="${program[teacher+"Link"]}">${program[teacher]}</a> (<span class="teacher${num}title">${program[teacher+"Title"]}</span>)
+    <div><span class="bio bio-${num}" style="background-image: url(${teacherImg})" role="img" aria-label="A photo of ${program[teacher]}'s face"></span></div><img src=""> <a class="teacher${num}Name" ${href}>${program[teacher]}</a> (<span class="teacher${num}title">${program[teacher+"Title"]}</span>)
     <span class="bioText">${program[teacher+"Bio"]}
     </span>
     </article>
