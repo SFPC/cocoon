@@ -587,6 +587,20 @@ p.visible a  {
 }
 
 
+.sensory-commons #location {
+  background: rgb(160 205 255);
+  border: 1px solid yellow;
+    border-radius: 100%;
+    color: var(limegreen);
+    padding: 0px 20px;
+    text-shadow: none;
+    font-family: 'Self Modern';
+    font-style: italic;
+    width: fit-content;
+    float: left;
+}
+
+
 #header h1 span {
   /* font-size: 2vw !important;
   font-family: 'Self Modern';
