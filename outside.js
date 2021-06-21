@@ -33,32 +33,50 @@ $(window).on("load", function() {
 $(document).ready(function() {
     bgR = 239, bgG = 154, bgB = 131;
     // $("body").get(0).style.setProperty("--background", "rgb(" + bgR + "," + bgG + "," + bgB + ")");
+
+    $('.intro1').removeClass('hideme').addClass('showme');
+
+    $(window).scroll(function() {
+
+      $('.hideme').each( function(i){
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            if( bottom_of_window > bottom_of_object ){
+                $(this).addClass('showme');
+            }
+            if( bottom_of_window < bottom_of_object ){
+                $(this).removeClass('showme');
+            }
+        });
+
+
+
+
+
+        var scroll = $(window).scrollTop();
+        var diff = $(document).height() - $(window).height();
+
+        console.log("Scroll " + scroll);
+        console.log("Diff " + diff);
+
+        // console.log(diff);
+
+        bgR = bgR + 5;
+        bgG = bgG + 5;
+        bgB = bgB + 5;
+
+        if ((scroll + 100 >= diff && scroll <= diff)) {
+            endlessScrollText();
+            activeLinks();
+            // lighterBG();
+        };
+
+        if ($(window).scrollTop() == 0) {
+            fadeOutAtTop();
+        }
+    });
+
 });
-
-$(window).scroll(function() {
-    var scroll = $(window).scrollTop();
-    var diff = $(document).height() - $(window).height();
-
-    console.log("Scroll " + scroll);
-    console.log("Diff " + diff);
-
-    // console.log(diff);
-
-    bgR = bgR + 5;
-    bgG = bgG + 5;
-    bgB = bgB + 5;
-
-    if ((scroll + 100 >= diff && scroll <= diff)) {
-        endlessScrollText();
-        activeLinks();
-        // lighterBG();
-    };
-
-    if ($(window).scrollTop() == 0) {
-        fadeOutAtTop();
-    }
-});
-
 
 if ( window.location.hash === '#programs' ) {
   showPrograms();
@@ -73,6 +91,26 @@ $(".top").click(function() {
     fadeOutAtTop();
     return false;
 });
+
+// $(window).on('resize scroll', function() {
+//     if ($('.intro1').isInViewport()) {
+//         $('.intro1').addClass('introhover');
+//     } else {
+//         $('.intro1').removeClass('introhover');
+//     }
+//
+//     if ($('.intro2').isInViewport()) {
+//         $('.intro2').addClass('introhover');
+//     } else {
+//         $('.intro2').removeClass('introhover');
+//     }
+//
+//     if ($('.intro3').isInViewport()) {
+//         $('.intro3').addClass('introhover');
+//     } else {
+//         $('.intro3').removeClass('introhover');
+//     }
+// });
 
 
 function showPrograms(){
@@ -179,3 +217,14 @@ function activeLinks() {
         }
     }, false);
 }
+
+//
+// $.fn.isInViewport = function() {
+//     var elementTop = $(this).offset().top;
+//     var elementBottom = elementTop + $(this).outerHeight();
+//
+//     var viewportTop = $(window).scrollTop();
+//     var viewportBottom = viewportTop + $(window).height();
+//
+//     return elementBottom > viewportTop && elementTop < viewportBottom;
+// };

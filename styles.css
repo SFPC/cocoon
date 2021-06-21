@@ -364,13 +364,38 @@ p:hover span.cocoon {
 .intro-text {
     position: relative;
     z-index: 12;
-    color: var(--background);
+    /* color: var(--background); */
+    /* color: var(--text-color);
+    text-shadow: 1px 1px 1px var(--background); */
     padding-top: var(--text-margin);
     transition: all 2s ease-out;
     -moz-transition: all 2s ease-out;
     ms-transition: all 2s ease-out;
     o-transition: all 2s ease-out;
 }
+
+.intro-text.active {
+  color: var(--text-color);
+  text-shadow: 1px 1px 1px var(--background);
+}
+
+.intro-text.inactive {
+  color: var(--background);
+}
+
+
+.hideme
+{
+    color: var(--background);
+}
+
+.showme {
+  color: var(--text-color) !important;
+  text-shadow: 1px 1px 1px var(--background) !important;
+}
+
+
+
 
 .intro-text:hover h1 {
     color: var(--text-color);
@@ -392,8 +417,10 @@ p.visible a  {
 
 
 /* .intro-text p:hover, */
-.intro-text p:hover, .intro-text p:focus-within,
-.intro-text.touched {
+/* .intro-text p:hover, .intro-text p:focus-within,
+.intro-text.touched */
+.introhover
+ {
     color: var(--text-color);
     text-shadow: 1px 1px 1px var(--background);
     transition: all 2s ease-out;
@@ -621,7 +648,9 @@ p,
     width: 30vw;
     height: auto;
     /* border: 2px solid var(--text-color); */
-    border-image: url(https://lovelanguages.melaniehoff.com/wp-content/themes/dlltheme/img/broider.png) 28 / 28px / 0 round;
+    /* border-image: url(https://lovelanguages.melaniehoff.com/wp-content/themes/dlltheme/img/broider.png) 28 / 28px / 0 round; */
+
+    border-image: url(lineborder.png) 28 / 28px / 0 round;
     border-width: 28px;
     border-style: solid;
     /* border-width: 2px;
