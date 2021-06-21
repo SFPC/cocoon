@@ -14,12 +14,12 @@ loadSheetData(function(programs){
             programData = programs[index]
         }
     }
-    $('#programs-nav a').click(findProgramAndLoad)
+    // if(location.pathname.includes("programs")) $('.programs-list a').click(findProgramAndLoad)
     if(programData) fillPageContent(programData);
 })
-function findProgramAndLoad(e){
+function findProgramAndLoad(urlTitle){
     for (let index = 0; index < sheetData.length; index++) {
-        if(sheetData[index].urlTitle == e.currentTarget.hash.slice(1)){
+        if(sheetData[index].urlTitle == urlTitle){
             fillPageContent(sheetData[index])
             break
         }
@@ -40,6 +40,9 @@ function fillPageContent(program){
         $('#location').html($('#location').html() + ` <a href="#section-covid" class="moreAbtCovid">Covid-19 Safety</a>`)
         $('#section-teachers').html($('#section-teachers').html().replace("organized", "supported"))
     }
+    else{
+        $('#section-covid, option[value="section-covid"]').hide()
+    }
     $('.price').text("$"+program.price)
     $('.application-link').attr('href', program.applicationLink)
     $('.organizerLink').attr('href', program.organizerLink)
@@ -55,6 +58,7 @@ function fillPageContent(program){
         $('#syllabus').parent().hide()
         $('#allSections option[value="section-syllabus"]')
     }
+    $('#teacher-list').empty()
     addTeacher(program, "")
     if(program.teacher2) addTeacher(program, "2")
     if(program.teacher3) addTeacher(program, "3")

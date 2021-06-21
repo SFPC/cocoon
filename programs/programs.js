@@ -55,5 +55,11 @@ function TSVToJSONArray(str, delimiter = "\t") {
 }
 
 function openPage(hash){
-  location.href = `/cocoon/programs#${hash}`
+  if(location.pathname.includes("programs")){
+    findProgramAndLoad(hash)
+  }
+  else {
+    location.hash= ""
+    location.href = `/cocoon/programs#${hash}`
+  }
 }
