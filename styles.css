@@ -732,7 +732,7 @@ p a:hover {
   border-radius:  75% 100%;
 }
 
-.bio-3, .bio-5, .bio-0 {
+.bio-3, .bio-5, .bio-0, .bio- {
   border-radius: 90% 75%;
 }
 
@@ -961,7 +961,7 @@ p.visible {
     font-family: 'Self Modern';
     font-style: italic;
     font-weight: bold;
-    /* text-decoration: underline; */
+    text-decoration: underline;
     margin-bottom:3vw;
   }
 
@@ -1036,6 +1036,7 @@ p a.expand.active {
 
 a.expand {
     text-decoration: underline;
+    /* border-bottom: 2px dotted var(--text-color); */
     display: inline;
     margin: 0 3px;
 }
