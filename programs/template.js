@@ -26,8 +26,7 @@ function findProgramAndLoad(e){
     }
 }
 function fillPageContent(program){
-    console.log(program)
-    console.log(program.imageAltText)
+    $('#class').addClass(program.urlTitle)
     if(program.image) $('#programImg').attr('src', program.image).attr('alt', program.imageAltText)
     $('.title').text(program.title)
     $('.teacherName').text(program.teacher)
