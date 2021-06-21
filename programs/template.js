@@ -29,8 +29,11 @@ function fillPageContent(program){
     $('#class').addClass(program.urlTitle)
     if(program.image) $('#programImg').attr('src', program.image).attr('alt', program.imageAltText)
     $('.title').text(program.title)
+    $('#byline').html(`<span class="teacherName"></span><span class="TAName"></span>`)
+
     $('.teacherName').text(program.teacher)
     if(program.teacher2) $('.TAName').text(" with " + program.teacher2)
+    else $('.TAName').text("")
     if(program.byline) $('#byline').text(program.byline)
     $('#date').text(program.date)
     $('#time').text(program.time)
@@ -48,12 +51,17 @@ function fillPageContent(program){
     $('.organizerLink').attr('href', program.organizerLink)
     $('.deadline').html(program.deadline)
     $('#descriptionText').html(program.description)
-    if (program.expectations) hyphensToList(program.expectations, "#expectations")
+    if (program.expectations){
+         hyphensToList(program.expectations, "#expectations")
+    }
     else{
         $('#expectations').parent().hide()
         $('#allSections option[value="section-expectations"]')
     }
-    if (program.syllabus) hyphensToList(program.syllabus, "#syllabus")
+    if (program.syllabus){
+         $('#syllabus').parent().show()
+         hyphensToList(program.syllabus, "#syllabus")
+    }
     else{
         $('#syllabus').parent().hide()
         $('#allSections option[value="section-syllabus"]')
@@ -67,12 +75,18 @@ function fillPageContent(program){
     if(program.teacher6) addTeacher(program, "6")
     $('#organizers').text(program.organizers)
     // $('#isThisForMe').text(program.isThisForMe)
-    if (program.isThisForMe) hyphensToList(program.isThisForMe, "#isThisForMe")
+    if (program.isThisForMe){
+         $('#isThisForMe').parent().show()
+         hyphensToList(program.isThisForMe, "#isThisForMe")
+    }
     else{
         $('#isThisForMe').parent().hide()
         $('#allSections option[value="section-forme"]')
     }
-    if (program.whatWillIGetFromThis) hyphensToList(program.whatWillIGetFromThis, "#whatWillIGetFromThis")
+    if (program.whatWillIGetFromThis){
+        $('#whatWillIGetFromThis').parent().show()
+        hyphensToList(program.whatWillIGetFromThis, "#whatWillIGetFromThis")
+    }
     else $('#whatWillIGetFromThis').parent().hide()
     // $('#whatWillIGetFromThis').text(program.whatWillIGetFromThis)
     $('#class').fadeIn()

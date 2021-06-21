@@ -56,6 +56,7 @@ function TSVToJSONArray(str, delimiter = "\t") {
 
 function openPage(hash){
   if(location.pathname.includes("programs")){
+    location.hash= hash
     findProgramAndLoad(hash)
   }
   else {
