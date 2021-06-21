@@ -818,13 +818,18 @@ p.visible, p:focus,  #info li
 {
     color: var(--text-color) !important;
     text-shadow: 1px 1px 1px var(--background);
-    font-size: 2vw;
     transition: all .2s ease-out !important;
     -moz-transition: all .2s ease-out !important;
     ms-transition: all .2s ease-out !important;
     o-transition: all .2s ease-out !important;
     /* margin-bottom: 0px !important; */
 }
+
+
+p.visible,  #info li{
+  font-size: 2vw;
+}
+
 
 #info ul, #info li {
   list-style: none;
