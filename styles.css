@@ -647,11 +647,8 @@ p,
 .break-sect img {
     width: 30vw;
     height: auto;
-    /* border: 2px solid var(--text-color); */
-    /* border-image: url(https://lovelanguages.melaniehoff.com/wp-content/themes/dlltheme/img/broider.png) 28 / 28px / 0 round; */
-
-    border-image: url(lineborder.png) 28 / 28px / 0 round;
-    border-width: 28px;
+    border-image: url(lineborder.png) 34 / 18px / 0 round;
+    border-width: 18px;
     border-style: solid;
     /* border-width: 2px;
     border-color: var(--text-color);
