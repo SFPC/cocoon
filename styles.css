@@ -1037,6 +1037,7 @@ a.expand {
     /* border-bottom: 2px dotted var(--text-color); */
     display: inline;
     margin: 0 3px;
+    cursor: pointer;
 }
 
 a.expand.active {
