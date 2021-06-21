@@ -1218,3 +1218,10 @@ a.expand.active {
 .expanded {
     display: none;
 }
+.sensory-commons #location {
+    background-color: limegreen;
+      width: fit-content;
+      padding: .3em;
+      float: left;
+      border-radius: 121%;
+  }
