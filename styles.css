@@ -961,7 +961,7 @@ p.visible {
     font-family: 'Self Modern';
     font-style: italic;
     font-weight: bold;
-    /* text-decoration: underline; */
+    text-decoration: underline;
     margin-bottom:3vw;
   }
 
