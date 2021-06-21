@@ -818,13 +818,18 @@ p.visible, p:focus,  #info li
 {
     color: var(--text-color) !important;
     text-shadow: 1px 1px 1px var(--background);
-    font-size: 2vw;
     transition: all .2s ease-out !important;
     -moz-transition: all .2s ease-out !important;
     ms-transition: all .2s ease-out !important;
     o-transition: all .2s ease-out !important;
     /* margin-bottom: 0px !important; */
 }
+
+
+p.visible,  #info li{
+  font-size: 2vw;
+}
+
 
 #info ul, #info li {
   list-style: none;
@@ -1127,9 +1132,10 @@ a.expand.active {
     h2, .programs-list h2, .session-info h2, .session-info .details .labels,
     p.visible,  #info li, .session-info .details .labels-info, .session-info .description p, .session-info article.teacher,
     .session-info .description li, .session-info .description h2 li:before,
-    #footer, select#allSections   {
+    #footer, select#allSections, .sitecredits   {
         font-size: 4.5vw !important;
     }
+
     p,
     .peek a {
         font-size: 8vw;
