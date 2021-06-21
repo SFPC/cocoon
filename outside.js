@@ -1,7 +1,7 @@
 var counter = 0;
 var bgImg = $('.layer1');
 var ran, ran2, ran3;
-ranCocoon = Math.floor(Math.random() * 8);
+ranCocoon = Math.floor(Math.random() * 12);
 ran = Math.floor(Math.random() * 22);
 ran2 = Math.floor(Math.random() * 22);
 ran3 = Math.floor(Math.random() * 22);
@@ -24,7 +24,7 @@ $(window).on("load", function() {
     $('<img src="bgImages/layer2.png" class="spiral" alt="" />').appendTo('.bgImg').hide().fadeIn(2000);
     $('<img src="bgImages/layer3.png" class="spiral" alt="" />').appendTo('.bgImg').hide().fadeIn(3000);
     $('<div class="break-sect"><center><img src="cocoonImages/cocoon' + ranCocoon + '.jpg"></center></div>').appendTo('#shell');
-    $('<div class="again "><h2>↓ (...over and over again) ↓</h2></div>').appendTo('#shell');
+    $('<div class="again"><h2>(...over and over again)<BR><span>|</span><BR><span>|</span><BR><span>|</span><BR><span>|</span><BR><span>|</span><BR><span>↓</span></h2></div>').appendTo('#shell');
 
 
 
@@ -53,7 +53,7 @@ $(document).ready(function() {
             if( bottom_of_window < bottom_of_object ){
                 $(this).removeClass('showme');
             }
-            
+
         });
     }
 
@@ -164,7 +164,9 @@ function endlessScrollText() {
     }
     ranCocoon = Math.floor(Math.random() * 8);
     $('<div class="break-sect break-new"><center><img src="cocoonImages/cocoon' + ranCocoon + '.jpg"></center></div>').appendTo('#shell');
-    $('<div class="again break-new"><h2>↓ (...over and over again) ↓</h2></div>').appendTo('#shell');
+
+    $('<div class="again break-new"><h2>(...over and over again)<BR><span>|</span><BR><span>|</span><BR><span>|</span><BR><span>|</span><BR><span>|</span><BR><span>↓</span></h2></div>').appendTo('#shell');
+
 
     $('<img src="bgImages/layer' + ran + '.png" class="spiral newBg" alt="" />').appendTo('.bgImg').hide().fadeIn(1000);
     $('<img src="bgImages/layer' + ran + '.png" class="spiral newBg" alt="" />').appendTo('.bgImg').hide().fadeIn(2000);
