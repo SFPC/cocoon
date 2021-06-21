@@ -37,7 +37,7 @@ function fillPageContent(program){
     $('#location').text(program.location)
     if(program.location.includes("In Person")){
         $('#section-covid, option[value="section-covid"]').show()
-        $('#location').html($('#location').html() + ` <a href="#section-covid">Covid-19 Safety</a>`)
+        $('#location').html($('#location').html() + ` <a href="#section-covid" class="moreAbtCovid">Covid-19 Safety</a>`)
     }
     $('.price').text("$"+program.price)
     $('.application-link').attr('href', program.applicationLink)
@@ -48,12 +48,12 @@ function fillPageContent(program){
     else{
         $('#expectations').parent().hide()
         $('#allSections option[value="section-expectations"]')
-    } 
+    }
     if (program.syllabus) hyphensToList(program.syllabus, "#syllabus")
     else{
         $('#syllabus').parent().hide()
         $('#allSections option[value="section-syllabus"]')
-    } 
+    }
     addTeacher(program, "")
     if(program.teacher2) addTeacher(program, "2")
     if(program.teacher3) addTeacher(program, "3")
@@ -65,7 +65,7 @@ function fillPageContent(program){
     else{
         $('#isThisForMe').parent().hide()
         $('#allSections option[value="section-forme"]')
-    } 
+    }
     if (program.whatWillIGetFromThis) hyphensToList(program.whatWillIGetFromThis, "#whatWillIGetFromThis")
     else $('#whatWillIGetFromThis').parent().hide()
     // $('#whatWillIGetFromThis').text(program.whatWillIGetFromThis)
