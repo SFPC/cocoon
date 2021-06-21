@@ -291,6 +291,18 @@ a.peek:hover {
   line-height: 1.3;
   color: var(--text-color);
   margin-bottom: calc(var(--text-margin)*2);
+  transition: all .2s ease-out;
+  -moz-transition: all .2s ease-out;
+  ms-transition: all .2s ease-out;
+  o-transition: all .2s ease-out;
+}
+
+.sitecredits a {
+
+  transition: all .2s ease-out;
+  -moz-transition: all .2s ease-out;
+  ms-transition: all .2s ease-out;
+  o-transition: all .2s ease-out;
 }
 
 .sitecredits a:hover {
