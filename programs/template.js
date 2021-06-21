@@ -60,6 +60,7 @@ function fillPageContent(program){
     if(program.teacher3) addTeacher(program, "3")
     if(program.teacher4) addTeacher(program, "4")
     if(program.teacher5) addTeacher(program, "5")
+    if(program.teacher6) addTeacher(program, "6")
     $('#organizers').text(program.organizers)
     // $('#isThisForMe').text(program.isThisForMe)
     if (program.isThisForMe) hyphensToList(program.isThisForMe, "#isThisForMe")
