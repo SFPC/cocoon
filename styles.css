@@ -635,6 +635,7 @@ h1 {
     -moz-transition: all .2s ease-out;
     ms-transition: all .2s ease-out;
     o-transition: all .2s ease-out;
+    line-height: 1;
 }
 
 h1.left {
