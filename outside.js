@@ -38,6 +38,8 @@ $(document).ready(function() {
 
     $(window).scroll(function() {
 
+
+
       $('.hideme').each( function(i){
             var bottom_of_object = $(this).offset().top + $(this).outerHeight();
             var bottom_of_window = $(window).scrollTop() + $(window).height();
@@ -133,9 +135,9 @@ function fadeOutAtTop() {
     });
 
 
-    $(".programs-list").addClass('hide');
-    $(".programs span").fadeIn();
-    $(".programs").removeClass('active');
+    // $(".programs-list").addClass('hide');
+    // $(".programs span").fadeIn();
+    // $(".programs").removeClass('active');
 
     counter = 0;
 }

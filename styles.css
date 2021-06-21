@@ -663,7 +663,7 @@ p,
 }
 
 .break-sect img:hover {
-    border: 2px solid var(--primary-color);
+    /* border: 2px solid var(--primary-color); */
 }
 
 .peek a {
