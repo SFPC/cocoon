@@ -1,7 +1,7 @@
 var counter = 0;
 var bgImg = $('.layer1');
 var ran, ran2, ran3;
-ranCocoon = Math.floor(Math.random() * 8);
+ranCocoon = Math.floor(Math.random() * 14);
 ran = Math.floor(Math.random() * 22);
 ran2 = Math.floor(Math.random() * 22);
 ran3 = Math.floor(Math.random() * 22);
