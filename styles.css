@@ -1159,13 +1159,15 @@ a.expand.active {
     }
     .break-sect img {
         width: 60vw;
+        border-image: url(lineborder.png) 38 / 12px / 0 round;
+        border-width: 11px;
     }
 
 
 
 
     h1,
-    h2, .programs-list h2, .session-info h2, .session-info .details .labels,
+    h2, .programs-list h2,  .session-info .details .labels,
     p.visible,  #info li, .session-info .details .labels-info, .session-info .description p, .session-info article.teacher,
     .session-info .description li, .session-info .description h2 li:before,
     #footer, select#allSections, .sitecredits   {
@@ -1173,8 +1175,13 @@ a.expand.active {
     }
 
     p,
-    .peek a, .session-programs-title{
+    .peek a, .session-info h2,
+    .session-info .description h2{
         font-size: 8vw;
+    }
+
+    .session-programs-title {
+      text-decoration: none;
     }
 
     .session-info .description li {
@@ -1234,7 +1241,7 @@ a.expand.active {
     }
 
 
-    .bio {
+    #section-teachers .bio {
       width: 20vw;
       height: 20vw;
     }
