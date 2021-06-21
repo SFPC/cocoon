@@ -283,6 +283,16 @@ a.peek:hover {
   float:right;
 }
 
+.sitecredits {
+  font-family: 'Times Dot';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.5vw;
+  line-height: 1.3;
+  color: var(--text-color);
+  margin-bottom: calc(var(--text-margin)*2);
+}
+
 select#allSections {
   background: var(--background);
   font-family: 'Times Dot';
@@ -935,7 +945,7 @@ p.visible {
 }
 
 .session-programs-title {
-    margin-top: var(--text-margin);
+    margin-top: calc(var(--text-margin) *2);
   }
 
 .session-info section {
