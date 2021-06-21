@@ -31,7 +31,7 @@ function fillPageContent(program){
     if(program.image) $('#programImg').attr('src', program.image).attr('alt', program.imageAltText)
     $('.title').text(program.title)
     $('.teacherName').text(program.teacher)
-    if(program.teacher2) $('.TAName').text(" with TA " + program.teacher2)
+    if(program.teacher2) $('.TAName').text(" with " + program.teacher2)
     if(program.byline) $('#byline').text(program.byline)
     $('#date').text(program.date)
     $('#time').text(program.time)
