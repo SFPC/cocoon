@@ -38,8 +38,8 @@
 
       <div id="header">
           <div class="cocoon top"><h1><a href="#top"><span class="hidedesk">SFPC</span> COCOON</h1></a></div>
-          <div class="cocoon"><h1><a href="https://sfpc.io/cocoon/programs">Our Programs</a></h1></div>
-          <div class="cocoon hidemobile"><h1><a href="https://sfpc.io">SFPC 2021</a></h1></div>
+          <div class="cocoon"><h1><a href="/cocoon/programs">Our Programs</a></h1></div>
+          <div class="cocoon hidemobile"><h1><a href="/">SFPC 2021</a></h1></div>
       </div>
 
       <div id="footer">
@@ -64,7 +64,7 @@
                     <a tabindex="0" class="expand">Zainab Aliyu<span class="expanded"> ("Zai") is interested in the material affect of the "immaterial." She contextualizes the cybernetic and temporal entanglement embedded within societal dynamics to understand how all sociotechnological systems of control are interconnected, and how we are all implicated through time. She often dreams, experiments and inquires through built virtual environments, printed matter, video, archives, writing, installation and community-participatory (un)learning</span>,</a>
 
                     <span class="bio bio-2" style="background-image: url('programs/bioImages/todd.jpg')" role="img"></span>
-                    <a tabindex="0" class="expand">Todd Anderson<span class="expanded"> is a digital artist, organizer and educator based in NYC. He likes to make weird websites, browser extensions, interactive digital poems, video games and experimental plays about the Internet. He is currently teaching and learning about online performance and the history of computer viruses. In addition to SFPC, Todd helps out as an organizer for Babycastles and the Illuminator Projection Collective. He is probably best known as the host and curator of WordHack, a 7-year running language+technology talk series at Babycastles in NYC. https://toddwords.com</span>,</a>
+                    <a tabindex="0" class="expand">Todd Anderson<span class="expanded"> is a digital artist, organizer and educator based in NYC. He likes to make weird websites, browser extensions, interactive digital poems, video games and experimental plays about the Internet. He is currently teaching and learning about online performance and the history of computer viruses. In addition to SFPC, Todd helps out as an organizer for Babycastles and the Illuminator Projection Collective. He is probably best known as the host and curator of WordHack, a 7-year running language+technology talk series at Babycastles in NYC.</span>,</a>
 
                     <span class="bio bio-3" style="background-image: url('programs/bioImages/neta.jpg')" role="img"></span>
                     <a tabindex="0" class="expand">Neta Bomani<span class="expanded"> is an abolitionist, learner and educator who is interested in parsing information and histories while making things by hand with human and non-human computers. Neta’s work combines archives, oral histories, computation, social practices, printmaking, paper engineering, zine making and workshops to create do it yourself artifacts. Neta received a graduate degree in Interactive Telecommunications from the Tisch School of the Arts at New York University. Neta has taught at the School for Poetic Computation, the New School and Yale University</span>,</a>
@@ -135,8 +135,8 @@
                     <a class="peek programs active" onclick="showPrograms()" onkeypress="showPrograms()" tabindex="0">P r o g r a m s</a>
                 </div> -->
 
-                <div class="peek programs active session-programs-title"  id="programs">
-                    <a class="peek programs active" tabindex="0">P r o g r a m s</a>
+                <div class="programs session-programs-title"  id="programs">
+                    P r o g r a m s
                 </div>
 
 
@@ -162,7 +162,7 @@
             </div>
 
             <div class="applynow">
-                <a target="_blank" href="https://withfriends.co/school_for_poetic_computation/join"><img src="pupa.png" alt="A pile of insect pupa, soft silky eggs">
+                <a target="_blank" href="https://forms.gle/yH7AV2xfF44V8Eek9"><img src="pupa.png" alt="A pile of insect pupa, soft silky eggs">
                     <p class="support-us">Apply<BR>Now</p>
                 </a>
             </div>
@@ -178,7 +178,6 @@
                     for (let index = 0; index < programs.length; index++) {
                         $('.programs-list').append(addProgramDiv(programs[index]))
                     }
-                    $('#programs a').trigger('click')
                 })
             </script>
 

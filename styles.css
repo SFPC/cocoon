@@ -951,6 +951,18 @@ p.visible {
 
 .session-programs-title {
     margin-top: calc(var(--text-margin) *2);
+    font-size: 4vw;
+    display: inline-block;
+    text-align: justify;
+    text-align-last: justify;
+    letter-spacing: -0.1em;
+    width: 100%;
+    color: var(--text-color);
+    font-family: 'Self Modern';
+    font-style: italic;
+    font-weight: bold;
+    /* text-decoration: underline; */
+    margin-bottom:3vw;
   }
 
 .session-info section {
