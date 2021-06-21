@@ -17,7 +17,7 @@ function addProgramDiv(program){
   let TAstring = program.teacher2 ? ` with ${program.teacher2}` : ""
   let byline = program.byline ? program.byline : program.teacher+TAstring
   let url = location.pathname.includes("programs") ? `../programs#${program.urlTitle}` : `programs#${program.urlTitle}`
-  let titleLink = `<a href="${url}"><span id="title">${program.title}</span></a>`
+  let titleLink = `<a href="javascript:void(0)" onclick="openPage('${program.urlTitle}')"><span id="title">${program.title}</span></a>`
   if(!program.live) titleLink = `<span id="title">${program.title}</span>`
   return `
     <div class="programDiv" id="${program.urlTitle}">
@@ -52,4 +52,8 @@ function TSVToJSONArray(str, delimiter = "\t") {
 
   // return the array
   return JSON.parse(JSON.stringify(arr));
+}
+
+function openPage(hash){
+  location.href = `/cocoon/programs#${hash}`
 }
