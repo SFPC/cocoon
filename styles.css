@@ -293,6 +293,11 @@ a.peek:hover {
   margin-bottom: calc(var(--text-margin)*2);
 }
 
+.sitecredits a:hover {
+  color: transparent;
+  text-shadow: 0 0 3px var(--secondary-color);
+}
+
 select#allSections {
   background: var(--background);
   font-family: 'Times Dot';
