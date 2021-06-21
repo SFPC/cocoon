@@ -469,10 +469,10 @@ p.visible a  {
 
 .withfriends {
     position: fixed;
-    bottom: calc(var(--body-margin)/2);
-    right: var(--body-margin);
+    bottom: 0px;
+    right: 0px;
     /* width: 230px; */
-    width: 9.5vw;
+    width: 12vw;
     z-index: 100;
     cursor: pointer !important;
     transition: all .2s ease-out;
@@ -482,7 +482,7 @@ p.visible a  {
 }
 
 .withfriends:hover, .withfriends.touched {
-  transform: rotate(5deg);
+  /* transform: rotate(-5deg); */
 }
 
 .withfriends:hover p  {
@@ -506,9 +506,9 @@ p.visible a  {
     text-align: center;
     /* font-size: 1.5em; */
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    bottom: 20%;
+    right: 10%;
+    /* transform: translate(-50%, -50%); */
     /* width: 100px; */
     /* text-shadow: 0 0 10px var(--background-shadow); */
     display: table;
@@ -521,10 +521,10 @@ p.visible a  {
     display: table;
     margin: 0px auto 0px auto;
     padding: 5px;
-    background-color: #ffffff80;
+    background-color: rgba(255,255,255, .2);
     /* height: 33px; */
     height: auto;
-    box-shadow: 0 0 10px white;
+    box-shadow: 0 0 10px rgba(255,255,255, .2);
     border-radius: 50%;
     transition: all .2s ease-out;
     -moz-transition: all .2s ease-out;
@@ -539,7 +539,7 @@ p.visible a  {
 
 .applynow {
     position: fixed;
-    bottom: calc(var(--body-margin)/2);
+    bottom: .5vh;
     left: var(--body-margin);
     /* width: 230px; */
     width: 9.5vw;
@@ -1232,11 +1232,12 @@ a.expand.active {
     }
     .withfriends {
       /* width: 110px; */
-      width: 27vw;
+      width: 34vw;
     }
     .withfriends p {
       opacity: 1;
       font-size: 4.5vw;
+      right: 5%;
     }
 
     .applynow {
