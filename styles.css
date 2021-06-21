@@ -608,7 +608,8 @@ p.visible a  {
   /* background: rgb(160 205 255); */
   /* border: 1px solid yellow; */
     /* border-radius: 100%; */
-    text-shadow: 0 0 4px var(--background-shadow-green);;
+    text-shadow: 0 0 4px var(--background-shadow-green);
+    border: 2px dotted var(--background-shadow-green);
     /* color: limegreen; */
     /* box-shadow: 0 0 20px limegreen; */
     /* padding: 0px 20px; */

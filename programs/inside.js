@@ -38,6 +38,11 @@ $(".moreAbtSchol").click(function() {
     }, 1000);
 });
 
+$(".moreAbtCovid").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#section-covid").offset().top - 100
+    }, 1000);
+});
 
 
 $(".top").click(function() {
