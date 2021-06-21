@@ -1171,7 +1171,7 @@ a.expand.active {
     p.visible,  #info li, .session-info .details .labels-info, .session-info .description p, .session-info article.teacher,
     .session-info .description li,
     .session-info .description h2 li:before,
-    .applynow p, .withfriends p,
+    .applynow p, .withfriends p, #section-description > h2,
     #footer, select#allSections, .sitecredits   {
         font-size: 4.5vw !important;
     }
