@@ -14,12 +14,12 @@ loadSheetData(function(programs){
             programData = programs[index]
         }
     }
-    $('#programs-nav a').click(findProgramAndLoad)
+    // if(location.pathname.includes("programs")) $('.programs-list a').click(findProgramAndLoad)
     if(programData) fillPageContent(programData);
 })
-function findProgramAndLoad(e){
+function findProgramAndLoad(urlTitle){
     for (let index = 0; index < sheetData.length; index++) {
-        if(sheetData[index].urlTitle == e.currentTarget.hash.slice(1)){
+        if(sheetData[index].urlTitle == urlTitle){
             fillPageContent(sheetData[index])
             break
         }
