@@ -1037,6 +1037,9 @@ p.visible {
 .session-info section.teacher {
   margin-bottom: 20px;
 }
+#teacher-list article {
+    min-height:7vw;
+}
 .programs-list h2, .session-info h2, .session-info .details .labels, .session-info .details .labels-info  {
   line-height: 1.5;
 }
