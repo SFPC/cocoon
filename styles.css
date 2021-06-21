@@ -1160,8 +1160,6 @@ a.expand.active {
     }
     .break-sect img {
         width: 60vw;
-        border-image: url(lineborder.png) 38 / 12px / 0 round;
-        border-width: 11px;
     }
 
 
