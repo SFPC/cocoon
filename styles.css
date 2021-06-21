@@ -621,12 +621,12 @@ p,
     width: 30vw;
     height: auto;
     /* border: 2px solid var(--text-color); */
-    /* border-image: url(https://lovelanguages.melaniehoff.com/wp-content/themes/dlltheme/img/broider.png) 28 / 28px / 0 round;
+    border-image: url(https://lovelanguages.melaniehoff.com/wp-content/themes/dlltheme/img/broider.png) 28 / 28px / 0 round;
     border-width: 28px;
-    border-style: solid; */
-    border-width: 2px;
+    border-style: solid;
+    /* border-width: 2px;
     border-color: var(--text-color);
-    border-style: dotted dashed solid double;
+    border-style: dotted dashed solid double; */
     -moz-transition: all .3s ease-out;
     ms-transition: all .3s ease-out;
     o-transition: all .3s ease-out;
