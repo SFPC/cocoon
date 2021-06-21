@@ -608,15 +608,15 @@ p.visible a  {
   /* background: rgb(160 205 255); */
   /* border: 1px solid yellow; */
     /* border-radius: 100%; */
-    text-shadow: 0 0 4px limegreen;
+    text-shadow: 0 0 4px var(--background-shadow-green);;
     /* color: limegreen; */
     /* box-shadow: 0 0 20px limegreen; */
-    padding: 0px 20px;
+    /* padding: 0px 20px; */
     /* font-family: 'Self Modern';
     font-style: italic; */
-    width: fit-content;
+    /* width: fit-content; */
     display: inline;
-    width: fit-content;
+    /* width: fit-content; */
     /* padding: .3em; */
     float: left;
 }
