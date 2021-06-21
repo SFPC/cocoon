@@ -1176,7 +1176,7 @@ a.expand.active {
 
     p,
     .peek a, .session-info h2,
-    .session-info .description h2{
+    .session-info .description h2, .session-programs-title, #section-description > h2{
         font-size: 8vw;
     }
 
