@@ -35,6 +35,10 @@ function fillPageContent(program){
     $('#date').text(program.date)
     $('#time').text(program.time)
     $('#location').text(program.location)
+    if(program.location.includes("In Person")){
+        $('#section-covid, option[value="section-covid"]').show()
+        $('#location').html($('#location').html() + ` <a href="#section-covid">Covid-19 Safety</a>`)
+    }
     $('.price').text("$"+program.price)
     $('.application-link').attr('href', program.applicationLink)
     $('.organizerLink').attr('href', program.organizerLink)
