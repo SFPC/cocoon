@@ -950,8 +950,8 @@ p.visible {
 }
 
 .session-info section:hover, .session-info.touched {
-  background-color: var(--background-light);
-  box-shadow: 0 0 20px var(--background-light);
+  background-color: var(--background);
+  box-shadow: 0 0 20px var(--background);
   cursor: help;
 }
 
