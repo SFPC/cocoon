@@ -608,11 +608,10 @@ p.visible a  {
   /* background: rgb(160 205 255); */
   /* border: 1px solid yellow; */
     /* border-radius: 100%; */
-    text-shadow: 0 0 20px limegreen;
+    text-shadow: 0 0 4px limegreen;
     /* color: limegreen; */
     /* box-shadow: 0 0 20px limegreen; */
     padding: 0px 20px;
-    text-shadow: none;
     /* font-family: 'Self Modern';
     font-style: italic; */
     width: fit-content;
