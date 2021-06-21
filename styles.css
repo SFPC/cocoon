@@ -617,6 +617,8 @@ p.visible a  {
     font-style: italic; */
     width: fit-content;
     display: inline;
+    width: fit-content;
+    /* padding: .3em; */
     float: left;
 }
 
@@ -1267,10 +1269,3 @@ a.expand.active {
 .expanded {
     display: none;
 }
-.sensory-commons #location {
-    background-color: limegreen;
-      width: fit-content;
-      padding: .3em;
-      float: left;
-      border-radius: 121%;
-  }
