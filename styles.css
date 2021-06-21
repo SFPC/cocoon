@@ -905,6 +905,11 @@ p.visible {
     margin-bottom: 20vh;
 }
 
+.again h2 span {
+  font-family: 'times dot';
+  font-style: normal;
+}
+
 .session-info {
   width: 52vw;
   margin: 0px auto;
@@ -965,7 +970,7 @@ p.visible {
 }
 
 .session-programs-title {
-    margin-top: calc(var(--text-margin) *2);
+    margin-top: calc(var(--text-margin) * 1);
     font-size: 4vw;
     display: inline-block;
     text-align: justify;
@@ -1154,7 +1159,7 @@ a.expand.active {
     }
 
     p,
-    .peek a {
+    .peek a, .session-programs-title{
         font-size: 8vw;
     }
 
