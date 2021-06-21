@@ -416,9 +416,9 @@ p.visible a  {
 
 
 
-/* .intro-text p:hover, */
-/* .intro-text p:hover, .intro-text p:focus-within,
-.intro-text.touched */
+.intro-text p:hover,
+.intro-text p:hover, .intro-text p:focus-within,
+.intro-text.touched,
 .introhover
  {
     color: var(--text-color);
