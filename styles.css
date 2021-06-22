@@ -1178,7 +1178,7 @@ a.expand.active {
     .session-info .description li,
     .session-info .description h2 li:before,
     .applynow p, .withfriends p, #section-description > h2,
-    #footer, select#allSections, .sitecredits   {
+    #footer, select#allSections, .sitecredits, .again h2    {
         font-size: 4.5vw !important;
     }
 
