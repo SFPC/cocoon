@@ -40,7 +40,7 @@ function fillPageContent(program){
     $('#location').html(program.location)
     if(program.location.includes("In Person")){
         $('#section-covid, option[value="section-covid"]').show()
-        $('#location').html($('#location').html() + ` <a href="#section-covid" class="moreAbtCovid">Covid-19 Safety</a>`)
+        $('#location').html($('#location').html() + ` · <a href="#section-covid" class="moreAbtCovid">Covid-19 Safety</a>`)
         $('#section-teachers').html($('#section-teachers').html().replace("organized", "supported"))
     }
     else{
