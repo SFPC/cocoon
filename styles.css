@@ -603,6 +603,10 @@ p.visible a  {
     cursor: pointer !important;
 }
 
+.ht {
+  color: #eccfab !important;
+  font-style: italic;
+}
 
 .sensory-commons #location {
   /* background: rgb(160 205 255); */
