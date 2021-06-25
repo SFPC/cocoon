@@ -97,7 +97,7 @@ function fillPageContent(program){
 }
 
 function hyphensToList(hyphenString, destinationSelector){
-    let list = hyphenString.split("-")
+    let list = hyphenString.split("- ")
     $(destinationSelector).empty()
     list.forEach(element => {
         if(element.length > 0) $(destinationSelector).append(`<li>${element}</li>`)
