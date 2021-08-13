@@ -5,16 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="title" content="SFPC Summer 2021 Cocoon - Meet the Participants">
-    <meta name="description" content="The School for Poetic Computation is changing. This summer, we are making a temporary space together: a COCOON. We invite you into our collective studies as we work towards an experimental curriculum that can grow and transform over time.">
+    <meta name="description" content="Meet the Participants in the SFPC Cocoon Summer 2021 session">
     <meta property="og:type" content="website">
     <meta property="og:url" content="http://sfpc.io/cocoon/participants">
-    <meta property="og:title" content="SFPC Summer 2021 Cocoon">
-    <meta property="og:description" content="The School for Poetic Computation is changing. This summer, we are making a temporary space together: a COCOON. We invite you into our collective studies as we work towards an experimental curriculum that can grow and transform over time.">
+    <meta property="og:title" content="SFPC Summer 2021 Cocoon - Meet the Participants">
+    <meta property="og:description" content="Meet the Participants in the SFPC Cocoon Summer 2021 session">
     <meta property="og:image" content="http://sfpc.io/cocoon/sfpc-cocoon.jpg">
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="http://sfpc.io/cocoon/participants">
-    <meta property="twitter:title" content="SFPC Summer 2021 Cocoon">
-    <meta property="twitter:description" content="The School for Poetic Computation is changing. This summer, we are making a temporary space together: a COCOON. We invite you into our collective studies as we work towards an experimental curriculum that can grow and transform over time.">
+    <meta property="twitter:title" content="SFPC Summer 2021 Cocoon - Meet the Participants">
+    <meta property="twitter:description" content="Meet the Participants in the SFPC Cocoon Summer 2021 session">
     <meta property="twitter:image" content="http://sfpc.io/cocoon/sfpc-cocoon.jpg">
     <link href="../styles.css" rel="stylesheet">
     <title>SFPC — COCOON : Summer 2021 — Meet the Participants</title>
@@ -28,7 +28,8 @@
       }
       .class-title {
         text-align: center;
-        font-size: 3vw;
+        font-size: 2vw;
+        line-height: 3vw;
         margin-top: 5vh;
         margin-bottom: 5vh;
       }
@@ -39,6 +40,11 @@
       }
       #container .intro {
         font-size: 2vw;
+      }
+      #classNav {
+        font-size: 1.25vw;
+        line-height: 2vw;
+        margin-bottom: 10vh;
       }
       .participantDiv {
         display:block;
@@ -55,6 +61,10 @@
       }
       .participantDiv p {
         font-size: 2.5vh;
+      }
+      .class-name {
+        font-size:3vw;
+        text-shadow:1px 1px 1px var(--background-shadow-green);
       }
     </style>
 </head>
@@ -77,12 +87,20 @@
       </h1>
       <div id="container">
         <p class="intro">The participants below joined us for one of the 5-week Summer 2021 sessions of SFPC Cocoon to learn, unlearn, shed and transform.</p>
+        <h1 style="text-align:center">Browse by session:</h1><br>
+        <ul id="classNav">
+          <li><a href="#Anc">AncestryandMe by American Artist and Zainab Aliyu</a></li>
+          <li><a href="#Dig">Digital Love Languages: Sensory Commons by Melanie Hoff and Olivia McKayla Ross</a></li>
+          <li><a href="#Get">Getting Situated in Augmented Reality by Zach Lieberman and Edgardo Avilés-López</a></li>
+          <li><a href="#Lea">Learning to Love Mathematics: History, Theory, Practice, Poetics by Nabil Hassein and Sean Catangui</a></li>
+          <li><a href="#Rea">Reading, Writing & Compiling by Neta Bomani, Gabrielle Octavia Rucker, Kameelah Janan Rasheed, Jie Qi, Natalie Freed, Chang Yuchen</a></li>
+        </ul>
         <div id="participantList">
-          <div id="Anc" ><h1 class="class-title">AncestryandMe by American Artist and Zainab Aliyu</h1></div>
-          <div id="Dig" ><h1 class="class-title">Digital Love Languages: Sensory Commons by Melanie Hoff and Olivia McKayla Ross</h1></div>
-          <div id="Get" ><h1 class="class-title">Getting Situated in Augmented Reality by Zach Lieberman and Edgardo Avilés-López</h1></div>
-          <div id="Lea" ><h1 class="class-title">Learning to Love Mathematics: History, Theory, Practice, Poetics by Nabil Hassein and Sean Catangui</h1></div>
-          <div id="Rea" ><h1 class="class-title">Reading, Writing & Compiling by Neta Bomani, Gabrielle Octavia Rucker, Kameelah Janan Rasheed, Jie Qi, Natalie Freed, Chang Yuchen</h1></div>
+          <div id="Anc" ><h1 class="class-title"><span class="class-name">AncestryandMe</span><br> by American Artist and Zainab Aliyu</h1></div>
+          <div id="Dig" ><h1 class="class-title"><span class="class-name">Digital Love Languages: Sensory Commons</span><br> by Melanie Hoff and Olivia McKayla Ross</h1></div>
+          <div id="Get" ><h1 class="class-title"><span class="class-name">Getting Situated in Augmented Reality</span><br> by Zach Lieberman and Edgardo Avilés-López</h1></div>
+          <div id="Lea" ><h1 class="class-title"><span class="class-name">Learning to Love Mathematics: History, Theory, Practice, Poetics</span><br> by Nabil Hassein and Sean Catangui</h1></div>
+          <div id="Rea" ><h1 class="class-title"><span class="class-name">Reading, Writing & Compiling</span><br> by Neta Bomani, Gabrielle Octavia Rucker, Kameelah Janan Rasheed, Jie Qi, Natalie Freed, Chang Yuchen</h1></div>
         </div>
       </div>
     </div>
