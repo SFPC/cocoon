@@ -8,7 +8,8 @@ loadSheetData(sheetTSVUrl, function(data){
 })
 
 function addParticipantDiv(p){
-  const photoId = p.photo.split("=")[1]
+  const sessionId = p.session ? "#" + p.session.slice(0,3) : ""
+  const photoId = p.photo ? p.photo.split("=")[1] : ""
   const instagram = p.instagram ? `<a href="${p.instagram}" target="_blank">instagram</a> // ` : ""
   const twitter = p.twitter ? `<a href="${p.twitter}" target="_blank">twitter</a> // ` : ""
   const arena = p.arena ? `<a href="${p.arena}" target="_blank">are.na</a> //` : ""
@@ -16,12 +17,11 @@ function addParticipantDiv(p){
   const participantDiv = `
   <div class="participantDiv">
   <h1><a href="${p.website}" target="_blank">${p.name}</a> (${p.pronouns.toLowerCase()})</h1>
-  <h4>${p.session}</h4>
   <h4>// ${socials}</h4>
   <img src="https://drive.google.com/thumbnail?id=${photoId}" />
   <p>${p.bio}</p>
   </div>
   `
-  $('#participantList').append(participantDiv)
+  $(sessionId).append(participantDiv)
 }
 
