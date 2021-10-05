@@ -8,20 +8,24 @@ loadSheetData(sheetTSVUrl, function(data){
 })
 
 function addParticipantDiv(p){
-  const sessionId = p.session ? "#" + p.session.slice(0,3) : ""
-  const photoId = p.photo ? p.photo.split("=")[1] : ""
-  const instagram = p.instagram ? `<a href="${p.instagram}" target="_blank">instagram</a> // ` : ""
-  const twitter = p.twitter ? `<a href="${p.twitter}" target="_blank">twitter</a> // ` : ""
-  const arena = p.arena ? `<a href="${p.arena}" target="_blank">are.na</a> //` : ""
+  const sessionId = p["Session(s) attended"] ? "#" + p["Session(s) attended"].slice(0,3) : ""
+  const pronouns = p["Your pronouns"] ? p["Your pronouns"].toLowerCase() : ""
+  const photoId = p["Upload a photo of you to go with your bio : )"] ? p["Upload a photo of you to go with your bio : )"].split("=")[1] : ""
+  console.log(photoId)
+  const instagram = p.Instagram ? `<a href="${p.Instagram}" target="_blank">instagram</a> // ` : ""
+  const twitter = p.Twitter ? `<a href="${p.Twitter}" target="_blank">twitter</a> // ` : ""
+  const arena = p["Are.na"] ? `<a href="${p["Are.na"]}" target="_blank">are.na</a> //` : ""
   const socials = instagram + twitter + arena
   const participantDiv = `
   <div class="participantDiv">
-  <h1><a href="${p.website}" target="_blank">${p.name}</a> (${p.pronouns.toLowerCase()})</h1>
+  <h1><a href="${p.Website}" target="_blank">${p["Your first and last name"]}</a> (${pronouns})</h1>
   <h4>// ${socials}</h4>
   <img src="https://drive.google.com/thumbnail?id=${photoId}" />
-  <p>${p.bio}</p>
+  <p>${p["Please share your bio. In 150 words or less, introduce yourself. Invitation to talk about your practice, your history, and/or some of the things you are most interested in."]}</p>
   </div>
   `
+  console.log(participantDiv)
+  console.log(sessionId)
   $(sessionId).append(participantDiv)
 }
 
