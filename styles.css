@@ -830,6 +830,7 @@ p a:hover {
   text-decoration: none;
 }
 
+ p span#title,
 .session p span.title,
 .programs-list p span,
 .programs-list a.expand {
