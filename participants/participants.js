@@ -20,7 +20,7 @@ function addParticipantDiv(p){
   <div class="participantDiv">
   <h1><a href="${p.Website}" target="_blank">${p["Your first and last name"]}</a> (${pronouns})</h1>
   <h4>// ${socials}</h4>
-  <img src="https://drive.google.com/thumbnail?id=${photoId}" />
+  <img style="width:200px" src="https://drive.google.com/uc?export=view&id=${photoId}" />
   <p>${p["Please share your bio. In 150 words or less, introduce yourself. Invitation to talk about your practice, your history, and/or some of the things you are most interested in."]}</p>
   </div>
   `
