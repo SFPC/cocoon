@@ -12,9 +12,9 @@ function addParticipantDiv(p){
   const pronouns = p["Your pronouns"] ? p["Your pronouns"].toLowerCase() : ""
   const photoId = p["Upload a photo of you to go with your bio : )"] ? p["Upload a photo of you to go with your bio : )"].split("=")[1] : ""
   console.log(photoId)
-  const instagram = p.Instagram ? `<a href="${p.Instagram}" target="_blank">instagram</a> · ` : ""
-  const twitter = p.Twitter ? `<a href="${p.Twitter}" target="_blank">twitter</a> · ` : ""
-  const arena = p["Are.na"] ? `<a href="${p["Are.na"]}" target="_blank">are.na</a> ·` : ""
+  const instagram = p.Instagram ? `<a href="${p.Instagram}" target="_blank">Instagram</a> · ` : ""
+  const twitter = p.Twitter ? `<a href="${p.Twitter}" target="_blank">Twitter</a> · ` : ""
+  const arena = p["Are.na"] ? `<a href="${p["Are.na"]}" target="_blank">Are.na</a> ·` : ""
   const socials = instagram + twitter + arena
   const participantDiv = `
   <div class="session-info">
