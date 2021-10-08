@@ -14,7 +14,7 @@ function addParticipantDiv(p){
   console.log(photoId)
   const instagram = p.Instagram ? `<a href="${p.Instagram}" target="_blank">instagram</a> · ` : ""
   const twitter = p.Twitter ? `<a href="${p.Twitter}" target="_blank">twitter</a> · ` : ""
-  const arena = p["Are.na"] ? `<a href="${p["Are.na"]}" target="_blank">are.na</a> ·` : ""
+  const arena = p["Are.na"] ? `<a href="${p["Are.na"]}" target="_blank">are.na</a>` : ""
   const socials = instagram + twitter + arena
   const participantDiv = `
   <div class="session-info">
