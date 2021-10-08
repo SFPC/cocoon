@@ -1227,6 +1227,11 @@ a.expand.active {
       height: 9vw;
     }
 
+    .participantDiv .bio {
+      width: 20vw;
+      height: 20vw;
+    }
+
     .session-info .details .labels {
         width: 35%;
     }
