@@ -22,10 +22,12 @@ function addParticipantDiv(p){
   <section>
     <div class="participantDiv">
   <h1><a href="${p.Website}" target="_blank">${p["Your first and last name"]}</a> (${pronouns})</h1>
-  <h4>· ${socials}</h4>
+
   <span class="bio" style="background-image: url('https://drive.google.com/uc?export=view&id=${photoId}')" role="img"></span>
 
-  <p>${p["Please share your bio. In 150 words or less, introduce yourself. Invitation to talk about your practice, your history, and/or some of the things you are most interested in."]}</p>
+  <p>${p["Please share your bio. In 150 words or less, introduce yourself. Invitation to talk about your practice, your history, and/or some of the things you are most interested in."]}<BR><BR>
+${socials}
+</p>
 </div>
 </section> </div></div>
   `
